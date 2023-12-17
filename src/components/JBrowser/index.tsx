@@ -108,19 +108,19 @@ const tracks = [
       },
     },
   },
-  {
-    trackId: "my_wiggle_track",
-    name: "My Wiggle Track",
-    assemblyNames: ["hg19"],
-    type: "QuantitativeTrack",
-    adapter: {
-      type: "BigWig",
-      bigWigLocation: {
-        uri: "https://www.encodeproject.org/files/ENCFF826HEW/@@download/ENCFF826HEW.bigWig",
-        locationType: "UriLocation"
-      }
-    }
-  },
+  // {
+  //   trackId: "my_wiggle_track",
+  //   name: "My Wiggle Track",
+  //   assemblyNames: ["hg19"],
+  //   type: "QuantitativeTrack",
+  //   adapter: {
+  //     type: "BigWig",
+  //     bigWigLocation: {
+  //       uri: "https://www.encodeproject.org/files/ENCFF826HEW/@@download/ENCFF826HEW.bigWig",
+  //       locationType: "UriLocation"
+  //     }
+  //   }
+  // },
   { type: "VariantTrack",
     trackId: "skbr3_bedpe_arcs",
     name: "SKBR3 BEDPE arcs",
@@ -263,16 +263,16 @@ const defaultSession = {
           },
         ],
       },
-      // {
-      //   type: "MultiQuantitativeTrack",
-      //   configuration: "microarray_multi",
-      //   displays: [
-      //     {
-      //       type: "MultiLinearWiggleDisplay",
-      //       displayId: "microarray_multi-MultiLinearWiggleDisplay",
-      //     }
-      //   ],
-      // },
+      {
+        type: "MultiQuantitativeTrack",
+        configuration: "microarray_multi",
+        displays: [
+          {
+            type: "MultiLinearWiggleDisplay",
+            displayId: "microarray_multi-MultiLinearWiggleDisplay",
+          }
+        ],
+      },
       {
         type: 'VariantTrack',
         configuration: 'skbr3_bedpe_arcs',
@@ -299,16 +299,16 @@ const defaultSession = {
           }
         ]
       },
-      {
-        type: "QuantitativeTrack",
-        configuration: "my_wiggle_track",
-        displays: [
-          {
-            type: "LinearWiggleDisplay",
-            displayId: "my_wiggle_track-LinearWiggleDisplay"
-          }
-        ]
-      }
+      // {
+      //   type: "QuantitativeTrack",
+      //   configuration: "my_wiggle_track",
+      //   displays: [
+      //     {
+      //       type: "LinearWiggleDisplay",
+      //       displayId: "my_wiggle_track-LinearWiggleDisplay"
+      //     }
+      //   ]
+      // }
     ],
   },
 };
