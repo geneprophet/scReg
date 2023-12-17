@@ -7,9 +7,9 @@ export default function IndexPage() {
     console.log(window.location.href);
   }, [window.location.href]);
   const data = {
-    chr: 10,
-    start: 28838737,
-    end: 28838899,
+    chr: 1,
+    start: 55055000,
+    end: 56061000,
   };
   return (
     <div>
