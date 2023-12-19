@@ -28,13 +28,17 @@ const defaultSession = {
         ],
       },
       // {
-      //   type: 'VariantTrack',
-      //   configuration: 'brain_track',
+      //   type: 'FeatureTrack',
+      //   configuration: 'snp151.bed4',
       //   displays: [
       //     {
-      //       type: 'LinearBasicDisplay',
-      //       // configuration: 'vcf-LinearBasicDisplay',
+      //       type: "LinearBasicDisplay",
+      //       displayId: "snp151.bed4-LinearBasicDisplay"
       //     },
+      //     {
+      //       type: "LinearArcDisplay",
+      //       displayId: "snp151.bed4-LinearArcDisplay"
+      //     }
       //   ],
       // },
       {
@@ -44,16 +48,6 @@ const defaultSession = {
           {
             type: 'LinearBasicDisplay',
             // configuration: 'vcf-LinearBasicDisplay',
-          },
-        ],
-      },
-      {
-        type: 'MultiQuantitativeTrack',
-        configuration: 'microarray_multi',
-        displays: [
-          {
-            type: 'MultiLinearWiggleDisplay',
-            displayId: 'microarray_multi-MultiLinearWiggleDisplay',
           },
         ],
       },
@@ -72,16 +66,6 @@ const defaultSession = {
           {
             type: 'ChordVariantDisplay',
             displayId: 'skbr3_bedpe_arcs-ChordVariantDisplay',
-          },
-        ],
-      },
-      {
-        type: 'MultiQuantitativeTrack',
-        configuration: 'microarray_multi_groups',
-        displays: [
-          {
-            type: 'MultiLinearWiggleDisplay',
-            displayId: 'microarray_multi_groups-MultiLinearWiggleDisplay',
           },
         ],
       },
