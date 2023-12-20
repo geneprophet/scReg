@@ -1,6 +1,7 @@
 // tracks 就是genome browser的一条可视化轨迹
 // 比如多种细胞类型的scATAC数据每一个都是一条track
 // 拱形图也是个track
+// @ts-ignore
 const tracks = [
   {
     type: 'FeatureTrack',
@@ -47,50 +48,38 @@ const tracks = [
       },
     },
   },
-  {
-    type: 'QuantitativeTrack',
-    trackId: 'my_wiggle_track',
-    name: 'My Wiggle Track',
-    assemblyNames: ['hg19'],
-    category: ['ENCODE bigWigs', 'subcategory'],
-    adapter: {
-      type: 'BigWigAdapter',
-      bigWigLocation: {
-        locationType: 'UriLocation',
-        // uri: 'https://www.encodeproject.org/files/ENCFF303QSJ/@@download/ENCFF303QSJ.bigWig',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipocyte.bw',
-      },
-    },
-  },
-  {
-    type: 'VariantTrack',
-    trackId: 'skbr3_bedpe_arcs',
-    name: 'SKBR3 BEDPE arcs',
-    assemblyNames: ['hg19'],
-    category: ['SKBR3'],
-    adapter: {
-      type: 'BedpeAdapter',
-      bedpeLocation: {
-        locationType: 'UriLocation',
-        // uri: 'https://jbrowse.org/genomes/hg19/skbr3/reads_lr_skbr3.fa_ngmlr-0.2.3_mapped.bam.sniffles1kb_auto_l8_s5_noalt.bedpe',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_lung-Cilliated_Cell.bedpe',
-      },
-    },
-  },
-  {
-    type: 'FeatureTrack',
-    trackId: 'snp151.bed4',
-    name: 'snp151.bed4',
-    assemblyNames: ['hg19'],
-    category: ['Variation'],
-    adapter: {
-      type: 'BigBedAdapter',
-      bigBedLocation: {
-        locationType: 'UriLocation',
-        uri: 'https://hgdownload.soe.ucsc.edu/gbdb/hg19/vai/snp151.bed4.bb',
-      },
-    },
-  },
+  // {
+  //   type: 'QuantitativeTrack',
+  //   trackId: 'my_wiggle_track',
+  //   name: 'My Wiggle Track',
+  //   assemblyNames: ['hg19'],
+  //   category: ['ENCODE bigWigs', 'subcategory'],
+  //   adapter: {
+  //     type: 'BigWigAdapter',
+  //     bigWigLocation: {
+  //       locationType: 'UriLocation',
+  //       // uri: 'https://www.encodeproject.org/files/ENCFF303QSJ/@@download/ENCFF303QSJ.bigWig',
+  //       // uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipocyte.bw',
+  //       uri:'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Megakaryocytes.bw',
+  //     },
+  //   },
+  // },
+  // {
+  //   type: 'VariantTrack',
+  //   trackId: 'skbr3_bedpe_arcs',
+  //   name: 'SKBR3 BEDPE arcs',
+  //   assemblyNames: ['hg19'],
+  //   category: ['SKBR3'],
+  //   adapter: {
+  //     type: 'BedpeAdapter',
+  //     bedpeLocation: {
+  //       locationType: 'UriLocation',
+  //       // uri: 'https://jbrowse.org/genomes/hg19/skbr3/reads_lr_skbr3.fa_ngmlr-0.2.3_mapped.bam.sniffles1kb_auto_l8_s5_noalt.bedpe',
+  //       uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_lung-Cilliated_Cell.bedpe',
+  //     },
+  //   },
+  // },
+
   {
     type: 'QuantitativeTrack',
     trackId: 'Adult_scATAC__Adipose_Omentum__adult_Adipocyte',
@@ -101,7 +90,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -115,7 +104,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -129,7 +118,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -143,7 +132,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -157,7 +146,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -171,7 +160,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -185,7 +174,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -199,7 +188,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -213,7 +202,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -227,7 +216,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -241,7 +230,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -255,7 +244,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -269,7 +258,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -283,7 +272,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -297,7 +286,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -311,7 +300,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -325,7 +314,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -339,7 +328,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Adipocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Adipocyte.bw',
       },
     },
   },
@@ -353,7 +342,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Airway_Goblet_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Airway_Goblet_Cell.bw',
       },
     },
   },
@@ -367,7 +356,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Airway_Goblet_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Airway_Goblet_Cell.bw',
       },
     },
   },
@@ -382,7 +371,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Alveolar_Capillary_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Capillary_Endothelial_Cell.bw',
       },
     },
   },
@@ -397,7 +386,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Alveolar_Capillary_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Capillary_Endothelial_Cell.bw',
       },
     },
   },
@@ -412,7 +401,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Alveolar_Capillary_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Capillary_Endothelial_Cell.bw',
       },
     },
   },
@@ -427,7 +416,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Alveolar_Capillary_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Capillary_Endothelial_Cell.bw',
       },
     },
   },
@@ -441,7 +430,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Alveolar_Capillary_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Capillary_Endothelial_Cell.bw',
       },
     },
   },
@@ -456,7 +445,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Alveolar_Capillary_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Capillary_Endothelial_Cell.bw',
       },
     },
   },
@@ -470,7 +459,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Alveolar_Capillary_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Capillary_Endothelial_Cell.bw',
       },
     },
   },
@@ -484,7 +473,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Alveolar_Capillary_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Capillary_Endothelial_Cell.bw',
       },
     },
   },
@@ -498,7 +487,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Alveolar_Capillary_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Capillary_Endothelial_Cell.bw',
       },
     },
   },
@@ -513,7 +502,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Alveolar_Type_1_AT1_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Type_1_AT1_Cell.bw',
       },
     },
   },
@@ -527,7 +516,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Alveolar_Type_1_AT1_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Type_1_AT1_Cell.bw',
       },
     },
   },
@@ -541,7 +530,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Alveolar_Type_2_AT2_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Type_2_AT2_Cell.bw',
       },
     },
   },
@@ -555,7 +544,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Alveolar_Type_2_AT2_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alveolar_Type_2_AT2_Cell.bw',
       },
     },
   },
@@ -569,7 +558,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Alverolar_Type_2_Immune.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alverolar_Type_2_Immune.bw',
       },
     },
   },
@@ -583,7 +572,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Alverolar_Type_2_Immune.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alverolar_Type_2_Immune.bw',
       },
     },
   },
@@ -597,7 +586,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Alverolar_Type_2_Immune.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alverolar_Type_2_Immune.bw',
       },
     },
   },
@@ -611,7 +600,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Alverolar_Type_2_Immune.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alverolar_Type_2_Immune.bw',
       },
     },
   },
@@ -625,7 +614,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Alverolar_Type_2_Immune.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Alverolar_Type_2_Immune.bw',
       },
     },
   },
@@ -639,7 +628,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Astrocyte_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Astrocyte_1.bw',
       },
     },
   },
@@ -653,7 +642,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Astrocyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Astrocyte_2.bw',
       },
     },
   },
@@ -667,7 +656,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Atrial_Cardiomyocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Atrial_Cardiomyocyte.bw',
       },
     },
   },
@@ -681,7 +670,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Atrial_Cardiomyocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Atrial_Cardiomyocyte.bw',
       },
     },
   },
@@ -695,7 +684,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Basal_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Basal_Epidermal_Skin.bw',
       },
     },
   },
@@ -709,7 +698,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Basal_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Basal_Epidermal_Skin.bw',
       },
     },
   },
@@ -723,7 +712,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Basal_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Basal_Epidermal_Skin.bw',
       },
     },
   },
@@ -737,7 +726,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Basal_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Basal_Epidermal_Skin.bw',
       },
     },
   },
@@ -751,7 +740,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Basal_Epithelial_Mammary.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Basal_Epithelial_Mammary.bw',
       },
     },
   },
@@ -765,7 +754,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Basal_Epithelial_Mammary.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Basal_Epithelial_Mammary.bw',
       },
     },
   },
@@ -779,7 +768,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Basal_Epithelial_Mammary.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Basal_Epithelial_Mammary.bw',
       },
     },
   },
@@ -793,7 +782,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Basal_Epithelial_Mammary.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Basal_Epithelial_Mammary.bw',
       },
     },
   },
@@ -808,7 +797,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -823,7 +812,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -838,7 +827,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -853,7 +842,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -868,7 +857,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -882,7 +871,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -897,7 +886,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -911,7 +900,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -926,7 +915,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -940,7 +929,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Blood_Brain_Barrier_Endothelial_Cell.bw',
       },
     },
   },
@@ -954,7 +943,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -968,7 +957,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -982,7 +971,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -996,7 +985,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1010,7 +999,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1024,7 +1013,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1038,7 +1027,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1052,7 +1041,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1066,7 +1055,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1080,7 +1069,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1094,7 +1083,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1108,7 +1097,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1122,7 +1111,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1136,7 +1125,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1150,7 +1139,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1164,7 +1153,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1178,7 +1167,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1192,7 +1181,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1206,7 +1195,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1220,7 +1209,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1234,7 +1223,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1248,7 +1237,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Cardiac_Fibroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Fibroblasts.bw',
       },
     },
   },
@@ -1262,7 +1251,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Cardiac_Pericyte_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_1.bw',
       },
     },
   },
@@ -1276,7 +1265,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Cardiac_Pericyte_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_1.bw',
       },
     },
   },
@@ -1290,7 +1279,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Cardiac_Pericyte_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_1.bw',
       },
     },
   },
@@ -1304,7 +1293,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1318,7 +1307,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1332,7 +1321,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1346,7 +1335,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1360,7 +1349,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1374,7 +1363,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1388,7 +1377,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1402,7 +1391,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1416,7 +1405,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1430,7 +1419,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1444,7 +1433,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1458,7 +1447,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1472,7 +1461,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1486,7 +1475,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1500,7 +1489,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1514,7 +1503,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Cardiac_Pericyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_2.bw',
       },
     },
   },
@@ -1528,7 +1517,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1542,7 +1531,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1556,7 +1545,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1570,7 +1559,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1584,7 +1573,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1598,7 +1587,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1612,7 +1601,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1626,7 +1615,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1640,7 +1629,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1654,7 +1643,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1668,7 +1657,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1682,7 +1671,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1696,7 +1685,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1710,7 +1699,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1724,7 +1713,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1738,7 +1727,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1752,7 +1741,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1766,7 +1755,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1780,7 +1769,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1794,7 +1783,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Cardiac_Pericyte_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_3.bw',
       },
     },
   },
@@ -1808,7 +1797,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1822,7 +1811,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1836,7 +1825,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1850,7 +1839,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1864,7 +1853,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1878,7 +1867,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1892,7 +1881,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1906,7 +1895,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1920,7 +1909,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1934,7 +1923,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1948,7 +1937,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1962,7 +1951,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Cardiac_Pericyte_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cardiac_Pericyte_4.bw',
       },
     },
   },
@@ -1976,7 +1965,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Chief_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Chief_Cell.bw',
       },
     },
   },
@@ -1990,7 +1979,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Chief_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Chief_Cell.bw',
       },
     },
   },
@@ -2004,7 +1993,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Chief_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Chief_Cell.bw',
       },
     },
   },
@@ -2018,7 +2007,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Chief_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Chief_Cell.bw',
       },
     },
   },
@@ -2032,7 +2021,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Chief_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Chief_Cell.bw',
       },
     },
   },
@@ -2046,7 +2035,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Cilliated_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cilliated_Cell.bw',
       },
     },
   },
@@ -2060,7 +2049,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Club_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Club_Cell.bw',
       },
     },
   },
@@ -2074,7 +2063,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Club_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Club_Cell.bw',
       },
     },
   },
@@ -2088,7 +2077,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2102,7 +2091,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2116,7 +2105,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2130,7 +2119,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2144,7 +2133,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2158,7 +2147,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2172,7 +2161,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2186,7 +2175,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2200,7 +2189,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2214,7 +2203,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_CNS_Enteric_Neuron.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_CNS_Enteric_Neuron.bw',
       },
     },
   },
@@ -2228,7 +2217,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Colon_Epithelial_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Colon_Epithelial_Cell_1.bw',
       },
     },
   },
@@ -2242,7 +2231,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Colon_Epithelial_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Colon_Epithelial_Cell_1.bw',
       },
     },
   },
@@ -2256,7 +2245,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Colon_Epithelial_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Colon_Epithelial_Cell_1.bw',
       },
     },
   },
@@ -2270,7 +2259,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Colon_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Colon_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -2284,7 +2273,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Colon_Epithelial_Cell_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Colon_Epithelial_Cell_3.bw',
       },
     },
   },
@@ -2298,7 +2287,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Colon_Epithelial_Cell_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Colon_Epithelial_Cell_3.bw',
       },
     },
   },
@@ -2312,7 +2301,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Colonic_Goblet_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Colonic_Goblet_Cell.bw',
       },
     },
   },
@@ -2326,7 +2315,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Colonic_Goblet_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Colonic_Goblet_Cell.bw',
       },
     },
   },
@@ -2340,7 +2329,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Cortical_Epithelial_like.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Cortical_Epithelial_like.bw',
       },
     },
   },
@@ -2354,7 +2343,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2368,7 +2357,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2382,7 +2371,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2396,7 +2385,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2410,7 +2399,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2424,7 +2413,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2438,7 +2427,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2452,7 +2441,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2466,7 +2455,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2480,7 +2469,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2494,7 +2483,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2508,7 +2497,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2522,7 +2511,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2536,7 +2525,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ductal_Cells.bw',
       },
     },
   },
@@ -2550,7 +2539,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Eccrine_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Eccrine_Epidermal_Skin.bw',
       },
     },
   },
@@ -2564,7 +2553,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Eccrine_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Eccrine_Epidermal_Skin.bw',
       },
     },
   },
@@ -2578,7 +2567,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Eccrine_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Eccrine_Epidermal_Skin.bw',
       },
     },
   },
@@ -2592,7 +2581,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Endocardial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endocardial_Cell.bw',
       },
     },
   },
@@ -2606,7 +2595,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Endocardial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endocardial_Cell.bw',
       },
     },
   },
@@ -2620,7 +2609,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Endocardial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endocardial_Cell.bw',
       },
     },
   },
@@ -2634,7 +2623,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Endocardial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endocardial_Cell.bw',
       },
     },
   },
@@ -2648,7 +2637,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Endocardial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endocardial_Cell.bw',
       },
     },
   },
@@ -2662,7 +2651,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2676,7 +2665,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2690,7 +2679,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2704,7 +2693,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2718,7 +2707,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2732,7 +2721,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2747,7 +2736,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2761,7 +2750,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2776,7 +2765,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2790,7 +2779,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2805,7 +2794,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2819,7 +2808,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2833,7 +2822,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2847,7 +2836,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2861,7 +2850,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2875,7 +2864,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2889,7 +2878,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2903,7 +2892,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2917,7 +2906,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2931,7 +2920,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2945,7 +2934,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2959,7 +2948,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2973,7 +2962,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -2987,7 +2976,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -3001,7 +2990,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -3015,7 +3004,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Endothelial_Cell_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_1.bw',
       },
     },
   },
@@ -3029,7 +3018,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3043,7 +3032,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3057,7 +3046,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3071,7 +3060,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3085,7 +3074,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3100,7 +3089,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3114,7 +3103,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3129,7 +3118,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3143,7 +3132,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3158,7 +3147,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3172,7 +3161,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3186,7 +3175,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3200,7 +3189,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3214,7 +3203,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3228,7 +3217,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3242,7 +3231,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3256,7 +3245,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3270,7 +3259,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3284,7 +3273,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3298,7 +3287,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3312,7 +3301,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3326,7 +3315,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3340,7 +3329,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3354,7 +3343,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3368,7 +3357,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Endothelial_Cell_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_2.bw',
       },
     },
   },
@@ -3382,7 +3371,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3396,7 +3385,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3410,7 +3399,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3424,7 +3413,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3439,7 +3428,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3453,7 +3442,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3467,7 +3456,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3482,7 +3471,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3496,7 +3485,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3510,7 +3499,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3524,7 +3513,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3538,7 +3527,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3552,7 +3541,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3566,7 +3555,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3580,7 +3569,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3594,7 +3583,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3608,7 +3597,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3622,7 +3611,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3636,7 +3625,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3650,7 +3639,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3664,7 +3653,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Endothelial_Cell_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_General_3.bw',
       },
     },
   },
@@ -3678,7 +3667,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3692,7 +3681,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3706,7 +3695,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3720,7 +3709,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3735,7 +3724,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3750,7 +3739,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3765,7 +3754,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3780,7 +3769,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3794,7 +3783,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3809,7 +3798,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3823,7 +3812,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3837,7 +3826,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3851,7 +3840,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3865,7 +3854,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3879,7 +3868,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3893,7 +3882,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3907,7 +3896,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3921,7 +3910,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3935,7 +3924,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Endothelial_Cell_Myocardial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Cell_Myocardial.bw',
       },
     },
   },
@@ -3949,7 +3938,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Endothelial_Exocrine_Tissues.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Exocrine_Tissues.bw',
       },
     },
   },
@@ -3964,7 +3953,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Endothelial_Exocrine_Tissues.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Exocrine_Tissues.bw',
       },
     },
   },
@@ -3978,7 +3967,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Endothelial_Exocrine_Tissues.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Endothelial_Exocrine_Tissues.bw',
       },
     },
   },
@@ -3992,7 +3981,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Enterochromaffin_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Enterochromaffin_Cell.bw',
       },
     },
   },
@@ -4006,7 +3995,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Enterochromaffin_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Enterochromaffin_Cell.bw',
       },
     },
   },
@@ -4020,7 +4009,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Enterochromaffin_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Enterochromaffin_Cell.bw',
       },
     },
   },
@@ -4034,7 +4023,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Esophageal_Epithelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Esophageal_Epithelial_Cell.bw',
       },
     },
   },
@@ -4048,7 +4037,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Esophageal_Epithelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Esophageal_Epithelial_Cell.bw',
       },
     },
   },
@@ -4062,7 +4051,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Esophageal_Epithelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Esophageal_Epithelial_Cell.bw',
       },
     },
   },
@@ -4076,7 +4065,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Esophageal_Epithelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Esophageal_Epithelial_Cell.bw',
       },
     },
   },
@@ -4090,7 +4079,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Esophageal_Epithelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Esophageal_Epithelial_Cell.bw',
       },
     },
   },
@@ -4104,7 +4093,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4118,7 +4107,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4132,7 +4121,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4146,7 +4135,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4160,7 +4149,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4174,7 +4163,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4188,7 +4177,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4202,7 +4191,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4216,7 +4205,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4230,7 +4219,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4244,7 +4233,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4258,7 +4247,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4272,7 +4261,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Fibroblast_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Epithelial.bw',
       },
     },
   },
@@ -4286,7 +4275,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Fibroblast_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Gastrointestinal.bw',
       },
     },
   },
@@ -4301,7 +4290,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Fibroblast_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Gastrointestinal.bw',
       },
     },
   },
@@ -4316,7 +4305,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Fibroblast_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Gastrointestinal.bw',
       },
     },
   },
@@ -4331,7 +4320,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Fibroblast_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Gastrointestinal.bw',
       },
     },
   },
@@ -4345,7 +4334,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Fibroblast_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Gastrointestinal.bw',
       },
     },
   },
@@ -4359,7 +4348,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Fibroblast_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Gastrointestinal.bw',
       },
     },
   },
@@ -4373,7 +4362,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Fibroblast_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Gastrointestinal.bw',
       },
     },
   },
@@ -4387,7 +4376,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4401,7 +4390,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4415,7 +4404,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4429,7 +4418,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4443,7 +4432,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4457,7 +4446,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4471,7 +4460,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4485,7 +4474,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4499,7 +4488,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4513,7 +4502,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4527,7 +4516,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4541,7 +4530,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4555,7 +4544,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4569,7 +4558,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4583,7 +4572,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4597,7 +4586,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4611,7 +4600,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4625,7 +4614,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4639,7 +4628,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4653,7 +4642,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4667,7 +4656,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4681,7 +4670,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4695,7 +4684,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4709,7 +4698,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4723,7 +4712,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4737,7 +4726,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Fibroblast_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_General.bw',
       },
     },
   },
@@ -4751,7 +4740,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Fibroblast_Liver_Adrenal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Liver_Adrenal.bw',
       },
     },
   },
@@ -4765,7 +4754,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Fibroblast_Liver_Adrenal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Liver_Adrenal.bw',
       },
     },
   },
@@ -4779,7 +4768,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Fibroblast_Liver_Adrenal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Liver_Adrenal.bw',
       },
     },
   },
@@ -4793,7 +4782,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Fibroblast_Liver_Adrenal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Liver_Adrenal.bw',
       },
     },
   },
@@ -4807,7 +4796,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Fibroblast_Liver_Adrenal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Liver_Adrenal.bw',
       },
     },
   },
@@ -4821,7 +4810,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4835,7 +4824,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4849,7 +4838,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4863,7 +4852,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4878,7 +4867,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4893,7 +4882,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4908,7 +4897,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4922,7 +4911,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4936,7 +4925,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4950,7 +4939,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4964,7 +4953,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4978,7 +4967,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -4993,7 +4982,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -5007,7 +4996,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -5021,7 +5010,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Fibroblast_Peripheral_Nerve.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Peripheral_Nerve.bw',
       },
     },
   },
@@ -5036,7 +5025,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Fibroblast_Sk_Muscle_Associated.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Sk_Muscle_Associated.bw',
       },
     },
   },
@@ -5051,7 +5040,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Fibroblast_Sk_Muscle_Associated.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Sk_Muscle_Associated.bw',
       },
     },
   },
@@ -5066,7 +5055,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Fibroblast_Sk_Muscle_Associated.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Sk_Muscle_Associated.bw',
       },
     },
   },
@@ -5081,7 +5070,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Fibroblast_Sk_Muscle_Associated.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Sk_Muscle_Associated.bw',
       },
     },
   },
@@ -5096,7 +5085,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Fibroblast_Sk_Muscle_Associated.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Sk_Muscle_Associated.bw',
       },
     },
   },
@@ -5110,7 +5099,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Fibroblast_Sk_Muscle_Associated.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Sk_Muscle_Associated.bw',
       },
     },
   },
@@ -5125,7 +5114,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Fibroblast_Sk_Muscle_Associated.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Sk_Muscle_Associated.bw',
       },
     },
   },
@@ -5140,7 +5129,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Fibroblast_Sk_Muscle_Associated.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Fibroblast_Sk_Muscle_Associated.bw',
       },
     },
   },
@@ -5154,7 +5143,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Foveolar_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Foveolar_Cell.bw',
       },
     },
   },
@@ -5168,7 +5157,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Foveolar_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Foveolar_Cell.bw',
       },
     },
   },
@@ -5182,7 +5171,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Foveolar_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Foveolar_Cell.bw',
       },
     },
   },
@@ -5196,7 +5185,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Cerebrum_adult_GABAergic_Neuron_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_GABAergic_Neuron_1.bw',
       },
     },
   },
@@ -5210,7 +5199,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Cerebrum_adult_GABAergic_Neuron_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_GABAergic_Neuron_2.bw',
       },
     },
   },
@@ -5224,7 +5213,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Gastric_Neuroendocrine_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Gastric_Neuroendocrine_Cell.bw',
       },
     },
   },
@@ -5238,7 +5227,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Gastric_Neuroendocrine_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Gastric_Neuroendocrine_Cell.bw',
       },
     },
   },
@@ -5253,7 +5242,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Gastric_Neuroendocrine_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Gastric_Neuroendocrine_Cell.bw',
       },
     },
   },
@@ -5267,7 +5256,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Gastric_Neuroendocrine_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Gastric_Neuroendocrine_Cell.bw',
       },
     },
   },
@@ -5281,7 +5270,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Cerebrum_adult_Glutamatergic_Neuron_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Glutamatergic_Neuron_1.bw',
       },
     },
   },
@@ -5295,7 +5284,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Cerebrum_adult_Glutamatergic_Neuron_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Glutamatergic_Neuron_2.bw',
       },
     },
   },
@@ -5309,7 +5298,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Granular_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Granular_Epidermal_Skin.bw',
       },
     },
   },
@@ -5323,7 +5312,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Granular_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Granular_Epidermal_Skin.bw',
       },
     },
   },
@@ -5337,7 +5326,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Granular_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Granular_Epidermal_Skin.bw',
       },
     },
   },
@@ -5351,7 +5340,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Granular_Epidermal_Skin.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Granular_Epidermal_Skin.bw',
       },
     },
   },
@@ -5365,7 +5354,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Hepatocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Hepatocyte.bw',
       },
     },
   },
@@ -5379,7 +5368,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Hepatocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Hepatocyte.bw',
       },
     },
   },
@@ -5393,7 +5382,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Hepatocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Hepatocyte.bw',
       },
     },
   },
@@ -5407,7 +5396,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Keratinocyte_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Keratinocyte_1.bw',
       },
     },
   },
@@ -5421,7 +5410,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Keratinocyte_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Keratinocyte_1.bw',
       },
     },
   },
@@ -5435,7 +5424,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Keratinocyte_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Keratinocyte_1.bw',
       },
     },
   },
@@ -5449,7 +5438,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Keratinocyte_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Keratinocyte_1.bw',
       },
     },
   },
@@ -5463,7 +5452,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Keratinocyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Keratinocyte_2.bw',
       },
     },
   },
@@ -5477,7 +5466,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Keratinocyte_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Keratinocyte_2.bw',
       },
     },
   },
@@ -5491,7 +5480,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5505,7 +5494,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5519,7 +5508,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5533,7 +5522,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5547,7 +5536,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5561,7 +5550,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5575,7 +5564,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5589,7 +5578,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5603,7 +5592,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5617,7 +5606,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5631,7 +5620,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5645,7 +5634,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5659,7 +5648,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5673,7 +5662,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5687,7 +5676,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5701,7 +5690,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5715,7 +5704,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5729,7 +5718,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5743,7 +5732,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5757,7 +5746,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5771,7 +5760,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5785,7 +5774,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Luteal_Cell_Ovarian.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Luteal_Cell_Ovarian.bw',
       },
     },
   },
@@ -5799,7 +5788,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5813,7 +5802,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5827,7 +5816,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5841,7 +5830,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5855,7 +5844,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5869,7 +5858,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5884,7 +5873,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5898,7 +5887,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5913,7 +5902,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5927,7 +5916,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5942,7 +5931,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5956,7 +5945,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5970,7 +5959,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5984,7 +5973,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -5998,7 +5987,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6012,7 +6001,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6026,7 +6015,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6040,7 +6029,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6054,7 +6043,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6068,7 +6057,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6082,7 +6071,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6096,7 +6085,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6110,7 +6099,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6124,7 +6113,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6138,7 +6127,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6152,7 +6141,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -6166,7 +6155,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6180,7 +6169,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6194,7 +6183,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6208,7 +6197,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6222,7 +6211,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6237,7 +6226,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6252,7 +6241,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6267,7 +6256,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6282,7 +6271,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6296,7 +6285,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6311,7 +6300,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6325,7 +6314,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6339,7 +6328,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6353,7 +6342,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6367,7 +6356,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6381,7 +6370,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6395,7 +6384,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6409,7 +6398,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6423,7 +6412,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6437,7 +6426,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6452,7 +6441,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6466,7 +6455,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6480,7 +6469,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6494,7 +6483,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6508,7 +6497,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Macrophage_General_Alveolar.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General_Alveolar.bw',
       },
     },
   },
@@ -6522,7 +6511,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6536,7 +6525,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6550,7 +6539,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6564,7 +6553,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6578,7 +6567,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6592,7 +6581,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6606,7 +6595,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6620,7 +6609,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6634,7 +6623,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6648,7 +6637,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6662,7 +6651,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6676,7 +6665,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6690,7 +6679,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6704,7 +6693,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6718,7 +6707,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6732,7 +6721,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6746,7 +6735,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6760,7 +6749,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6774,7 +6763,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6788,7 +6777,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6802,7 +6791,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6816,7 +6805,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6830,7 +6819,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6844,7 +6833,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6858,7 +6847,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6872,7 +6861,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Macrophage_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Macrophage_General.bw',
       },
     },
   },
@@ -6886,7 +6875,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Mammary_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Epithelial.bw',
       },
     },
   },
@@ -6900,7 +6889,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Mammary_Epithelial.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Epithelial.bw',
       },
     },
   },
@@ -6915,7 +6904,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Mammary_Luminal_Epithelial_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_1.bw',
       },
     },
   },
@@ -6929,7 +6918,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Mammary_Luminal_Epithelial_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_1.bw',
       },
     },
   },
@@ -6944,7 +6933,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Mammary_Luminal_Epithelial_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_1.bw',
       },
     },
   },
@@ -6959,7 +6948,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -6974,7 +6963,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -6989,7 +6978,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7003,7 +6992,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7017,7 +7006,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7032,7 +7021,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7046,7 +7035,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7061,7 +7050,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7075,7 +7064,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7089,7 +7078,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7103,7 +7092,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7118,7 +7107,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7133,7 +7122,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7147,7 +7136,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Mammary_Luminal_Epithelial_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mammary_Luminal_Epithelial_Cell_2.bw',
       },
     },
   },
@@ -7161,7 +7150,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7175,7 +7164,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7189,7 +7178,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7203,7 +7192,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7217,7 +7206,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7231,7 +7220,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7245,7 +7234,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7259,7 +7248,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7273,7 +7262,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7287,7 +7276,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7301,7 +7290,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7315,7 +7304,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7329,7 +7318,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7343,7 +7332,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7357,7 +7346,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7371,7 +7360,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7385,7 +7374,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7399,7 +7388,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7413,7 +7402,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7427,7 +7416,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7441,7 +7430,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7455,7 +7444,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7469,7 +7458,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7483,7 +7472,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7497,7 +7486,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Mast_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mast_Cell.bw',
       },
     },
   },
@@ -7511,7 +7500,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Melanocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Melanocyte.bw',
       },
     },
   },
@@ -7525,7 +7514,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Melanocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Melanocyte.bw',
       },
     },
   },
@@ -7539,7 +7528,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Melanocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Melanocyte.bw',
       },
     },
   },
@@ -7553,7 +7542,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7567,7 +7556,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7581,7 +7570,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7595,7 +7584,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7609,7 +7598,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7623,7 +7612,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7637,7 +7626,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7651,7 +7640,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7665,7 +7654,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7679,7 +7668,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7693,7 +7682,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7707,7 +7696,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7721,7 +7710,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7735,7 +7724,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7749,7 +7738,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7763,7 +7752,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Memory_B_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Memory_B_Cell.bw',
       },
     },
   },
@@ -7777,7 +7766,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7791,7 +7780,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7805,7 +7794,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7819,7 +7808,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7833,7 +7822,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7847,7 +7836,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7861,7 +7850,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7875,7 +7864,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7889,7 +7878,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7903,7 +7892,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7917,7 +7906,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7931,7 +7920,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7945,7 +7934,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7959,7 +7948,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Intestine_adult_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Mesothelial_Cells.bw',
       },
     },
   },
@@ -7973,7 +7962,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Microglia.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Microglia.bw',
       },
     },
   },
@@ -7987,7 +7976,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Microglia.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Microglia.bw',
       },
     },
   },
@@ -8001,7 +7990,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Myoepithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Myoepithelial_Cells.bw',
       },
     },
   },
@@ -8015,7 +8004,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Myoepithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Myoepithelial_Cells.bw',
       },
     },
   },
@@ -8029,7 +8018,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Myoepithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Myoepithelial_Cells.bw',
       },
     },
   },
@@ -8043,7 +8032,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Myoepithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Myoepithelial_Cells.bw',
       },
     },
   },
@@ -8057,7 +8046,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Myoepithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Myoepithelial_Cells.bw',
       },
     },
   },
@@ -8071,7 +8060,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8085,7 +8074,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8099,7 +8088,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8113,7 +8102,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8127,7 +8116,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8141,7 +8130,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8155,7 +8144,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8169,7 +8158,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8183,7 +8172,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8197,7 +8186,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8211,7 +8200,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8225,7 +8214,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8239,7 +8228,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8253,7 +8242,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8267,7 +8256,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8281,7 +8270,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8295,7 +8284,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8309,7 +8298,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8323,7 +8312,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8337,7 +8326,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8351,7 +8340,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8365,7 +8354,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8379,7 +8368,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8393,7 +8382,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8407,7 +8396,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Naive_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Naive_T_Cell.bw',
       },
     },
   },
@@ -8421,7 +8410,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8435,7 +8424,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8449,7 +8438,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8463,7 +8452,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8477,7 +8466,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8491,7 +8480,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8505,7 +8494,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8519,7 +8508,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8533,7 +8522,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8547,7 +8536,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8561,7 +8550,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8575,7 +8564,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8589,7 +8578,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8603,7 +8592,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8617,7 +8606,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8631,7 +8620,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8645,7 +8634,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8659,7 +8648,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8673,7 +8662,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8687,7 +8676,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8701,7 +8690,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8715,7 +8704,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Natural_Killer_T_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Natural_Killer_T_Cell.bw',
       },
     },
   },
@@ -8729,7 +8718,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Oligodendrocyte_Precursor.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Oligodendrocyte_Precursor.bw',
       },
     },
   },
@@ -8743,7 +8732,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Cerebrum_adult_Oligodendrocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Oligodendrocyte.bw',
       },
     },
   },
@@ -8757,7 +8746,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Pancreatic_Acinar_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Acinar_Cell.bw',
       },
     },
   },
@@ -8771,7 +8760,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Pancreatic_Acinar_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Acinar_Cell.bw',
       },
     },
   },
@@ -8785,7 +8774,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Pancreatic_Acinar_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Acinar_Cell.bw',
       },
     },
   },
@@ -8799,7 +8788,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Pancreatic_Acinar_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Acinar_Cell.bw',
       },
     },
   },
@@ -8813,7 +8802,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Pancreatic_Acinar_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Acinar_Cell.bw',
       },
     },
   },
@@ -8827,7 +8816,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Pancreatic_Acinar_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Acinar_Cell.bw',
       },
     },
   },
@@ -8841,7 +8830,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Pancreatic_Alpha_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Alpha_Cell_1.bw',
       },
     },
   },
@@ -8855,7 +8844,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Pancreatic_Alpha_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Alpha_Cell_1.bw',
       },
     },
   },
@@ -8869,7 +8858,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Pancreatic_Alpha_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Alpha_Cell_2.bw',
       },
     },
   },
@@ -8883,7 +8872,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Pancreatic_Alpha_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Alpha_Cell_2.bw',
       },
     },
   },
@@ -8897,7 +8886,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Pancreatic_Beta_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Beta_Cell_1.bw',
       },
     },
   },
@@ -8911,7 +8900,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Pancreatic_Beta_Cell_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Beta_Cell_1.bw',
       },
     },
   },
@@ -8925,7 +8914,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Pancreatic_Beta_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Beta_Cell_2.bw',
       },
     },
   },
@@ -8939,7 +8928,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Pancreatic_Beta_Cell_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Beta_Cell_2.bw',
       },
     },
   },
@@ -8953,7 +8942,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Pancreatic_Delta_Gamma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Delta_Gamma_Cell.bw',
       },
     },
   },
@@ -8967,7 +8956,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Pancreatic_Delta_Gamma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Delta_Gamma_Cell.bw',
       },
     },
   },
@@ -8981,7 +8970,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Pancreatic_Delta_Gamma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Delta_Gamma_Cell.bw',
       },
     },
   },
@@ -8995,7 +8984,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Pancreatic_Delta_Gamma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pancreatic_Delta_Gamma_Cell.bw',
       },
     },
   },
@@ -9009,7 +8998,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Paneth_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Paneth_Cell.bw',
       },
     },
   },
@@ -9023,7 +9012,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Paneth_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Paneth_Cell.bw',
       },
     },
   },
@@ -9037,7 +9026,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Parietal_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Parietal_Cell.bw',
       },
     },
   },
@@ -9052,7 +9041,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9066,7 +9055,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9081,7 +9070,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9096,7 +9085,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9111,7 +9100,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9126,7 +9115,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9141,7 +9130,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9156,7 +9145,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9170,7 +9159,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9185,7 +9174,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9200,7 +9189,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9214,7 +9203,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9228,7 +9217,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9242,7 +9231,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9257,7 +9246,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9271,7 +9260,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9285,7 +9274,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9299,7 +9288,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9313,7 +9302,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Pericyte_Esophageal_Muscularis.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_Esophageal_Muscularis.bw',
       },
     },
   },
@@ -9327,7 +9316,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9341,7 +9330,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9355,7 +9344,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9369,7 +9358,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9383,7 +9372,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9397,7 +9386,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9411,7 +9400,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9425,7 +9414,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9439,7 +9428,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9453,7 +9442,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9467,7 +9456,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9481,7 +9470,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9495,7 +9484,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9509,7 +9498,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9523,7 +9512,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9537,7 +9526,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9551,7 +9540,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9565,7 +9554,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9579,7 +9568,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9593,7 +9582,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9607,7 +9596,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9621,7 +9610,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Pericyte_General_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_1.bw',
       },
     },
   },
@@ -9635,7 +9624,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9649,7 +9638,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9663,7 +9652,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9677,7 +9666,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9691,7 +9680,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9705,7 +9694,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9719,7 +9708,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9733,7 +9722,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9747,7 +9736,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9761,7 +9750,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9775,7 +9764,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9789,7 +9778,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9803,7 +9792,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9817,7 +9806,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9831,7 +9820,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9845,7 +9834,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9859,7 +9848,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9873,7 +9862,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9887,7 +9876,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9901,7 +9890,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9915,7 +9904,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9929,7 +9918,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Pericyte_General_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_2.bw',
       },
     },
   },
@@ -9943,7 +9932,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -9957,7 +9946,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -9971,7 +9960,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -9985,7 +9974,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -9999,7 +9988,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10013,7 +10002,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10027,7 +10016,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10041,7 +10030,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10055,7 +10044,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10069,7 +10058,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10083,7 +10072,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10097,7 +10086,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10111,7 +10100,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10125,7 +10114,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10139,7 +10128,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10153,7 +10142,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10167,7 +10156,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10181,7 +10170,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10195,7 +10184,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10209,7 +10198,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10223,7 +10212,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10237,7 +10226,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10251,7 +10240,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10265,7 +10254,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10279,7 +10268,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Pericyte_General_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_3.bw',
       },
     },
   },
@@ -10293,7 +10282,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10307,7 +10296,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10321,7 +10310,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10335,7 +10324,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10349,7 +10338,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10363,7 +10352,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10377,7 +10366,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10391,7 +10380,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10405,7 +10394,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10419,7 +10408,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10433,7 +10422,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10447,7 +10436,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10461,7 +10450,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10475,7 +10464,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10489,7 +10478,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10503,7 +10492,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10517,7 +10506,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10531,7 +10520,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10545,7 +10534,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10559,7 +10548,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10573,7 +10562,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10587,7 +10576,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10601,7 +10590,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10615,7 +10604,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Pericyte_General_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Pericyte_General_4.bw',
       },
     },
   },
@@ -10629,7 +10618,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10643,7 +10632,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10658,7 +10647,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10672,7 +10661,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10687,7 +10676,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10701,7 +10690,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10715,7 +10704,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10729,7 +10718,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10743,7 +10732,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10757,7 +10746,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10771,7 +10760,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10785,7 +10774,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Peripheral_Nerve_Stromal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Peripheral_Nerve_Stromal.bw',
       },
     },
   },
@@ -10799,7 +10788,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10813,7 +10802,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10827,7 +10816,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10841,7 +10830,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10855,7 +10844,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10869,7 +10858,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10883,7 +10872,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10897,7 +10886,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10911,7 +10900,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10925,7 +10914,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10939,7 +10928,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10953,7 +10942,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10967,7 +10956,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10981,7 +10970,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -10995,7 +10984,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -11009,7 +10998,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -11023,7 +11012,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Plasma_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Plasma_Cell.bw',
       },
     },
   },
@@ -11037,7 +11026,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Satellite_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Satellite_Cells.bw',
       },
     },
   },
@@ -11051,7 +11040,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Satellite_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Satellite_Cells.bw',
       },
     },
   },
@@ -11065,7 +11054,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11079,7 +11068,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11093,7 +11082,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11107,7 +11096,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11121,7 +11110,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11135,7 +11124,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11149,7 +11138,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11163,7 +11152,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11177,7 +11166,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11191,7 +11180,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11205,7 +11194,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11219,7 +11208,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11233,7 +11222,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11247,7 +11236,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11261,7 +11250,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11275,7 +11264,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11289,7 +11278,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11303,7 +11292,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11317,7 +11306,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11331,7 +11320,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11345,7 +11334,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11359,7 +11348,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11373,7 +11362,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11387,7 +11376,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11401,7 +11390,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Schwann_Cell_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Schwann_Cell_General.bw',
       },
     },
   },
@@ -11415,7 +11404,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Small_Intestinal_Enterocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Small_Intestinal_Enterocyte.bw',
       },
     },
   },
@@ -11430,7 +11419,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Small_Intestinal_Enterocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Small_Intestinal_Enterocyte.bw',
       },
     },
   },
@@ -11445,7 +11434,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Small_Intestinal_Enterocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Small_Intestinal_Enterocyte.bw',
       },
     },
   },
@@ -11459,7 +11448,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Small_Intestinal_Enterocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Small_Intestinal_Enterocyte.bw',
       },
     },
   },
@@ -11473,7 +11462,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Small_Intestinal_Enterocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Small_Intestinal_Enterocyte.bw',
       },
     },
   },
@@ -11487,7 +11476,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Small_Intestinal_Enterocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Small_Intestinal_Enterocyte.bw',
       },
     },
   },
@@ -11502,7 +11491,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Small_Intestinal_Goblet_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Small_Intestinal_Goblet_Cell.bw',
       },
     },
   },
@@ -11517,7 +11506,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Small_Intestinal_Goblet_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Small_Intestinal_Goblet_Cell.bw',
       },
     },
   },
@@ -11531,7 +11520,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11545,7 +11534,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11559,7 +11548,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11573,7 +11562,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11587,7 +11576,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11601,7 +11590,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11615,7 +11604,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11629,7 +11618,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11643,7 +11632,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11657,7 +11646,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Smooth_Muscle_Colon_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_1.bw',
       },
     },
   },
@@ -11671,7 +11660,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11685,7 +11674,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11699,7 +11688,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11713,7 +11702,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11727,7 +11716,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11741,7 +11730,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11755,7 +11744,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11769,7 +11758,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11783,7 +11772,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11797,7 +11786,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Smooth_Muscle_Colon_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Colon_2.bw',
       },
     },
   },
@@ -11812,7 +11801,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11827,7 +11816,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11842,7 +11831,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11857,7 +11846,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11872,7 +11861,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11886,7 +11875,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11900,7 +11889,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11915,7 +11904,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11930,7 +11919,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11944,7 +11933,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11958,7 +11947,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11972,7 +11961,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Smooth_Muscle_Esophageal_Mucosal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Mucosal.bw',
       },
     },
   },
@@ -11987,7 +11976,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
       },
     },
   },
@@ -12002,7 +11991,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
       },
     },
   },
@@ -12017,7 +12006,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
       },
     },
   },
@@ -12032,7 +12021,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
       },
     },
   },
@@ -12047,7 +12036,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
       },
     },
   },
@@ -12061,7 +12050,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
       },
     },
   },
@@ -12076,7 +12065,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
       },
     },
   },
@@ -12091,7 +12080,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
       },
     },
   },
@@ -12106,7 +12095,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_1.bw',
       },
     },
   },
@@ -12121,7 +12110,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
       },
     },
   },
@@ -12136,7 +12125,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
       },
     },
   },
@@ -12151,7 +12140,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
       },
     },
   },
@@ -12166,7 +12155,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
       },
     },
   },
@@ -12181,7 +12170,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
       },
     },
   },
@@ -12196,7 +12185,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
       },
     },
   },
@@ -12211,7 +12200,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
       },
     },
   },
@@ -12226,7 +12215,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_2.bw',
       },
     },
   },
@@ -12241,7 +12230,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12256,7 +12245,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12271,7 +12260,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12286,7 +12275,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12301,7 +12290,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12316,7 +12305,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12331,7 +12320,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12346,7 +12335,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12361,7 +12350,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12375,7 +12364,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12390,7 +12379,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12405,7 +12394,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12420,7 +12409,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12435,7 +12424,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12450,7 +12439,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Esophageal_Muscularis_3.bw',
       },
     },
   },
@@ -12464,7 +12453,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12478,7 +12467,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12492,7 +12481,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12507,7 +12496,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12521,7 +12510,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12536,7 +12525,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12550,7 +12539,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12564,7 +12553,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12578,7 +12567,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12592,7 +12581,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_GE_Junction.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_GE_Junction.bw',
       },
     },
   },
@@ -12607,7 +12596,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_General_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General_Gastrointestinal.bw',
       },
     },
   },
@@ -12622,7 +12611,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_General_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General_Gastrointestinal.bw',
       },
     },
   },
@@ -12637,7 +12626,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_General_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General_Gastrointestinal.bw',
       },
     },
   },
@@ -12652,7 +12641,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_General_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General_Gastrointestinal.bw',
       },
     },
   },
@@ -12667,7 +12656,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_General_Gastrointestinal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General_Gastrointestinal.bw',
       },
     },
   },
@@ -12681,7 +12670,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12695,7 +12684,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12709,7 +12698,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12723,7 +12712,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12737,7 +12726,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12751,7 +12740,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12765,7 +12754,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12779,7 +12768,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12793,7 +12782,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12807,7 +12796,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12821,7 +12810,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12835,7 +12824,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12849,7 +12838,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12863,7 +12852,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12877,7 +12866,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12891,7 +12880,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12905,7 +12894,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12919,7 +12908,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12933,7 +12922,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12947,7 +12936,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12961,7 +12950,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12975,7 +12964,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -12989,7 +12978,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -13003,7 +12992,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Smooth_Muscle_General.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_General.bw',
       },
     },
   },
@@ -13017,7 +13006,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_Uterine.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Uterine.bw',
       },
     },
   },
@@ -13031,7 +13020,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_Uterine.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Uterine.bw',
       },
     },
   },
@@ -13045,7 +13034,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_Uterine.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Uterine.bw',
       },
     },
   },
@@ -13059,7 +13048,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_Uterine.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Uterine.bw',
       },
     },
   },
@@ -13073,7 +13062,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Smooth_Muscle_Uterine.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Uterine.bw',
       },
     },
   },
@@ -13087,7 +13076,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Smooth_Muscle_Uterine.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Uterine.bw',
       },
     },
   },
@@ -13101,7 +13090,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Smooth_Muscle_Uterine.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Uterine.bw',
       },
     },
   },
@@ -13115,7 +13104,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_Uterine.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Uterine.bw',
       },
     },
   },
@@ -13129,7 +13118,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Smooth_Muscle_Uterine.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Uterine.bw',
       },
     },
   },
@@ -13143,7 +13132,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Smooth_Muscle_Vaginal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Vaginal.bw',
       },
     },
   },
@@ -13157,7 +13146,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Smooth_Muscle_Vaginal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Vaginal.bw',
       },
     },
   },
@@ -13171,7 +13160,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Smooth_Muscle_Vaginal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Vaginal.bw',
       },
     },
   },
@@ -13185,7 +13174,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Smooth_Muscle_Vaginal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Vaginal.bw',
       },
     },
   },
@@ -13199,7 +13188,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Smooth_Muscle_Vaginal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Vaginal.bw',
       },
     },
   },
@@ -13213,7 +13202,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Smooth_Muscle_Vaginal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Vaginal.bw',
       },
     },
   },
@@ -13227,7 +13216,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Smooth_Muscle_Vaginal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Vaginal.bw',
       },
     },
   },
@@ -13241,7 +13230,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Smooth_Muscle_Vaginal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Vaginal.bw',
       },
     },
   },
@@ -13255,7 +13244,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Smooth_Muscle_Vaginal.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Smooth_Muscle_Vaginal.bw',
       },
     },
   },
@@ -13269,7 +13258,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13283,7 +13272,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13297,7 +13286,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13311,7 +13300,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13325,7 +13314,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13339,7 +13328,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13353,7 +13342,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13367,7 +13356,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13381,7 +13370,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13395,7 +13384,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13409,7 +13398,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13423,7 +13412,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13437,7 +13426,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Liver_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13451,7 +13440,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13465,7 +13454,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13479,7 +13468,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13493,7 +13482,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13507,7 +13496,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13521,7 +13510,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13535,7 +13524,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13549,7 +13538,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13563,7 +13552,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13577,7 +13566,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13591,7 +13580,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13605,7 +13594,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13619,7 +13608,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_T_Lymphocyte_1_CD8+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_1_CD8+.bw',
       },
     },
   },
@@ -13633,7 +13622,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13647,7 +13636,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13661,7 +13650,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13675,7 +13664,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13689,7 +13678,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13703,7 +13692,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13717,7 +13706,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13731,7 +13720,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13745,7 +13734,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13759,7 +13748,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Islet_Cb_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13773,7 +13762,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13787,7 +13776,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13801,7 +13790,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13815,7 +13804,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13829,7 +13818,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13843,7 +13832,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13857,7 +13846,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13871,7 +13860,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13885,7 +13874,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13899,7 +13888,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_T_Lymphocyte_2_CD4+.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_T_Lymphocyte_2_CD4+.bw',
       },
     },
   },
@@ -13914,7 +13903,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Thyroid_Follicular_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Thyroid_Follicular_Cell.bw',
       },
     },
   },
@@ -13929,7 +13918,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Thyroid_Follicular_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Thyroid_Follicular_Cell.bw',
       },
     },
   },
@@ -13943,7 +13932,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Thyroid_Follicular_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Thyroid_Follicular_Cell.bw',
       },
     },
   },
@@ -13958,7 +13947,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Transitional_Zone_Cortical_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Transitional_Zone_Cortical_Cell.bw',
       },
     },
   },
@@ -13972,7 +13961,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Tuft_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Tuft_Cell.bw',
       },
     },
   },
@@ -13986,7 +13975,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Tuft_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Tuft_Cell.bw',
       },
     },
   },
@@ -14001,7 +13990,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Type_I_Skeletal_Myocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Type_I_Skeletal_Myocyte.bw',
       },
     },
   },
@@ -14015,7 +14004,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Type_I_Skeletal_Myocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Type_I_Skeletal_Myocyte.bw',
       },
     },
   },
@@ -14029,7 +14018,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Type_II_Skeletal_Myocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Type_II_Skeletal_Myocyte.bw',
       },
     },
   },
@@ -14043,7 +14032,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Type_II_Skeletal_Myocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Type_II_Skeletal_Myocyte.bw',
       },
     },
   },
@@ -14057,7 +14046,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14071,7 +14060,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14085,7 +14074,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14099,7 +14088,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14113,7 +14102,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14128,7 +14117,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14143,7 +14132,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14157,7 +14146,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Lung_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14171,7 +14160,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14185,7 +14174,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14199,7 +14188,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14213,7 +14202,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14227,7 +14216,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14241,7 +14230,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Thyroid_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14255,7 +14244,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14269,7 +14258,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Vascular_Smooth_Muscle_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_1.bw',
       },
     },
   },
@@ -14283,7 +14272,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adipose_Omentum_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14297,7 +14286,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14311,7 +14300,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Aorta_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14325,7 +14314,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Artery_Tibial_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14339,7 +14328,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Sigmoid_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14353,7 +14342,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Colon_Transverse_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14368,7 +14357,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Gejunction_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14382,7 +14371,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Mucosa_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14397,7 +14386,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Esophagus_Muscularis_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14411,7 +14400,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14426,7 +14415,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14440,7 +14429,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Mammary_Tissue_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14454,7 +14443,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Muscle_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14468,7 +14457,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Nerve_Tibial_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14482,7 +14471,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Ovary_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14496,7 +14485,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Pancreas_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14510,7 +14499,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14524,7 +14513,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Skin_Sun_Exposed_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14538,7 +14527,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Small_Intestine_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14552,7 +14541,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Stomach_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14566,7 +14555,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Uterus_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14580,7 +14569,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Vagina_adult_Vascular_Smooth_Muscle_2.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Vascular_Smooth_Muscle_2.bw',
       },
     },
   },
@@ -14594,7 +14583,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heart_Lv_adult_Ventricular_Cardiomyocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ventricular_Cardiomyocyte.bw',
       },
     },
   },
@@ -14609,7 +14598,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Heartatrial_Appendage_adult_Ventricular_Cardiomyocyte.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Ventricular_Cardiomyocyte.bw',
       },
     },
   },
@@ -14624,7 +14613,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Zona_Fasciculata_Cortical_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Zona_Fasciculata_Cortical_Cell.bw',
       },
     },
   },
@@ -14639,7 +14628,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/adult_Adrenal_Gland_adult_Zona_Glomerulosa_Cortical_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/adult_Zona_Glomerulosa_Cortical_Cell.bw',
       },
     },
   },
@@ -14653,7 +14642,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Pancreas_fetal_Acinar_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Acinar_Cells.bw',
       },
     },
   },
@@ -14667,7 +14656,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Adrenal_Gland_fetal_Adrenocortical_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Adrenocortical_Cells.bw',
       },
     },
   },
@@ -14681,7 +14670,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Thymus_fetal_Antigen_Presenting_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Antigen_Presenting_Cells.bw',
       },
     },
   },
@@ -14695,7 +14684,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebrum_fetal_Astrocytes_Oligodendrocytes.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Astrocytes_Oligodendrocytes.bw',
       },
     },
   },
@@ -14709,7 +14698,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebellum_fetal_Astrocytes.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Astrocytes.bw',
       },
     },
   },
@@ -14723,7 +14712,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebrum_fetal_Astrocytes.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Astrocytes.bw',
       },
     },
   },
@@ -14738,7 +14727,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Lung_fetal_Bronchiolar_And_Alveolar_Epithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Bronchiolar_And_Alveolar_Epithelial_Cells.bw',
       },
     },
   },
@@ -14753,7 +14742,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Cardiomyocytes_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Cardiomyocytes_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -14767,7 +14756,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Cardiomyocytes.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Cardiomyocytes.bw',
       },
     },
   },
@@ -14781,7 +14770,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebrum_fetal_Cerebrum_Unknown_3.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Cerebrum_Unknown_3.bw',
       },
     },
   },
@@ -14795,7 +14784,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Adrenal_Gland_fetal_Chromaffin_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Chromaffin_Cells.bw',
       },
     },
   },
@@ -14809,7 +14798,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Chromaffin_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Chromaffin_Cells.bw',
       },
     },
   },
@@ -14823,7 +14812,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Lung_fetal_Ciliated_Epithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Ciliated_Epithelial_Cells.bw',
       },
     },
   },
@@ -14837,7 +14826,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Pancreas_fetal_Ductal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Ductal_Cells.bw',
       },
     },
   },
@@ -14851,7 +14840,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Elf3_Agbl2_Positive_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Elf3_Agbl2_Positive_Cells.bw',
       },
     },
   },
@@ -14865,7 +14854,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Artery_Aorta_fetal_Endocardial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Endocardial_Cells.bw',
       },
     },
   },
@@ -14879,7 +14868,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_Lv_fetal_Endocardial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Endocardial_Cells.bw',
       },
     },
   },
@@ -14893,7 +14882,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heartatrial_Appendage_fetal_Endocardial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Endocardial_Cells.bw',
       },
     },
   },
@@ -14907,7 +14896,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Liver_fetal_Endocardial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Endocardial_Cells.bw',
       },
     },
   },
@@ -14921,7 +14910,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Muscle_fetal_Endocardial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Endocardial_Cells.bw',
       },
     },
   },
@@ -14935,7 +14924,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Endocardial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Endocardial_Cells.bw',
       },
     },
   },
@@ -14949,7 +14938,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_ENS_Glia.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_ENS_Glia.bw',
       },
     },
   },
@@ -14963,7 +14952,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Stomach_fetal_ENS_Glia.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_ENS_Glia.bw',
       },
     },
   },
@@ -14977,7 +14966,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_ENS_Neurons.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_ENS_Neurons.bw',
       },
     },
   },
@@ -14991,7 +14980,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Stomach_fetal_ENS_Neurons.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_ENS_Neurons.bw',
       },
     },
   },
@@ -15005,7 +14994,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Epicardial_Fat_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Epicardial_Fat_Cells.bw',
       },
     },
   },
@@ -15019,7 +15008,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Stomach_fetal_Epithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Epithelial_Cells.bw',
       },
     },
   },
@@ -15033,7 +15022,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Adrenal_Gland_fetal_Erythroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Erythroblasts.bw',
       },
     },
   },
@@ -15047,7 +15036,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Erythroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Erythroblasts.bw',
       },
     },
   },
@@ -15061,7 +15050,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Liver_fetal_Erythroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Erythroblasts.bw',
       },
     },
   },
@@ -15075,7 +15064,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Erythroblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Erythroblasts.bw',
       },
     },
   },
@@ -15089,7 +15078,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebrum_fetal_Excitatory_Neurons.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Excitatory_Neurons.bw',
       },
     },
   },
@@ -15103,7 +15092,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Extravillous_Trophoblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Extravillous_Trophoblasts.bw',
       },
     },
   },
@@ -15117,7 +15106,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Eye_fetal_Eye_Unknown_6.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Eye_Unknown_6.bw',
       },
     },
   },
@@ -15131,7 +15120,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Eye_fetal_Ganglion_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Ganglion_Cells.bw',
       },
     },
   },
@@ -15145,7 +15134,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Stomach_fetal_Goblet_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Goblet_Cells.bw',
       },
     },
   },
@@ -15159,7 +15148,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebellum_fetal_Granule_Neurons.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Granule_Neurons.bw',
       },
     },
   },
@@ -15173,7 +15162,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Heart_Unknown_10.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Heart_Unknown_10.bw',
       },
     },
   },
@@ -15187,7 +15176,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Liver_fetal_Hematopoietic_Stem_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Hematopoietic_Stem_Cells.bw',
       },
     },
   },
@@ -15201,7 +15190,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Liver_fetal_Hepatoblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Hepatoblasts.bw',
       },
     },
   },
@@ -15215,7 +15204,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Eye_fetal_Horizontal_Cells_Amacrine_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Horizontal_Cells_Amacrine_Cells.bw',
       },
     },
   },
@@ -15229,7 +15218,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Igfbp1_Dkk1_Positive_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Igfbp1_Dkk1_Positive_Cells.bw',
       },
     },
   },
@@ -15243,7 +15232,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebellum_fetal_Inhibitory_Interneurons.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Inhibitory_Interneurons.bw',
       },
     },
   },
@@ -15257,7 +15246,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebrum_fetal_Inhibitory_Neurons.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Inhibitory_Neurons.bw',
       },
     },
   },
@@ -15271,7 +15260,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Intestinal_Epithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Intestinal_Epithelial_Cells.bw',
       },
     },
   },
@@ -15285,7 +15274,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Intestine_Unknown_4.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Intestine_Unknown_4.bw',
       },
     },
   },
@@ -15299,7 +15288,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Intestine_Unknown_8.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Intestine_Unknown_8.bw',
       },
     },
   },
@@ -15313,7 +15302,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Pancreas_fetal_Islet_Endocrine_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Islet_Endocrine_Cells.bw',
       },
     },
   },
@@ -15327,7 +15316,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Kidney_fetal_Kidney_Unknown_14.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Kidney_Unknown_14.bw',
       },
     },
   },
@@ -15341,7 +15330,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Kidney_fetal_Kidney_Unknown_7.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Kidney_Unknown_7.bw',
       },
     },
   },
@@ -15355,7 +15344,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebrum_fetal_Limbic_System_Neurons.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Limbic_System_Neurons.bw',
       },
     },
   },
@@ -15369,7 +15358,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -15383,7 +15372,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -15397,7 +15386,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Lung_fetal_Lymphatic_Endothelial_Cell.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphatic_Endothelial_Cell.bw',
       },
     },
   },
@@ -15411,7 +15400,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Muscle_fetal_Lymphoid_And_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphoid_And_Myeloid_Cells.bw',
       },
     },
   },
@@ -15425,7 +15414,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Pancreas_fetal_Lymphoid_And_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphoid_And_Myeloid_Cells.bw',
       },
     },
   },
@@ -15439,7 +15428,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Lymphoid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphoid_Cells.bw',
       },
     },
   },
@@ -15453,7 +15442,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Lymphoid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphoid_Cells.bw',
       },
     },
   },
@@ -15467,7 +15456,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Liver_fetal_Lymphoid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphoid_Cells.bw',
       },
     },
   },
@@ -15481,7 +15470,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Lung_fetal_Lymphoid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphoid_Cells.bw',
       },
     },
   },
@@ -15495,7 +15484,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Lymphoid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Lymphoid_Cells.bw',
       },
     },
   },
@@ -15509,7 +15498,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Adrenal_Gland_fetal_Megakaryocytes.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Megakaryocytes.bw',
       },
     },
   },
@@ -15523,7 +15512,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Liver_fetal_Megakaryocytes.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Megakaryocytes.bw',
       },
     },
   },
@@ -15537,7 +15526,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Lung_fetal_Megakaryocytes.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Megakaryocytes.bw',
       },
     },
   },
@@ -15551,7 +15540,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Spleen_fetal_Megakaryocytes.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Megakaryocytes.bw',
       },
     },
   },
@@ -15565,7 +15554,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Kidney_fetal_Mesangial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Mesangial_Cells.bw',
       },
     },
   },
@@ -15579,7 +15568,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Mesothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Mesothelial_Cells.bw',
       },
     },
   },
@@ -15593,7 +15582,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Kidney_fetal_Metanephric_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Metanephric_Cells.bw',
       },
     },
   },
@@ -15607,7 +15596,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Muscle_fetal_Muscle_Unknown_7.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Muscle_Unknown_7.bw',
       },
     },
   },
@@ -15621,7 +15610,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Adrenal_Gland_fetal_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Myeloid_Cells.bw',
       },
     },
   },
@@ -15635,7 +15624,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Myeloid_Cells.bw',
       },
     },
   },
@@ -15649,7 +15638,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Myeloid_Cells.bw',
       },
     },
   },
@@ -15663,7 +15652,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Kidney_fetal_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Myeloid_Cells.bw',
       },
     },
   },
@@ -15677,7 +15666,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Liver_fetal_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Myeloid_Cells.bw',
       },
     },
   },
@@ -15691,7 +15680,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Lung_fetal_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Myeloid_Cells.bw',
       },
     },
   },
@@ -15705,7 +15694,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Myeloid_Cells.bw',
       },
     },
   },
@@ -15719,7 +15708,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Spleen_fetal_Myeloid_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Myeloid_Cells.bw',
       },
     },
   },
@@ -15733,7 +15722,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Lung_fetal_Neuroendocrine_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Neuroendocrine_Cells.bw',
       },
     },
   },
@@ -15747,7 +15736,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Paep_Mecom_Positive_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Paep_Mecom_Positive_Cells.bw',
       },
     },
   },
@@ -15761,7 +15750,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Pancreas_fetal_Pancreas_Unknown_1.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Pancreas_Unknown_1.bw',
       },
     },
   },
@@ -15775,7 +15764,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Stomach_fetal_Parietal_And_Chief_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Parietal_And_Chief_Cells.bw',
       },
     },
   },
@@ -15789,7 +15778,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Eye_fetal_Photoreceptor_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Photoreceptor_Cells.bw',
       },
     },
   },
@@ -15803,7 +15792,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebellum_fetal_Purkinje_Neurons.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Purkinje_Neurons.bw',
       },
     },
   },
@@ -15817,7 +15806,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Eye_fetal_Retinal_Pigment_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Retinal_Pigment_Cells.bw',
       },
     },
   },
@@ -15831,7 +15820,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Eye_fetal_Retinal_Progenitors_And_Muller_Glia.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Retinal_Progenitors_And_Muller_Glia.bw',
       },
     },
   },
@@ -15845,7 +15834,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Muscle_fetal_Satellite_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Satellite_Cells.bw',
       },
     },
   },
@@ -15859,7 +15848,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Adrenal_Gland_fetal_Schwann_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Schwann_Cells.bw',
       },
     },
   },
@@ -15873,7 +15862,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Schwann_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Schwann_Cells.bw',
       },
     },
   },
@@ -15887,7 +15876,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Muscle_fetal_Schwann_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Schwann_Cells.bw',
       },
     },
   },
@@ -15901,7 +15890,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Muscle_fetal_Skeletal_Muscle_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Skeletal_Muscle_Cells.bw',
       },
     },
   },
@@ -15915,7 +15904,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebrum_fetal_Skor2_Npsr1_Positive_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Skor2_Npsr1_Positive_Cells.bw',
       },
     },
   },
@@ -15929,7 +15918,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Smooth_Muscle_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Smooth_Muscle_Cells.bw',
       },
     },
   },
@@ -15943,7 +15932,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Smooth_Muscle_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Smooth_Muscle_Cells.bw',
       },
     },
   },
@@ -15957,7 +15946,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Muscle_fetal_Smooth_Muscle_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Smooth_Muscle_Cells.bw',
       },
     },
   },
@@ -15971,7 +15960,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Smooth_Muscle_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Smooth_Muscle_Cells.bw',
       },
     },
   },
@@ -15985,7 +15974,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Liver_fetal_Stellate_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stellate_Cells.bw',
       },
     },
   },
@@ -15999,7 +15988,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Adrenal_Gland_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16013,7 +16002,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Eye_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16027,7 +16016,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16041,7 +16030,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16055,7 +16044,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Kidney_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16069,7 +16058,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Lung_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16083,7 +16072,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Muscle_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16097,7 +16086,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Pancreas_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16111,7 +16100,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16125,7 +16114,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Spleen_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16139,7 +16128,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Stomach_fetal_Stromal_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Stromal_Cells.bw',
       },
     },
   },
@@ -16153,7 +16142,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Adrenal_Gland_fetal_Sympathoblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Sympathoblasts.bw',
       },
     },
   },
@@ -16168,7 +16157,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Syncytiotrophoblast_And_Villous_Cytotrophoblasts.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Syncytiotrophoblast_And_Villous_Cytotrophoblasts.bw',
       },
     },
   },
@@ -16182,7 +16171,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Thymus_fetal_Thymic_Epithelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Thymic_Epithelial_Cells.bw',
       },
     },
   },
@@ -16196,7 +16185,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Thymus_fetal_Thymocytes.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Thymocytes.bw',
       },
     },
   },
@@ -16210,7 +16199,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Trophoblast_Giant_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Trophoblast_Giant_Cells.bw',
       },
     },
   },
@@ -16224,7 +16213,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Kidney_fetal_Ureteric_Bud_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Ureteric_Bud_Cells.bw',
       },
     },
   },
@@ -16238,7 +16227,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Adrenal_Gland_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16252,7 +16241,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Cerebrum_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16266,7 +16255,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Eye_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16280,7 +16269,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Heart_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16294,7 +16283,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Intestine_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16308,7 +16297,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Kidney_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16322,7 +16311,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Liver_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16336,7 +16325,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Lung_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16350,7 +16339,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Muscle_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16364,7 +16353,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Pancreas_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16378,7 +16367,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Placenta_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16392,7 +16381,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Spleen_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16406,7 +16395,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Stomach_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16420,7 +16409,7 @@ const tracks = [
       type: 'BigWigAdapter',
       bigWigLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/Chromatin_accessibility/fetal_Thymus_fetal_Vascular_Endothelial_Cells.bw',
+        uri: 'https://ngdc.cncb.ac.cn/targetgene/open_chromatin/fetal_Vascular_Endothelial_Cells.bw',
       },
     },
   },
@@ -16434,9 +16423,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal_Gland-Adrenal_Adrenocortical_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Adrenocortical_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Adrenocortical_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Adrenocortical_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Adrenocortical_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16448,9 +16454,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal_Gland-Adrenal_Chromaffin_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Chromaffin_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Chromaffin_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Chromaffin_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Chromaffin_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16462,9 +16485,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal_Gland-Adrenal_Erythroblasts.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Erythroblasts.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Erythroblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Erythroblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Erythroblasts-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16476,9 +16516,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal_Gland-Adrenal_Megakaryocytes_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Megakaryocytes_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Megakaryocytes_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Megakaryocytes_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Megakaryocytes_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16490,9 +16547,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal_Gland-Adrenal_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16504,9 +16578,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal_Gland-Adrenal_Schwann_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Schwann_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Schwann_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Schwann_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Schwann_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16518,9 +16609,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal_Gland-Adrenal_Stromal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Stromal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Stromal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Stromal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Stromal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16532,9 +16640,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal_Gland-Adrenal_Sympathoblasts.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Sympathoblasts.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Sympathoblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Sympathoblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Sympathoblasts-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16546,9 +16671,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal_Gland-Adrenal_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Adrenal_Gland__Adrenal_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16560,9 +16702,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebellum-Cerebellum_Astrocytes.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Astrocytes.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Astrocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Astrocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Astrocytes-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16574,9 +16733,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebellum-Cerebellum_Granule_Neurons.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Granule_Neurons.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Granule_Neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Granule_Neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Granule_Neurons-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16588,9 +16764,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebellum-Cerebellum_Inhibitory_Interneurons_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Inhibitory_Interneurons_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Inhibitory_Interneurons_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Inhibitory_Interneurons_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Inhibitory_Interneurons_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16602,9 +16795,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebellum-Cerebellum_Purkinje_Neurons.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Purkinje_Neurons.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Purkinje_Neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Purkinje_Neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebellum__Cerebellum_Purkinje_Neurons-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16616,9 +16826,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebrum-Cerebrum_Astrocytes.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Astrocytes.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Astrocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Astrocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Astrocytes-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16630,9 +16857,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebrum-Cerebrum_Cerebrum_Unknown.3.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Cerebrum_Unknown.3.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Cerebrum_Unknown.3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Cerebrum_Unknown.3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Cerebrum_Unknown.3-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16644,9 +16888,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebrum-Cerebrum_Excitatory_Neurons.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Excitatory_Neurons.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Excitatory_Neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Excitatory_Neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Excitatory_Neurons-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16658,9 +16919,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebrum-Cerebrum_Inhibitory_Neurons.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Inhibitory_Neurons.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Inhibitory_Neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Inhibitory_Neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Inhibitory_Neurons-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16672,9 +16950,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebrum-Cerebrum_Limbic_System_Neurons.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Limbic_System_Neurons.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Limbic_System_Neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Limbic_System_Neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Limbic_System_Neurons-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16686,9 +16981,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebrum-Cerebrum_Skor2_Npsr1_Positive_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Skor2_Npsr1_Positive_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Skor2_Npsr1_Positive_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Skor2_Npsr1_Positive_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Skor2_Npsr1_Positive_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16700,9 +17012,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Cerebrum-Cerebrum_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Cerebrum__Cerebrum_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16714,9 +17043,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Ganglion_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Ganglion_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_abc__Eye__Eye_Ganglion_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Eye__Eye_Ganglion_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Eye__Eye_Ganglion_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16728,9 +17071,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Horizontal_Cells_Amacrine_Cells_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Horizontal_Cells_Amacrine_Cells_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Horizontal_Cells_Amacrine_Cells_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Horizontal_Cells_Amacrine_Cells_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Horizontal_Cells_Amacrine_Cells_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16742,9 +17102,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Photoreceptor_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Photoreceptor_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Photoreceptor_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Photoreceptor_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Photoreceptor_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16756,9 +17133,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Retinal_Pigment_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Retinal_Pigment_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Retinal_Pigment_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Retinal_Pigment_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Retinal_Pigment_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16770,9 +17164,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Retinal_Progenitors_And_Muller_Glia.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Retinal_Progenitors_And_Muller_Glia.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Retinal_Progenitors_And_Muller_Glia-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Retinal_Progenitors_And_Muller_Glia-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Retinal_Progenitors_And_Muller_Glia-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16784,9 +17195,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Stromal_Cells_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Stromal_Cells_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Stromal_Cells_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Stromal_Cells_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Stromal_Cells_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16798,9 +17226,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Unknown_6.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Unknown_6.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_abc__Eye__Eye_Unknown_6-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Eye__Eye_Unknown_6-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Eye__Eye_Unknown_6-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16812,9 +17254,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Vascular_Endothelial_Cells_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Vascular_Endothelial_Cells_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Vascular_Endothelial_Cells_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Vascular_Endothelial_Cells_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Eye__Eye_Vascular_Endothelial_Cells_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16827,9 +17286,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Cardiomyocytes_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Cardiomyocytes_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Cardiomyocytes_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Cardiomyocytes_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Cardiomyocytes_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16841,9 +17317,25 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Cardiomyocytes.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Cardiomyocytes.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Cardiomyocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Cardiomyocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Cardiomyocytes-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16855,9 +17347,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Elf3_Agbl2_Positive_Cells_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Elf3_Agbl2_Positive_Cells_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Elf3_Agbl2_Positive_Cells_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Elf3_Agbl2_Positive_Cells_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Elf3_Agbl2_Positive_Cells_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16869,9 +17378,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Endocardial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Endocardial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Endocardial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Endocardial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Endocardial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16883,9 +17409,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Epicardial_Fat_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Epicardial_Fat_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Epicardial_Fat_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Epicardial_Fat_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Epicardial_Fat_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16897,9 +17440,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Erythroblasts.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Erythroblasts.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Erythroblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Erythroblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Erythroblasts-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16911,9 +17469,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Heart_Unknown.10.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Heart_Unknown.10.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Heart_Unknown.10-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Heart_Unknown.10-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Heart_Unknown.10-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16925,9 +17500,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Lymphatic_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Lymphatic_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Lymphatic_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Lymphatic_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Lymphatic_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16939,9 +17531,25 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Lymphoid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Lymphoid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Lymphoid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Lymphoid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Lymphoid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16953,9 +17561,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16967,9 +17590,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Schwann_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Schwann_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Schwann_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Schwann_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Schwann_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16981,9 +17619,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Smooth_Muscle_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Smooth_Muscle_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Smooth_Muscle_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Smooth_Muscle_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Smooth_Muscle_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -16995,9 +17650,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Stromal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Stromal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Stromal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Stromal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Heart__Heart_Stromal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17009,9 +17679,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Heart-Heart_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Heart__Heart_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17023,9 +17710,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Chromaffin_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Chromaffin_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Chromaffin_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Chromaffin_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Chromaffin_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17037,9 +17741,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Ens_Glia.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Ens_Glia.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Ens_Glia-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Ens_Glia-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Ens_Glia-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17051,9 +17772,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Ens_Neurons.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Ens_Neurons.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Ens_Neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Ens_Neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Ens_Neurons-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17065,9 +17803,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Intestinal_Epithelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Intestinal_Epithelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Intestinal_Epithelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Intestinal_Epithelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Intestinal_Epithelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17079,9 +17834,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Intestine_Unknown.4.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Intestine_Unknown.4.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Intestine_Unknown.4-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Intestine_Unknown.4-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Intestine_Unknown.4-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17093,9 +17865,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Intestine_Unknown.8.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Intestine_Unknown.8.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Intestine_Unknown.8-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Intestine_Unknown.8-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Intestine_Unknown.8-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17107,9 +17896,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Lymphatic_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Lymphatic_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Lymphatic_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Lymphatic_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Lymphatic_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17121,9 +17927,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Lymphoid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Lymphoid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Lymphoid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Lymphoid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Lymphoid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17135,9 +17958,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Mesothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Mesothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Mesothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Mesothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Mesothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17149,9 +17989,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17163,9 +18020,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Smooth_Muscle_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Smooth_Muscle_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Smooth_Muscle_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Smooth_Muscle_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Smooth_Muscle_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17177,9 +18051,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Stromal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Stromal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Stromal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Stromal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Stromal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17191,9 +18082,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Intestine__Intestine_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17205,9 +18113,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Kidney-Kidney_Mesangial_Cells_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Mesangial_Cells_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Mesangial_Cells_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Mesangial_Cells_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Mesangial_Cells_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17219,9 +18144,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Kidney-Kidney_Mesangial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Mesangial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Mesangial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Mesangial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Mesangial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17233,9 +18175,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Kidney-Kidney_Metanephric_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Metanephric_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Metanephric_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Metanephric_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Metanephric_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17247,9 +18206,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Kidney-Kidney_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17261,9 +18237,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Kidney-Kidney_Stromal_Cells_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Stromal_Cells_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Stromal_Cells_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Stromal_Cells_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Stromal_Cells_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17275,9 +18268,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Kidney-Kidney_Unknown_14.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Unknown_14.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Unknown_14-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Kidney__Kidney_Unknown_14-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Kidney__Kidney_Unknown_14-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17289,9 +18297,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Kidney-Kidney_Unknown_7.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Unknown_7.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_abc__Kidney__Kidney_Unknown_7-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Kidney__Kidney_Unknown_7-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Kidney__Kidney_Unknown_7-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17303,9 +18325,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Kidney-Kidney_Ureteric_Bud_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Ureteric_Bud_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Ureteric_Bud_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Ureteric_Bud_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Ureteric_Bud_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17317,9 +18356,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Kidney-Kidney_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Kidney__Kidney_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17331,9 +18387,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Liver-Liver_Erythroblasts.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Erythroblasts.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Erythroblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Liver__Liver_Erythroblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Liver__Liver_Erythroblasts-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17345,9 +18416,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Liver-Liver_Hematopoietic_Stem_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Hematopoietic_Stem_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Hematopoietic_Stem_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Hematopoietic_Stem_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Hematopoietic_Stem_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17359,9 +18447,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Liver-Liver_Hepatoblasts.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Hepatoblasts.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Hepatoblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Liver__Liver_Hepatoblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Liver__Liver_Hepatoblasts-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17373,9 +18476,25 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Liver-Liver_Lymphoid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Lymphoid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Lymphoid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Lymphoid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Liver__Liver_Lymphoid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17387,9 +18506,25 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Liver-Liver_Megakaryocytes.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Megakaryocytes.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Megakaryocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Megakaryocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Liver__Liver_Megakaryocytes-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17401,9 +18536,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Liver-Liver_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Liver__Liver_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Liver__Liver_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17415,9 +18565,25 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Liver-Liver_Stellate_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Stellate_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Stellate_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Stellate_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Liver__Liver_Stellate_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17429,9 +18595,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Liver-Liver_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Liver__Liver_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17443,9 +18626,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Lung-Lung_Bronchiolar_And_Alveolar_Epithelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Bronchiolar_And_Alveolar_Epithelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Bronchiolar_And_Alveolar_Epithelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Bronchiolar_And_Alveolar_Epithelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Bronchiolar_And_Alveolar_Epithelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17457,9 +18657,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Lung-Lung_Ciliated_Epithelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Ciliated_Epithelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Ciliated_Epithelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Ciliated_Epithelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Ciliated_Epithelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17471,9 +18688,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Lung-Lung_Lymphatic_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Lymphatic_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Lymphatic_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Lymphatic_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Lymphatic_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17485,9 +18719,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Lung-Lung_Lymphoid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Lymphoid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Lymphoid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Lymphoid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Lymphoid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17499,9 +18748,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Lung-Lung_Megakaryocytes.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Megakaryocytes.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Megakaryocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Megakaryocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Megakaryocytes-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17513,9 +18777,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Lung-Lung_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17527,9 +18805,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Lung-Lung_Neuroendocrine_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Neuroendocrine_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Neuroendocrine_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Neuroendocrine_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Neuroendocrine_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17541,9 +18836,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Lung-Lung_Stromal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Stromal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Stromal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Stromal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Lung__Lung_Stromal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17555,9 +18864,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Lung-Lung_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Lung__Lung_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17569,9 +18895,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Lymphoid_And_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Lymphoid_And_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Lymphoid_And_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Lymphoid_And_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Lymphoid_And_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17583,9 +18926,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Satellite_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Satellite_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Satellite_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Satellite_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Satellite_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17597,9 +18957,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Schwann_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Schwann_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Schwann_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Schwann_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Schwann_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17611,9 +18988,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Skeletal_Muscle_Cells_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Skeletal_Muscle_Cells_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Skeletal_Muscle_Cells_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Skeletal_Muscle_Cells_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Skeletal_Muscle_Cells_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17625,9 +19019,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Skeletal_Muscle_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Skeletal_Muscle_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Skeletal_Muscle_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Skeletal_Muscle_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Skeletal_Muscle_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17639,9 +19050,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Smooth_Muscle_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Smooth_Muscle_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Smooth_Muscle_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Smooth_Muscle_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Smooth_Muscle_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17653,9 +19081,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Stromal_Cells_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Stromal_Cells_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Stromal_Cells_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Stromal_Cells_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Stromal_Cells_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17667,9 +19112,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Stromal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Stromal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Stromal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Stromal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Stromal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17681,9 +19143,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Unknown_7.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Unknown_7.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_abc__Muscle__Muscle_Unknown_7-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Muscle__Muscle_Unknown_7-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Muscle__Muscle_Unknown_7-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17695,9 +19171,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Muscle-Muscle_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Muscle__Muscle_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17709,9 +19202,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Pancreas-Pancreas_Acinar_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Acinar_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Acinar_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Acinar_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Acinar_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17723,9 +19233,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Pancreas-Pancreas_Ductal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Ductal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Ductal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Ductal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Ductal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17737,9 +19264,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Pancreas-Pancreas_Islet_Endocrine_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Islet_Endocrine_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Islet_Endocrine_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Islet_Endocrine_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Islet_Endocrine_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17751,9 +19295,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Pancreas-Pancreas_Lymphoid_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Lymphoid_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Lymphoid_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Lymphoid_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Lymphoid_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17765,9 +19326,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Pancreas-Pancreas_Pancreas_Unknown.1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Pancreas_Unknown.1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Pancreas_Unknown.1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Pancreas_Unknown.1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Pancreas_Unknown.1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17779,9 +19357,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Pancreas-Pancreas_Stromal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Stromal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Stromal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Stromal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Stromal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17793,9 +19388,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Pancreas-Pancreas_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Pancreas__Pancreas_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17807,9 +19419,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Erythroblasts.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Erythroblasts.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Erythroblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Erythroblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Erythroblasts-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17821,9 +19450,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Extravillous_Trophoblasts.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Extravillous_Trophoblasts.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Extravillous_Trophoblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Extravillous_Trophoblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Extravillous_Trophoblasts-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17835,9 +19481,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Igfbp1_Dkk1_Positive_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Igfbp1_Dkk1_Positive_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Igfbp1_Dkk1_Positive_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Igfbp1_Dkk1_Positive_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Igfbp1_Dkk1_Positive_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17849,9 +19512,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Lymphoid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Lymphoid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Lymphoid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Lymphoid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Lymphoid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17863,9 +19543,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17877,9 +19574,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Paep_Mecom_Positive_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Paep_Mecom_Positive_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Paep_Mecom_Positive_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Paep_Mecom_Positive_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Paep_Mecom_Positive_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17891,9 +19605,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Smooth_Muscle_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Smooth_Muscle_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Smooth_Muscle_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Smooth_Muscle_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Smooth_Muscle_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17905,9 +19636,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Stromal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Stromal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Stromal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Stromal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Stromal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17920,9 +19668,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Syncytiotrophoblast_And_Villous_Cytotrophoblasts_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Syncytiotrophoblast_And_Villous_Cytotrophoblasts_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Syncytiotrophoblast_And_Villous_Cytotrophoblasts_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Syncytiotrophoblast_And_Villous_Cytotrophoblasts_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Syncytiotrophoblast_And_Villous_Cytotrophoblasts_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17935,9 +19700,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Syncytiotrophoblasts_And_Villous_Cytotrophoblasts.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Syncytiotrophoblasts_And_Villous_Cytotrophoblasts.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Syncytiotrophoblasts_And_Villous_Cytotrophoblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Syncytiotrophoblasts_And_Villous_Cytotrophoblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Syncytiotrophoblasts_And_Villous_Cytotrophoblasts-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17949,9 +19731,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Trophoblast_Giant_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Trophoblast_Giant_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Trophoblast_Giant_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Trophoblast_Giant_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Trophoblast_Giant_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17963,9 +19762,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Placenta_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Placenta__Placenta_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17977,9 +19793,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Spleen-Spleen_Megakaryocytes.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Megakaryocytes.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Megakaryocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Megakaryocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Megakaryocytes-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -17991,9 +19824,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Spleen-Spleen_Myeloid_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Myeloid_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Myeloid_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Myeloid_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Myeloid_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18005,9 +19855,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Spleen-Spleen_Stromal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Stromal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Stromal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Stromal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Stromal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18019,9 +19886,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Spleen-Spleen_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Spleen__Spleen_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18033,9 +19917,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Stomach-Stomach_Ens_Glia.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Ens_Glia.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Ens_Glia-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Stomach__Stomach_Ens_Glia-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Stomach__Stomach_Ens_Glia-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18047,9 +19946,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Stomach-Stomach_Ens_Neurons_Unsure.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Ens_Neurons_Unsure.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Ens_Neurons_Unsure-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Ens_Neurons_Unsure-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Ens_Neurons_Unsure-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18061,9 +19977,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Stomach-Stomach_Epithelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Epithelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Epithelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Epithelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Epithelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18075,9 +20008,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Stomach-Stomach_Goblet_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Goblet_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Goblet_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Goblet_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Goblet_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18089,9 +20039,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Stomach-Stomach_Parietal_And_Chief_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Parietal_And_Chief_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Parietal_And_Chief_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Parietal_And_Chief_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Parietal_And_Chief_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18103,9 +20070,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Stomach-Stomach_Stromal_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Stromal_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Stromal_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Stromal_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Stromal_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18117,9 +20101,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Stomach-Stomach_Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Stomach__Stomach_Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18131,9 +20132,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Thymus-Thymic_Epithelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Thymic_Epithelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Thymus__Thymic_Epithelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Thymus__Thymic_Epithelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Thymus__Thymic_Epithelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18145,9 +20163,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Thymus-Thymocytes.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Thymocytes.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_abc__Thymus__Thymocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_abc__Thymus__Thymocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_abc__Thymus__Thymocytes-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18159,9 +20191,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Thymus-Thymus_Antigen_Presenting_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Thymus_Antigen_Presenting_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Thymus__Thymus_Antigen_Presenting_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Thymus__Thymus_Antigen_Presenting_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Thymus__Thymus_Antigen_Presenting_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18173,9 +20222,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Thymus-Vascular_Endothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Vascular_Endothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_abc__Thymus__Vascular_Endothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_abc__Thymus__Vascular_Endothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_abc__Thymus__Vascular_Endothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18187,9 +20253,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Adipocyte.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Adipocyte.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Adipocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Adipose_Omentum__Adipocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Adipose_Omentum__Adipocyte-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18201,9 +20282,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Alveolar_Capillary_Endothelial_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Alveolar_Capillary_Endothelial_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Alveolar_Capillary_Endothelial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Alveolar_Capillary_Endothelial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Alveolar_Capillary_Endothelial_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18215,9 +20313,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Blood_Brain_Barrier_Endothelial_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Blood_Brain_Barrier_Endothelial_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Blood_Brain_Barrier_Endothelial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Blood_Brain_Barrier_Endothelial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Blood_Brain_Barrier_Endothelial_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18229,9 +20344,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Cardiac_Fibroblasts.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Fibroblasts.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Fibroblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Fibroblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Fibroblasts-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18243,9 +20375,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Cardiac_Pericyte_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Pericyte_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Pericyte_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Pericyte_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Pericyte_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18257,9 +20406,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Cardiac_Pericyte_3.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Pericyte_3.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Pericyte_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Pericyte_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Pericyte_3-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18271,9 +20437,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Cardiac_Pericyte_4.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Pericyte_4.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Pericyte_4-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Pericyte_4-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Cardiac_Pericyte_4-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18285,9 +20468,25 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Chief_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Chief_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Chief_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Chief_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Adipose_Omentum__Chief_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18299,9 +20498,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Endothelial_Cell_General_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_General_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_General_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_General_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_General_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18313,9 +20529,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Endothelial_Cell_General_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_General_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_General_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_General_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_General_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18327,9 +20560,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Endothelial_Cell_General_3.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_General_3.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_General_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_General_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_General_3-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18341,9 +20591,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Endothelial_Cell_Myocardial.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_Myocardial.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_Myocardial-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_Myocardial-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Endothelial_Cell_Myocardial-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18355,9 +20622,25 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Enterocyte.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Enterocyte.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Enterocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Enterocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Adipose_Omentum__Enterocyte-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18369,9 +20652,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Fibroblast_Epithelial.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_Epithelial.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_Epithelial-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_Epithelial-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_Epithelial-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18383,9 +20683,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Fibroblast_General.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_General.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_General-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_General-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_General-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18397,9 +20714,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Fibroblast_Peripheral_Nerve.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_Peripheral_Nerve.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_Peripheral_Nerve-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_Peripheral_Nerve-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_Peripheral_Nerve-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18411,9 +20745,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Fibroblast_Sk_Muscle_Associated.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_Sk_Muscle_Associated.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_Sk_Muscle_Associated-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_Sk_Muscle_Associated-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Fibroblast_Sk_Muscle_Associated-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18425,9 +20776,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Foveolar_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Foveolar_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Foveolar_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Foveolar_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Foveolar_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18439,9 +20807,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Luteal_Cell_Ovarian.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Luteal_Cell_Ovarian.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Luteal_Cell_Ovarian-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Luteal_Cell_Ovarian-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Luteal_Cell_Ovarian-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18453,9 +20838,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Lymphatic_Endothelial_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Lymphatic_Endothelial_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Lymphatic_Endothelial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Lymphatic_Endothelial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Lymphatic_Endothelial_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18467,9 +20869,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Macrophage_Gen_Or_Alv.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Macrophage_Gen_Or_Alv.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Macrophage_Gen_Or_Alv-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Macrophage_Gen_Or_Alv-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Macrophage_Gen_Or_Alv-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18481,9 +20900,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Macrophage_General.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Macrophage_General.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Macrophage_General-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Macrophage_General-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Macrophage_General-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18495,9 +20931,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Mast_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Mast_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Mast_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Adipose_Omentum__Mast_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Adipose_Omentum__Mast_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18509,9 +20960,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Memory_B_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Memory_B_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Memory_B_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Memory_B_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Memory_B_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18523,9 +20991,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Mesothelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Mesothelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Mesothelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Mesothelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Mesothelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18537,9 +21022,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Naive_T_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Naive_T_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Naive_T_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Naive_T_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Naive_T_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18551,9 +21053,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Natural_Killer_T_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Natural_Killer_T_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Natural_Killer_T_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Natural_Killer_T_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Natural_Killer_T_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18565,9 +21084,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Nerve_Stromal.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Nerve_Stromal.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Nerve_Stromal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Nerve_Stromal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Nerve_Stromal-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18579,9 +21115,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Pericyte_General_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18593,9 +21146,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Pericyte_General_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18607,9 +21177,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Pericyte_General_3.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_3.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_3-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18621,9 +21208,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Pericyte_General_4.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_4.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_4-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_4-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_General_4-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18635,9 +21239,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Pericyte_Muscularis.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_Muscularis.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_Muscularis-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_Muscularis-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Pericyte_Muscularis-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18649,9 +21270,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Plasma_B.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Plasma_B.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Plasma_B-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Adipose_Omentum__Plasma_B-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Adipose_Omentum__Plasma_B-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18663,9 +21299,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Schwann_Cell_General.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Schwann_Cell_General.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Schwann_Cell_General-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Schwann_Cell_General-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Schwann_Cell_General-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18678,9 +21331,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Smooth_Muscle_Esophageal_Muscularis_3.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Smooth_Muscle_Esophageal_Muscularis_3.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Smooth_Muscle_Esophageal_Muscularis_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Smooth_Muscle_Esophageal_Muscularis_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Smooth_Muscle_Esophageal_Muscularis_3-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18692,9 +21362,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Smooth_Muscle_General.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Smooth_Muscle_General.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Smooth_Muscle_General-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Smooth_Muscle_General-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Smooth_Muscle_General-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18706,9 +21393,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Smooth_Muscle_Vaginal.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Smooth_Muscle_Vaginal.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Smooth_Muscle_Vaginal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Smooth_Muscle_Vaginal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Smooth_Muscle_Vaginal-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18720,9 +21424,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Vascular_Smooth_Muscle_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Vascular_Smooth_Muscle_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Vascular_Smooth_Muscle_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Vascular_Smooth_Muscle_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Vascular_Smooth_Muscle_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18734,9 +21455,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_Omentum-Vascular_Smooth_Muscle_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Vascular_Smooth_Muscle_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Vascular_Smooth_Muscle_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Vascular_Smooth_Muscle_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adipose_Omentum__Vascular_Smooth_Muscle_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18748,9 +21486,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_Gland-Cortical_Epithelial_Like.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Cortical_Epithelial_Like.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Cortical_Epithelial_Like-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Cortical_Epithelial_Like-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Cortical_Epithelial_Like-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18762,9 +21517,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_Gland-Endothelial_Exocrine_Tissues.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Endothelial_Exocrine_Tissues.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Endothelial_Exocrine_Tissues-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Endothelial_Exocrine_Tissues-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Endothelial_Exocrine_Tissues-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18776,9 +21548,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_Gland-Enteric_Neuron.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Enteric_Neuron.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Enteric_Neuron-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Enteric_Neuron-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Enteric_Neuron-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18790,9 +21579,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_Gland-Fasciculata.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Fasciculata.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Fasciculata-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Adrenal_Gland__Fasciculata-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Adrenal_Gland__Fasciculata-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18804,9 +21608,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_Gland-Fibroblast_Liver_Adrenal.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Fibroblast_Liver_Adrenal.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Fibroblast_Liver_Adrenal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Fibroblast_Liver_Adrenal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Fibroblast_Liver_Adrenal-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18818,9 +21639,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_Gland-Glomerulosa.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Glomerulosa.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Glomerulosa-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Adrenal_Gland__Glomerulosa-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Adrenal_Gland__Glomerulosa-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18832,9 +21668,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_Gland-Transitional_Cortical.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Transitional_Cortical.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Transitional_Cortical-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Transitional_Cortical-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Adrenal_Gland__Transitional_Cortical-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18846,9 +21699,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_Aorta-Alveolar_Type_2_AT2_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-Alveolar_Type_2_AT2_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__Alveolar_Type_2_AT2_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__Alveolar_Type_2_AT2_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__Alveolar_Type_2_AT2_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18860,9 +21730,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_Aorta-Endocardial_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-Endocardial_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__Endocardial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__Endocardial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__Endocardial_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18874,9 +21761,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_Aorta-T_Lymphocyte_1_CD8.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-T_Lymphocyte_1_CD8.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__T_Lymphocyte_1_CD8-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__T_Lymphocyte_1_CD8-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__T_Lymphocyte_1_CD8-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18888,9 +21792,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_Aorta-T_Lymphocyte_2_CD4.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-T_Lymphocyte_2_CD4.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__T_Lymphocyte_2_CD4-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__T_Lymphocyte_2_CD4-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Aorta__T_Lymphocyte_2_CD4-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18902,9 +21823,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_Tibial-Alveolar_Type_2_Immune.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Tibial-Alveolar_Type_2_Immune.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Artery_Tibial__Alveolar_Type_2_Immune-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Tibial__Alveolar_Type_2_Immune-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Tibial__Alveolar_Type_2_Immune-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18916,9 +21854,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_Tibial-Smooth_Muscle_Colon_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Tibial-Smooth_Muscle_Colon_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Artery_Tibial__Smooth_Muscle_Colon_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Tibial__Smooth_Muscle_Colon_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Tibial__Smooth_Muscle_Colon_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18930,9 +21885,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_Tibial-Smooth_Muscle_Ge_Junction.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Tibial-Smooth_Muscle_Ge_Junction.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Artery_Tibial__Smooth_Muscle_Ge_Junction-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Tibial__Smooth_Muscle_Ge_Junction-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Artery_Tibial__Smooth_Muscle_Ge_Junction-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18944,9 +21916,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Cerebrum-GABAergic_Neuron_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-GABAergic_Neuron_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__GABAergic_Neuron_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__GABAergic_Neuron_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__GABAergic_Neuron_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18958,9 +21947,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Cerebrum-GABAergic_Neuron_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-GABAergic_Neuron_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__GABAergic_Neuron_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__GABAergic_Neuron_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__GABAergic_Neuron_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18972,9 +21978,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Cerebrum-Glutamatergic_Neuron_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-Glutamatergic_Neuron_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__Glutamatergic_Neuron_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__Glutamatergic_Neuron_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__Glutamatergic_Neuron_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -18986,9 +22009,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Cerebrum-Glutamatergic_Neuron_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-Glutamatergic_Neuron_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__Glutamatergic_Neuron_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__Glutamatergic_Neuron_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Cerebrum__Glutamatergic_Neuron_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19000,9 +22040,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Sigmoid-Colon_Epithelial_Cell_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Colon_Epithelial_Cell_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Colon_Epithelial_Cell_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Colon_Epithelial_Cell_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Colon_Epithelial_Cell_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19014,9 +22071,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Sigmoid-Fibroblast_Gastrointestinal.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Fibroblast_Gastrointestinal.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Fibroblast_Gastrointestinal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Fibroblast_Gastrointestinal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Fibroblast_Gastrointestinal-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19028,9 +22102,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Sigmoid-Melanocyte.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Melanocyte.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Melanocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Colon_Sigmoid__Melanocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Colon_Sigmoid__Melanocyte-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19042,9 +22131,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Sigmoid-Smooth_Muscle_Colon_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Colon_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Colon_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Colon_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Colon_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19056,9 +22162,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Sigmoid-Smooth_Muscle_Esophageal_Mucosal.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Esophageal_Mucosal.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Esophageal_Mucosal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Esophageal_Mucosal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Esophageal_Mucosal-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19070,9 +22193,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Sigmoid-Smooth_Muscle_Esophageal_Muscularis_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Esophageal_Muscularis_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Esophageal_Muscularis_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Esophageal_Muscularis_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Esophageal_Muscularis_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19084,9 +22224,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Sigmoid-Smooth_Muscle_Esophageal_Muscularis_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Esophageal_Muscularis_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Esophageal_Muscularis_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Esophageal_Muscularis_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Esophageal_Muscularis_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19098,9 +22255,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Sigmoid-Smooth_Muscle_General_Gastrointestinal.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_General_Gastrointestinal.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_General_Gastrointestinal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_General_Gastrointestinal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_General_Gastrointestinal-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19112,9 +22286,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Sigmoid-Smooth_Muscle_Uterine.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Uterine.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Uterine-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Uterine-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Sigmoid__Smooth_Muscle_Uterine-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19126,9 +22317,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Astrocyte_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Astrocyte_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Astrocyte_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Astrocyte_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Astrocyte_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19140,9 +22348,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Colon_Epithelial_Cell_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Colon_Epithelial_Cell_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Colon_Epithelial_Cell_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Colon_Epithelial_Cell_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Colon_Epithelial_Cell_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19154,9 +22379,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Colon_Epithelial_Cell_3.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Colon_Epithelial_Cell_3.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Colon_Epithelial_Cell_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Colon_Epithelial_Cell_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Colon_Epithelial_Cell_3-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19168,9 +22410,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Colonic_Goblet_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Colonic_Goblet_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Colonic_Goblet_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Colonic_Goblet_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Colonic_Goblet_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19182,9 +22441,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Enterochromaffin_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Enterochromaffin_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Enterochromaffin_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Enterochromaffin_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Enterochromaffin_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19196,9 +22472,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Mammary_Luminal_Epithelial_Cell_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Mammary_Luminal_Epithelial_Cell_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Mammary_Luminal_Epithelial_Cell_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Mammary_Luminal_Epithelial_Cell_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Mammary_Luminal_Epithelial_Cell_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19210,9 +22503,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Oligodendrocyte_Precursor.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Oligodendrocyte_Precursor.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Oligodendrocyte_Precursor-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Oligodendrocyte_Precursor-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Oligodendrocyte_Precursor-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19224,9 +22534,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Paneth_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Paneth_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Paneth_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Paneth_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Paneth_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19238,9 +22565,25 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Si_Goblet.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Si_Goblet.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Si_Goblet-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Si_Goblet-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Colon_Transverse__Si_Goblet-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19252,9 +22595,25 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_Transverse-Tuft_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Tuft_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Tuft_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Colon_Transverse__Tuft_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Colon_Transverse__Tuft_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19266,9 +22625,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Gejunction-Airway_Goblet_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Gejunction-Airway_Goblet_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Gejunction__Airway_Goblet_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Gejunction__Airway_Goblet_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Gejunction__Airway_Goblet_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19280,9 +22656,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Gejunction-Myoepithelial_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Gejunction-Myoepithelial_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Gejunction__Myoepithelial_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Gejunction__Myoepithelial_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Gejunction__Myoepithelial_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19294,9 +22687,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Mucosa-Esophageal_Epithelial_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Esophageal_Epithelial_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Esophageal_Epithelial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Esophageal_Epithelial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Esophageal_Epithelial_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19308,9 +22718,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Mucosa-Keratinocyte_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Keratinocyte_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Keratinocyte_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Keratinocyte_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Keratinocyte_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19322,9 +22749,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Mucosa-Mammary_Basal_Epi.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Mammary_Basal_Epi.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Mammary_Basal_Epi-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Mammary_Basal_Epi-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Mammary_Basal_Epi-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19336,9 +22780,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Mucosa-Skin_Basal_Epidermal.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Skin_Basal_Epidermal.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Skin_Basal_Epidermal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Skin_Basal_Epidermal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Skin_Basal_Epidermal-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19350,9 +22811,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Mucosa-Skin_Granular_Epidermal.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Skin_Granular_Epidermal.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Skin_Granular_Epidermal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Skin_Granular_Epidermal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Mucosa__Skin_Granular_Epidermal-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19364,9 +22842,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Muscularis-Follicular.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Muscularis-Follicular.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Muscularis__Follicular-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Muscularis__Follicular-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Muscularis__Follicular-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19378,9 +22873,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Muscularis-Satellite_Cells.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Muscularis-Satellite_Cells.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Muscularis__Satellite_Cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Muscularis__Satellite_Cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Muscularis__Satellite_Cells-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19392,9 +22904,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_Muscularis-Type_I_Skeletal_Myocyte.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Muscularis-Type_I_Skeletal_Myocyte.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Muscularis__Type_I_Skeletal_Myocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Muscularis__Type_I_Skeletal_Myocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Esophagus_Muscularis__Type_I_Skeletal_Myocyte-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19406,9 +22935,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Heart_Lv-A_Cardiomyocyte.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Heart_Lv-A_Cardiomyocyte.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Heart_Lv__A_Cardiomyocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Heart_Lv__A_Cardiomyocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Heart_Lv__A_Cardiomyocyte-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19420,9 +22964,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Heart_Lv-Cardiac_Pericyte_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Heart_Lv-Cardiac_Pericyte_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Heart_Lv__Cardiac_Pericyte_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Heart_Lv__Cardiac_Pericyte_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Heart_Lv__Cardiac_Pericyte_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19434,9 +22995,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Heart_Lv-Ventricular_Cardiomyocyte.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Heart_Lv-Ventricular_Cardiomyocyte.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Heart_Lv__Ventricular_Cardiomyocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Heart_Lv__Ventricular_Cardiomyocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Heart_Lv__Ventricular_Cardiomyocyte-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19448,9 +23026,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Heartatrial_Appendage-Alveolar_Type_1_AT1_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Heartatrial_Appendage-Alveolar_Type_1_AT1_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Heartatrial_Appendage__Alveolar_Type_1_AT1_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Heartatrial_Appendage__Alveolar_Type_1_AT1_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Heartatrial_Appendage__Alveolar_Type_1_AT1_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19462,9 +23057,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_Cb-Acinar.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Acinar.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Acinar-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Acinar-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Acinar-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19476,9 +23085,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_Cb-Alpha_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Alpha_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Alpha_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Alpha_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Alpha_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19490,9 +23113,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_Cb-Alpha_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Alpha_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Alpha_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Alpha_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Alpha_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19504,9 +23141,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_Cb-Beta_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Beta_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Beta_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Beta_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Beta_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19518,9 +23169,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_Cb-Beta_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Beta_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Beta_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Beta_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Beta_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19532,9 +23197,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_Cb-Delta_Gamma.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Delta_Gamma.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Delta_Gamma-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Delta_Gamma-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Delta_Gamma-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19546,9 +23225,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_Cb-Gastric_Neuroendocrine.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Gastric_Neuroendocrine.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Islet_Cb__Gastric_Neuroendocrine-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Islet_Cb__Gastric_Neuroendocrine-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Islet_Cb__Gastric_Neuroendocrine-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19560,9 +23256,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_Cb-Hepatocyte.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Hepatocyte.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Hepatocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Hepatocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Islet_Cb__Hepatocyte-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19574,9 +23284,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Lung-Cilliated_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Lung-Cilliated_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Lung__Cilliated_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Lung__Cilliated_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Lung__Cilliated_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19588,9 +23312,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Lung-Club_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Lung-Club_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Lung__Club_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Lung__Club_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Lung__Club_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19602,9 +23340,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_Tissue-Mammary_Epithelial.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Mammary_Epithelial.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Mammary_Epithelial-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Mammary_Epithelial-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Mammary_Epithelial-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19616,9 +23371,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_Tissue-Mammary_Luminal_Epithelial_Cell_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Mammary_Luminal_Epithelial_Cell_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Mammary_Luminal_Epithelial_Cell_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Mammary_Luminal_Epithelial_Cell_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Mammary_Luminal_Epithelial_Cell_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19630,9 +23402,24 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_Tissue-Microglia.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Microglia.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Microglia-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Mammary_Tissue__Microglia-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Mammary_Tissue__Microglia-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19644,9 +23431,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_Tissue-Skin_Eccrine_Epidermal.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Skin_Eccrine_Epidermal.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Skin_Eccrine_Epidermal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Skin_Eccrine_Epidermal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Mammary_Tissue__Skin_Eccrine_Epidermal-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19658,9 +23462,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Muscle-Type_II_Skeletal_Myocyte.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Muscle-Type_II_Skeletal_Myocyte.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Muscle__Type_II_Skeletal_Myocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Muscle__Type_II_Skeletal_Myocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Muscle__Type_II_Skeletal_Myocyte-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19672,9 +23493,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Pancreas-Ductal_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Pancreas-Ductal_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Pancreas__Ductal_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Pancreas__Ductal_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Pancreas__Ductal_Cell-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19686,9 +23521,26 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Skin_Sun_Exposed-Astrocyte_1.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Skin_Sun_Exposed-Astrocyte_1.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_abc__Skin_Sun_Exposed__Astrocyte_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_abc__Skin_Sun_Exposed__Astrocyte_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_abc__Skin_Sun_Exposed__Astrocyte_1-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19700,9 +23552,23 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Skin-Keratinocyte_2.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Skin-Keratinocyte_2.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Skin__Keratinocyte_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Skin__Keratinocyte_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Skin__Keratinocyte_2-ChordVariantDisplay',
+      },
+    ],
   },
   {
     type: 'VariantTrack',
@@ -19714,9 +23580,5302 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Stomach-Parietal_Cell.bedpe',
+        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Stomach-Parietal_Cell.bedpe',
       },
     },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_abc__Stomach__Parietal_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_abc__Stomach__Parietal_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_abc__Stomach__Parietal_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Adrenal__Adrenocortical_cells',
+    name: 'Adrenocortical_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Adrenal'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Adrenocortical_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Adrenal__Adrenocortical_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Adrenal__Adrenocortical_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Adrenal__Adrenocortical_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Adrenal__Chromaffin_cells',
+    name: 'Chromaffin_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Adrenal'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Chromaffin_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Adrenal__Chromaffin_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Adrenal__Chromaffin_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Chromaffin_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Adrenal__Erythroblasts',
+    name: 'Erythroblasts',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Adrenal'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Erythroblasts.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Erythroblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Erythroblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Erythroblasts-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Adrenal__Myeloid_cells',
+    name: 'Myeloid_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Adrenal'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Myeloid_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Myeloid_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Myeloid_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Myeloid_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Adrenal__Schwann_cells',
+    name: 'Schwann_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Adrenal'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Schwann_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Schwann_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Schwann_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Schwann_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Adrenal__Stromal_cells',
+    name: 'Stromal_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Adrenal'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Stromal_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Stromal_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Stromal_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Stromal_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Adrenal__Sympathoblasts',
+    name: 'Sympathoblasts',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Adrenal'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Sympathoblasts.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Adrenal__Sympathoblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Sympathoblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Adrenal__Sympathoblasts-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Adrenal__Vascular_endothelial_cells',
+    name: 'Vascular_endothelial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Adrenal'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Vascular_endothelial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Adrenal__Vascular_endothelial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Adrenal__Vascular_endothelial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Adrenal__Vascular_endothelial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__cerebellum__Astrocytes',
+    name: 'Astrocytes',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'cerebellum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebellum-Astrocytes.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__cerebellum__Astrocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__cerebellum__Astrocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__cerebellum__Astrocytes-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__cerebellum__Granule_neurons',
+    name: 'Granule_neurons',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'cerebellum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebellum-Granule_neurons.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__cerebellum__Granule_neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebellum__Granule_neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebellum__Granule_neurons-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__cerebrum__Astrocytes_Oligodendrocytes',
+    name: 'Astrocytes_Oligodendrocytes',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'cerebrum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Astrocytes_Oligodendrocytes.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Astrocytes_Oligodendrocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Astrocytes_Oligodendrocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Astrocytes_Oligodendrocytes-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__cerebrum__Cerebrum_Unknown_3',
+    name: 'Cerebrum_Unknown_3',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'cerebrum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Cerebrum_Unknown_3.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Cerebrum_Unknown_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Cerebrum_Unknown_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Cerebrum_Unknown_3-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__cerebrum__Excitatory_neurons',
+    name: 'Excitatory_neurons',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'cerebrum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Excitatory_neurons.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Excitatory_neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Excitatory_neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Excitatory_neurons-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__cerebrum__Inhibitory_neurons',
+    name: 'Inhibitory_neurons',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'cerebrum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Inhibitory_neurons.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Inhibitory_neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Inhibitory_neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Inhibitory_neurons-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__cerebrum__Limbic_system_neurons',
+    name: 'Limbic_system_neurons',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'cerebrum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Limbic_system_neurons.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Limbic_system_neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Limbic_system_neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__Limbic_system_neurons-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__cerebrum__SKOR2_NPSR1_positive_cells',
+    name: 'SKOR2_NPSR1_positive_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'cerebrum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-SKOR2_NPSR1_positive_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__SKOR2_NPSR1_positive_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__SKOR2_NPSR1_positive_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__cerebrum__SKOR2_NPSR1_positive_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Eye__Eye_Unknown_6',
+    name: 'Eye_Unknown_6',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Eye'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Unknown_6.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__Eye__Eye_Unknown_6-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Eye__Eye_Unknown_6-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Eye__Eye_Unknown_6-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Eye__Ganglion_cells',
+    name: 'Ganglion_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Eye'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Ganglion_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__Eye__Ganglion_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Eye__Ganglion_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Eye__Ganglion_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Eye__Horizontal_cells_Amacrine_cells_',
+    name: 'Horizontal_cells_Amacrine_cells_',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Eye'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Horizontal_cells_Amacrine_cells_.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Horizontal_cells_Amacrine_cells_-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Horizontal_cells_Amacrine_cells_-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Horizontal_cells_Amacrine_cells_-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Eye__Photoreceptor_cells',
+    name: 'Photoreceptor_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Eye'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Photoreceptor_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Photoreceptor_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Eye__Photoreceptor_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Eye__Photoreceptor_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Eye__Retinal_pigment_cells',
+    name: 'Retinal_pigment_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Eye'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Retinal_pigment_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Retinal_pigment_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Retinal_pigment_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Retinal_pigment_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Eye__Retinal_progenitors_and_Muller_glia',
+    name: 'Retinal_progenitors_and_Muller_glia',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Eye'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Retinal_progenitors_and_Muller_glia.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Retinal_progenitors_and_Muller_glia-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Retinal_progenitors_and_Muller_glia-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Eye__Retinal_progenitors_and_Muller_glia-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__heart__Cardiomyocytes_Vascular_endothelial_cells',
+    name: 'Cardiomyocytes_Vascular_endothelial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'heart'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Cardiomyocytes_Vascular_endothelial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__heart__Cardiomyocytes_Vascular_endothelial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__Cardiomyocytes_Vascular_endothelial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__Cardiomyocytes_Vascular_endothelial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__heart__Cardiomyocytes',
+    name: 'Cardiomyocytes',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'heart'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Cardiomyocytes.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__heart__Cardiomyocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__heart__Cardiomyocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__heart__Cardiomyocytes-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__heart__ELF3_AGBL2_positive_cells',
+    name: 'ELF3_AGBL2_positive_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'heart'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-ELF3_AGBL2_positive_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__heart__ELF3_AGBL2_positive_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__ELF3_AGBL2_positive_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__ELF3_AGBL2_positive_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__heart__Endocardial_cells',
+    name: 'Endocardial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'heart'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Endocardial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__heart__Endocardial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__heart__Endocardial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__heart__Endocardial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__heart__Epicardial_fat_cells',
+    name: 'Epicardial_fat_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'heart'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Epicardial_fat_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__heart__Epicardial_fat_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__Epicardial_fat_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__Epicardial_fat_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__heart__Heart_Unknown_10',
+    name: 'Heart_Unknown_10',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'heart'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Heart_Unknown_10.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__heart__Heart_Unknown_10-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__heart__Heart_Unknown_10-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__heart__Heart_Unknown_10-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__heart__Lymphatic_endothelial_cells',
+    name: 'Lymphatic_endothelial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'heart'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Lymphatic_endothelial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__heart__Lymphatic_endothelial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__Lymphatic_endothelial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__Lymphatic_endothelial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__heart__Lymphoid_cells',
+    name: 'Lymphoid_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'heart'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Lymphoid_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__heart__Lymphoid_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__heart__Lymphoid_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__heart__Lymphoid_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__heart__Smooth_muscle_cells',
+    name: 'Smooth_muscle_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'heart'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Smooth_muscle_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__heart__Smooth_muscle_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__Smooth_muscle_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__heart__Smooth_muscle_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Intestine__ENS_glia',
+    name: 'ENS_glia',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Intestine'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-ENS_glia.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__Intestine__ENS_glia-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Intestine__ENS_glia-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Intestine__ENS_glia-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Intestine__ENS_neurons',
+    name: 'ENS_neurons',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Intestine'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-ENS_neurons.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__Intestine__ENS_neurons-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__Intestine__ENS_neurons-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__Intestine__ENS_neurons-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Intestine__Intestinal_epithelial_cells',
+    name: 'Intestinal_epithelial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Intestine'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestinal_epithelial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Intestinal_epithelial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Intestinal_epithelial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Intestinal_epithelial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Intestine__Intestine_Unknown_4',
+    name: 'Intestine_Unknown_4',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Intestine'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Unknown_4.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Intestine_Unknown_4-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Intestine_Unknown_4-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Intestine_Unknown_4-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Intestine__Intestine_Unknown_8',
+    name: 'Intestine_Unknown_8',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Intestine'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Unknown_8.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Intestine_Unknown_8-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Intestine_Unknown_8-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Intestine_Unknown_8-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Intestine__Mesothelial_cells',
+    name: 'Mesothelial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Intestine'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Mesothelial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Mesothelial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Mesothelial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Intestine__Mesothelial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__kidney__Kidney_Unknown_14',
+    name: 'Kidney_Unknown_14',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'kidney'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Kidney_Unknown_14.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__kidney__Kidney_Unknown_14-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__kidney__Kidney_Unknown_14-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__kidney__Kidney_Unknown_14-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__kidney__Kidney_Unknown_7',
+    name: 'Kidney_Unknown_7',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'kidney'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Kidney_Unknown_7.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__kidney__Kidney_Unknown_7-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__kidney__Kidney_Unknown_7-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__kidney__Kidney_Unknown_7-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__kidney__Mesangial_cells',
+    name: 'Mesangial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'kidney'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Mesangial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__kidney__Mesangial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__kidney__Mesangial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__kidney__Mesangial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__kidney__Metanephric_cells',
+    name: 'Metanephric_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'kidney'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Metanephric_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__kidney__Metanephric_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__kidney__Metanephric_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__kidney__Metanephric_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__kidney__Ureteric_bud_cells',
+    name: 'Ureteric_bud_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'kidney'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Ureteric_bud_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__kidney__Ureteric_bud_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__kidney__Ureteric_bud_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__kidney__Ureteric_bud_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__liver__Hematopoietic_stem_cells',
+    name: 'Hematopoietic_stem_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'liver'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Hematopoietic_stem_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__liver__Hematopoietic_stem_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__liver__Hematopoietic_stem_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__liver__Hematopoietic_stem_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__liver__Hepatoblasts',
+    name: 'Hepatoblasts',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'liver'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Hepatoblasts.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__liver__Hepatoblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__liver__Hepatoblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__liver__Hepatoblasts-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__liver__Megakaryocytes',
+    name: 'Megakaryocytes',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'liver'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Megakaryocytes.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__liver__Megakaryocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__liver__Megakaryocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__liver__Megakaryocytes-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__liver__Stellate_cells',
+    name: 'Stellate_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'liver'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Stellate_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__liver__Stellate_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__liver__Stellate_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__liver__Stellate_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__lung__Bronchiolar_and_alveolar_epithelial_cells',
+    name: 'Bronchiolar_and_alveolar_epithelial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'lung'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_lung-Bronchiolar_and_alveolar_epithelial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__lung__Bronchiolar_and_alveolar_epithelial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__lung__Bronchiolar_and_alveolar_epithelial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__lung__Bronchiolar_and_alveolar_epithelial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__lung__Ciliated_epithelial_cells',
+    name: 'Ciliated_epithelial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'lung'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_lung-Ciliated_epithelial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__lung__Ciliated_epithelial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__lung__Ciliated_epithelial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__lung__Ciliated_epithelial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__lung__Neuroendocrine_cells',
+    name: 'Neuroendocrine_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'lung'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_lung-Neuroendocrine_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__lung__Neuroendocrine_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__lung__Neuroendocrine_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__lung__Neuroendocrine_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__muscle__Lymphoid_and_Myeloid_cells',
+    name: 'Lymphoid_and_Myeloid_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'muscle'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Lymphoid_and_Myeloid_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__muscle__Lymphoid_and_Myeloid_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__muscle__Lymphoid_and_Myeloid_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__muscle__Lymphoid_and_Myeloid_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__muscle__Muscle_Unknown_7',
+    name: 'Muscle_Unknown_7',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'muscle'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Muscle_Unknown_7.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__muscle__Muscle_Unknown_7-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__muscle__Muscle_Unknown_7-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__muscle__Muscle_Unknown_7-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__muscle__Satellite_cells',
+    name: 'Satellite_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'muscle'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Satellite_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__muscle__Satellite_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__muscle__Satellite_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__muscle__Satellite_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__muscle__Skeletal_muscle_cells',
+    name: 'Skeletal_muscle_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'muscle'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Skeletal_muscle_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__muscle__Skeletal_muscle_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__muscle__Skeletal_muscle_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__muscle__Skeletal_muscle_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__pancreas__Acinar_cells',
+    name: 'Acinar_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'pancreas'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Acinar_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__pancreas__Acinar_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__pancreas__Acinar_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__pancreas__Acinar_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__pancreas__Ductal_cells',
+    name: 'Ductal_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'pancreas'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Ductal_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__pancreas__Ductal_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__pancreas__Ductal_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__pancreas__Ductal_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__pancreas__Islet_endocrine_cells',
+    name: 'Islet_endocrine_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'pancreas'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Islet_endocrine_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__pancreas__Islet_endocrine_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__pancreas__Islet_endocrine_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__pancreas__Islet_endocrine_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__pancreas__Pancreas_Unknown_1',
+    name: 'Pancreas_Unknown_1',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'pancreas'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Pancreas_Unknown_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__pancreas__Pancreas_Unknown_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__pancreas__Pancreas_Unknown_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__pancreas__Pancreas_Unknown_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Placenta__Extravillous_trophoblasts',
+    name: 'Extravillous_trophoblasts',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Placenta'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Extravillous_trophoblasts.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__Extravillous_trophoblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__Extravillous_trophoblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__Extravillous_trophoblasts-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Placenta__PAEP_MECOM_positive_cells',
+    name: 'PAEP_MECOM_positive_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Placenta'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-PAEP_MECOM_positive_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__PAEP_MECOM_positive_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__PAEP_MECOM_positive_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__PAEP_MECOM_positive_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId:
+      'Fetal_coacc__Placenta__Syncytiotrophoblast_and_villous_cytotrophoblasts',
+    name: 'Syncytiotrophoblast_and_villous_cytotrophoblasts',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Placenta'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Syncytiotrophoblast_and_villous_cytotrophoblasts.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__Syncytiotrophoblast_and_villous_cytotrophoblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__Syncytiotrophoblast_and_villous_cytotrophoblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__Syncytiotrophoblast_and_villous_cytotrophoblasts-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__Placenta__Trophoblast_giant_cells',
+    name: 'Trophoblast_giant_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'Placenta'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Trophoblast_giant_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__Trophoblast_giant_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__Trophoblast_giant_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__Placenta__Trophoblast_giant_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__stomach__Epithelial_cells',
+    name: 'Epithelial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'stomach'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_stomach-Epithelial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__stomach__Epithelial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__stomach__Epithelial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__stomach__Epithelial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__stomach__Goblet_cells',
+    name: 'Goblet_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'stomach'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_stomach-Goblet_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__stomach__Goblet_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__stomach__Goblet_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__stomach__Goblet_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__stomach__Parietal_and_chief_cells',
+    name: 'Parietal_and_chief_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'stomach'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_stomach-Parietal_and_chief_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__stomach__Parietal_and_chief_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__stomach__Parietal_and_chief_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__stomach__Parietal_and_chief_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__thymus__Antigen_presenting_cells',
+    name: 'Antigen_presenting_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'thymus'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_thymus-Antigen_presenting_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__thymus__Antigen_presenting_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__thymus__Antigen_presenting_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__thymus__Antigen_presenting_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__thymus__Thymic_epithelial_cells',
+    name: 'Thymic_epithelial_cells',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'thymus'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_thymus-Thymic_epithelial_cells.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Fetal_coacc__thymus__Thymic_epithelial_cells-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Fetal_coacc__thymus__Thymic_epithelial_cells-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Fetal_coacc__thymus__Thymic_epithelial_cells-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Fetal_coacc__thymus__Thymocytes',
+    name: 'Thymocytes',
+    assemblyNames: ['hg19'],
+    category: ['Fetal_coacc', 'thymus'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_thymus-Thymocytes.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Fetal_coacc__thymus__Thymocytes-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Fetal_coacc__thymus__Thymocytes-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Fetal_coacc__thymus__Thymocytes-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Adipocyte',
+    name: 'Adipocyte',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Adipocyte.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Adipocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Adipocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Adipocyte-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId:
+      'Adult_coacc__Adipose_omentum__Alveolar_Capillary_Endothelial_Cell',
+    name: 'Alveolar_Capillary_Endothelial_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Alveolar_Capillary_Endothelial_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Alveolar_Capillary_Endothelial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Alveolar_Capillary_Endothelial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Alveolar_Capillary_Endothelial_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId:
+      'Adult_coacc__Adipose_omentum__Blood_Brain_Barrier_Endothelial_Cell',
+    name: 'Blood_Brain_Barrier_Endothelial_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Blood_Brain_Barrier_Endothelial_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Blood_Brain_Barrier_Endothelial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Blood_Brain_Barrier_Endothelial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Blood_Brain_Barrier_Endothelial_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Cardiac_Fibroblasts',
+    name: 'Cardiac_Fibroblasts',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Fibroblasts.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Fibroblasts-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Fibroblasts-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Fibroblasts-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_2',
+    name: 'Cardiac_Pericyte_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Pericyte_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_3',
+    name: 'Cardiac_Pericyte_3',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Pericyte_3.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_3-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_4',
+    name: 'Cardiac_Pericyte_4',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Pericyte_4.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_4-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_4-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Cardiac_Pericyte_4-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Chief_Cell',
+    name: 'Chief_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Chief_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Chief_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Chief_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Chief_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Ductal_Cell_(Pancreatic)',
+    name: 'Ductal_Cell_(Pancreatic)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Ductal_Cell_(Pancreatic).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Ductal_Cell_(Pancreatic)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Ductal_Cell_(Pancreatic)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Ductal_Cell_(Pancreatic)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_1',
+    name: 'Endothelial_Cell_(General)_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(General)_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_2',
+    name: 'Endothelial_Cell_(General)_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(General)_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_3',
+    name: 'Endothelial_Cell_(General)_3',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(General)_3.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(General)_3-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Endothelial_Cell_(Myocardial)',
+    name: 'Endothelial_Cell_(Myocardial)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(Myocardial).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(Myocardial)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(Myocardial)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Endothelial_Cell_(Myocardial)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Fibroblast_(Epithelial)',
+    name: 'Fibroblast_(Epithelial)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(Epithelial).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(Epithelial)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(Epithelial)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(Epithelial)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Fibroblast_(General)',
+    name: 'Fibroblast_(General)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(General).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(General)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(General)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(General)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Fibroblast_(Peripheral_Nerve)',
+    name: 'Fibroblast_(Peripheral_Nerve)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(Peripheral_Nerve).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(Peripheral_Nerve)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(Peripheral_Nerve)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(Peripheral_Nerve)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Fibroblast_(Sk_Muscle_Associated)',
+    name: 'Fibroblast_(Sk_Muscle_Associated)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(Sk_Muscle_Associated).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(Sk_Muscle_Associated)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(Sk_Muscle_Associated)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Fibroblast_(Sk_Muscle_Associated)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Foveolar_Cell',
+    name: 'Foveolar_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Foveolar_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Foveolar_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Foveolar_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Foveolar_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Luteal_Cell_(Ovarian)',
+    name: 'Luteal_Cell_(Ovarian)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Luteal_Cell_(Ovarian).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Luteal_Cell_(Ovarian)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Luteal_Cell_(Ovarian)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Luteal_Cell_(Ovarian)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Lymphatic_Endothelial_Cell',
+    name: 'Lymphatic_Endothelial_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Lymphatic_Endothelial_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Lymphatic_Endothelial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Lymphatic_Endothelial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Lymphatic_Endothelial_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Macrophage_(General,Alveolar)',
+    name: 'Macrophage_(General,Alveolar)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Macrophage_(General,Alveolar).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Macrophage_(General,Alveolar)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Macrophage_(General,Alveolar)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Macrophage_(General,Alveolar)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Macrophage_(General)',
+    name: 'Macrophage_(General)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Macrophage_(General).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Macrophage_(General)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Macrophage_(General)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Macrophage_(General)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Mast_Cell',
+    name: 'Mast_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Mast_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Mast_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Mast_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Mast_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Memory_B_Cell',
+    name: 'Memory_B_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Memory_B_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Memory_B_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Memory_B_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Memory_B_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Mesothelial_Cell',
+    name: 'Mesothelial_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Mesothelial_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Mesothelial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Mesothelial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Mesothelial_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Naive_T_cell',
+    name: 'Naive_T_cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Naive_T_cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Naive_T_cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Naive_T_cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Naive_T_cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Natural_Killer_T_Cell',
+    name: 'Natural_Killer_T_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Natural_Killer_T_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Natural_Killer_T_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Natural_Killer_T_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Natural_Killer_T_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Pancreatic_Acinar_Cell',
+    name: 'Pancreatic_Acinar_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pancreatic_Acinar_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pancreatic_Acinar_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pancreatic_Acinar_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pancreatic_Acinar_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Pericyte_(Esophageal_Muscularis)',
+    name: 'Pericyte_(Esophageal_Muscularis)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(Esophageal_Muscularis).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(Esophageal_Muscularis)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(Esophageal_Muscularis)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(Esophageal_Muscularis)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Pericyte_(General)_1',
+    name: 'Pericyte_(General)_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Pericyte_(General)_2',
+    name: 'Pericyte_(General)_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Pericyte_(General)_3',
+    name: 'Pericyte_(General)_3',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_3.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_3-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Pericyte_(General)_4',
+    name: 'Pericyte_(General)_4',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_4.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_4-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_4-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Pericyte_(General)_4-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Peripheral_Nerve_Stromal',
+    name: 'Peripheral_Nerve_Stromal',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Peripheral_Nerve_Stromal.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Peripheral_Nerve_Stromal-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Peripheral_Nerve_Stromal-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Peripheral_Nerve_Stromal-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Plasma_Cell',
+    name: 'Plasma_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Plasma_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Plasma_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Plasma_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Plasma_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Schwann_Cell_(General)',
+    name: 'Schwann_Cell_(General)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Schwann_Cell_(General).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Schwann_Cell_(General)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Schwann_Cell_(General)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Schwann_Cell_(General)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Small_Intestinal_Enterocyte',
+    name: 'Small_Intestinal_Enterocyte',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Small_Intestinal_Enterocyte.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Small_Intestinal_Enterocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Small_Intestinal_Enterocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Small_Intestinal_Enterocyte-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId:
+      'Adult_coacc__Adipose_omentum__Smooth_Muscle_(Esophageal_Muscularis)_3',
+    name: 'Smooth_Muscle_(Esophageal_Muscularis)_3',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Smooth_Muscle_(Esophageal_Muscularis)_3.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Smooth_Muscle_(Esophageal_Muscularis)_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Smooth_Muscle_(Esophageal_Muscularis)_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Smooth_Muscle_(Esophageal_Muscularis)_3-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Smooth_Muscle_(General)',
+    name: 'Smooth_Muscle_(General)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Smooth_Muscle_(General).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Smooth_Muscle_(General)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Smooth_Muscle_(General)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Smooth_Muscle_(General)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Smooth_Muscle_(Vaginal)',
+    name: 'Smooth_Muscle_(Vaginal)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Smooth_Muscle_(Vaginal).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Smooth_Muscle_(Vaginal)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Smooth_Muscle_(Vaginal)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Smooth_Muscle_(Vaginal)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__T_Lymphocyte_1_(CD8+)',
+    name: 'T_Lymphocyte_1_(CD8+)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-T_Lymphocyte_1_(CD8+).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__T_Lymphocyte_1_(CD8+)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__T_Lymphocyte_1_(CD8+)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__T_Lymphocyte_1_(CD8+)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__T_lymphocyte_2_(CD4+)',
+    name: 'T_lymphocyte_2_(CD4+)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-T_lymphocyte_2_(CD4+).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__T_lymphocyte_2_(CD4+)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__T_lymphocyte_2_(CD4+)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__T_lymphocyte_2_(CD4+)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Vascular_Smooth_Muscle_1',
+    name: 'Vascular_Smooth_Muscle_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Vascular_Smooth_Muscle_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Vascular_Smooth_Muscle_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Vascular_Smooth_Muscle_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Vascular_Smooth_Muscle_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adipose_omentum__Vascular_Smooth_Muscle_2',
+    name: 'Vascular_Smooth_Muscle_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adipose_omentum'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Vascular_Smooth_Muscle_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Vascular_Smooth_Muscle_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Vascular_Smooth_Muscle_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adipose_omentum__Vascular_Smooth_Muscle_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adrenal_gland__CNS,Enteric_Neuron',
+    name: 'CNS,Enteric_Neuron',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adrenal_gland'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-CNS,Enteric_Neuron.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__CNS,Enteric_Neuron-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__CNS,Enteric_Neuron-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__CNS,Enteric_Neuron-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adrenal_gland__Cortical_Epithelial-like',
+    name: 'Cortical_Epithelial-like',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adrenal_gland'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Cortical_Epithelial-like.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Cortical_Epithelial-like-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Cortical_Epithelial-like-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Cortical_Epithelial-like-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adrenal_gland__Endothelial_(Exocrine_Tissues)',
+    name: 'Endothelial_(Exocrine_Tissues)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adrenal_gland'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Endothelial_(Exocrine_Tissues).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Endothelial_(Exocrine_Tissues)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Endothelial_(Exocrine_Tissues)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Endothelial_(Exocrine_Tissues)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adrenal_gland__Fibroblast_(Liver_Adrenal)',
+    name: 'Fibroblast_(Liver_Adrenal)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adrenal_gland'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Fibroblast_(Liver_Adrenal).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Fibroblast_(Liver_Adrenal)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Fibroblast_(Liver_Adrenal)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Fibroblast_(Liver_Adrenal)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adrenal_gland__Transitional_Zone_Cortical_Cell',
+    name: 'Transitional_Zone_Cortical_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adrenal_gland'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Transitional_Zone_Cortical_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Transitional_Zone_Cortical_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Transitional_Zone_Cortical_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Transitional_Zone_Cortical_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adrenal_gland__Zona_Fasciculata_Cortical_Cell',
+    name: 'Zona_Fasciculata_Cortical_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adrenal_gland'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Zona_Fasciculata_Cortical_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Zona_Fasciculata_Cortical_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Zona_Fasciculata_Cortical_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Zona_Fasciculata_Cortical_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Adrenal_gland__Zona_Glomerulosa_Cortical_Cell',
+    name: 'Zona_Glomerulosa_Cortical_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Adrenal_gland'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Zona_Glomerulosa_Cortical_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Zona_Glomerulosa_Cortical_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Zona_Glomerulosa_Cortical_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Adrenal_gland__Zona_Glomerulosa_Cortical_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Artery_aorta__Alveolar_Type_2_(AT2)_Cell',
+    name: 'Alveolar_Type_2_(AT2)_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Artery_aorta'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_aorta-Alveolar_Type_2_(AT2)_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Artery_aorta__Alveolar_Type_2_(AT2)_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_aorta__Alveolar_Type_2_(AT2)_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_aorta__Alveolar_Type_2_(AT2)_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Artery_aorta__Endocardial_Cell',
+    name: 'Endocardial_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Artery_aorta'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_aorta-Endocardial_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Artery_aorta__Endocardial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_aorta__Endocardial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_aorta__Endocardial_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Artery_tibial__Alverolar_Type_2,Immune',
+    name: 'Alverolar_Type_2,Immune',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Artery_tibial'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_tibial-Alverolar_Type_2,Immune.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Artery_tibial__Alverolar_Type_2,Immune-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_tibial__Alverolar_Type_2,Immune-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_tibial__Alverolar_Type_2,Immune-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Artery_tibial__Smooth_Muscle_(Colon)_2',
+    name: 'Smooth_Muscle_(Colon)_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Artery_tibial'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_tibial-Smooth_Muscle_(Colon)_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Artery_tibial__Smooth_Muscle_(Colon)_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_tibial__Smooth_Muscle_(Colon)_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_tibial__Smooth_Muscle_(Colon)_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Artery_tibial__Smooth_Muscle_(GE_Junction)',
+    name: 'Smooth_Muscle_(GE_Junction)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Artery_tibial'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_tibial-Smooth_Muscle_(GE_Junction).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Artery_tibial__Smooth_Muscle_(GE_Junction)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_tibial__Smooth_Muscle_(GE_Junction)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Artery_tibial__Smooth_Muscle_(GE_Junction)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_sigmoid__Colon_Epithelial_Cell_1',
+    name: 'Colon_Epithelial_Cell_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_sigmoid'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Colon_Epithelial_Cell_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Colon_Epithelial_Cell_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Colon_Epithelial_Cell_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Colon_Epithelial_Cell_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_sigmoid__Fibroblast_(Gastrointestinal)',
+    name: 'Fibroblast_(Gastrointestinal)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_sigmoid'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Fibroblast_(Gastrointestinal).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Fibroblast_(Gastrointestinal)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Fibroblast_(Gastrointestinal)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Fibroblast_(Gastrointestinal)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_sigmoid__Melanocyte',
+    name: 'Melanocyte',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_sigmoid'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Melanocyte.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Melanocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Melanocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_coacc__Colon_sigmoid__Melanocyte-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Colon)_1',
+    name: 'Smooth_Muscle_(Colon)_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_sigmoid'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Colon)_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Colon)_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Colon)_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Colon)_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Mucosal)',
+    name: 'Smooth_Muscle_(Esophageal_Mucosal)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_sigmoid'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Esophageal_Mucosal).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Mucosal)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Mucosal)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Mucosal)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId:
+      'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Muscularis)_1',
+    name: 'Smooth_Muscle_(Esophageal_Muscularis)_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_sigmoid'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Esophageal_Muscularis)_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Muscularis)_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Muscularis)_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Muscularis)_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId:
+      'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Muscularis)_2',
+    name: 'Smooth_Muscle_(Esophageal_Muscularis)_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_sigmoid'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Esophageal_Muscularis)_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Muscularis)_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Muscularis)_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Esophageal_Muscularis)_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId:
+      'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(General_Gastrointestinal)',
+    name: 'Smooth_Muscle_(General_Gastrointestinal)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_sigmoid'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(General_Gastrointestinal).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(General_Gastrointestinal)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(General_Gastrointestinal)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(General_Gastrointestinal)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Uterine)',
+    name: 'Smooth_Muscle_(Uterine)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_sigmoid'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Uterine).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Uterine)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Uterine)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_sigmoid__Smooth_Muscle_(Uterine)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Astrocyte_2',
+    name: 'Astrocyte_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Astrocyte_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Astrocyte_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Astrocyte_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Astrocyte_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Colon_Epithelial_Cell_2',
+    name: 'Colon_Epithelial_Cell_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Colon_Epithelial_Cell_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Colon_Epithelial_Cell_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Colon_Epithelial_Cell_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Colon_Epithelial_Cell_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Colon_Epithelial_Cell_3',
+    name: 'Colon_Epithelial_Cell_3',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Colon_Epithelial_Cell_3.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Colon_Epithelial_Cell_3-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Colon_Epithelial_Cell_3-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Colon_Epithelial_Cell_3-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Colonic_Goblet_Cell',
+    name: 'Colonic_Goblet_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Colonic_Goblet_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Colonic_Goblet_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Colonic_Goblet_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Colonic_Goblet_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Enterochromaffin_Cell',
+    name: 'Enterochromaffin_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Enterochromaffin_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Enterochromaffin_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Enterochromaffin_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Enterochromaffin_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Mammary_Luminal_Epithelial_Cell_2',
+    name: 'Mammary_Luminal_Epithelial_Cell_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Mammary_Luminal_Epithelial_Cell_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Mammary_Luminal_Epithelial_Cell_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Mammary_Luminal_Epithelial_Cell_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Mammary_Luminal_Epithelial_Cell_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Oligodendrocyte_Precursor',
+    name: 'Oligodendrocyte_Precursor',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Oligodendrocyte_Precursor.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Oligodendrocyte_Precursor-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Oligodendrocyte_Precursor-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Oligodendrocyte_Precursor-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Paneth_Cell',
+    name: 'Paneth_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Paneth_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Paneth_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Paneth_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Paneth_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Small_Intestinal_Goblet_Cell',
+    name: 'Small_Intestinal_Goblet_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Small_Intestinal_Goblet_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Small_Intestinal_Goblet_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Small_Intestinal_Goblet_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Small_Intestinal_Goblet_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Colon_transverse__Tuft_Cell',
+    name: 'Tuft_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Colon_transverse'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Tuft_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Tuft_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Tuft_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Colon_transverse__Tuft_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_gejunction__Airway_Goblet_Cell',
+    name: 'Airway_Goblet_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_gejunction'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_gejunction-Airway_Goblet_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_gejunction__Airway_Goblet_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_gejunction__Airway_Goblet_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_gejunction__Airway_Goblet_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_gejunction__Myoepithelial_(Skin)',
+    name: 'Myoepithelial_(Skin)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_gejunction'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_gejunction-Myoepithelial_(Skin).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_gejunction__Myoepithelial_(Skin)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_gejunction__Myoepithelial_(Skin)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_gejunction__Myoepithelial_(Skin)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_mucosa__Basal_Epidermal_(Skin)',
+    name: 'Basal_Epidermal_(Skin)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_mucosa'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Basal_Epidermal_(Skin).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Basal_Epidermal_(Skin)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Basal_Epidermal_(Skin)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Basal_Epidermal_(Skin)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_mucosa__Basal_Epithelial_(Mammary)',
+    name: 'Basal_Epithelial_(Mammary)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_mucosa'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Basal_Epithelial_(Mammary).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Basal_Epithelial_(Mammary)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Basal_Epithelial_(Mammary)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Basal_Epithelial_(Mammary)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_mucosa__Esophageal_Epithelial_Cell',
+    name: 'Esophageal_Epithelial_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_mucosa'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Esophageal_Epithelial_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Esophageal_Epithelial_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Esophageal_Epithelial_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Esophageal_Epithelial_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_mucosa__Granular_Epidermal_(Skin)',
+    name: 'Granular_Epidermal_(Skin)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_mucosa'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Granular_Epidermal_(Skin).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Granular_Epidermal_(Skin)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Granular_Epidermal_(Skin)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Granular_Epidermal_(Skin)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_mucosa__Keratinocyte_1',
+    name: 'Keratinocyte_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_mucosa'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Keratinocyte_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Keratinocyte_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Keratinocyte_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_mucosa__Keratinocyte_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_muscularis__Satellite_Cell',
+    name: 'Satellite_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_muscularis'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_muscularis-Satellite_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_muscularis__Satellite_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_muscularis__Satellite_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_muscularis__Satellite_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_muscularis__Thyroid_Follicular_Cell',
+    name: 'Thyroid_Follicular_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_muscularis'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_muscularis-Thyroid_Follicular_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_muscularis__Thyroid_Follicular_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_muscularis__Thyroid_Follicular_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_muscularis__Thyroid_Follicular_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Esophagus_muscularis__Type_I_Skeletal_Myocyte',
+    name: 'Type_I_Skeletal_Myocyte',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Esophagus_muscularis'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_muscularis-Type_I_Skeletal_Myocyte.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_muscularis__Type_I_Skeletal_Myocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_muscularis__Type_I_Skeletal_Myocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Esophagus_muscularis__Type_I_Skeletal_Myocyte-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__HeartAtrial_appendage__Alveolar_Type_1_(AT1)_Cell',
+    name: 'Alveolar_Type_1_(AT1)_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'HeartAtrial_appendage'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Alveolar_Type_1_(AT1)_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Alveolar_Type_1_(AT1)_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Alveolar_Type_1_(AT1)_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Alveolar_Type_1_(AT1)_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__HeartAtrial_appendage__Atrial_Cardiomyocyte',
+    name: 'Atrial_Cardiomyocyte',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'HeartAtrial_appendage'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Atrial_Cardiomyocyte.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Atrial_Cardiomyocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Atrial_Cardiomyocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Atrial_Cardiomyocyte-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__HeartAtrial_appendage__Cardiac_Pericyte_1',
+    name: 'Cardiac_Pericyte_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'HeartAtrial_appendage'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Cardiac_Pericyte_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Cardiac_Pericyte_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Cardiac_Pericyte_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Cardiac_Pericyte_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__HeartAtrial_appendage__Ventricular_Cardiomyocyte',
+    name: 'Ventricular_Cardiomyocyte',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'HeartAtrial_appendage'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Ventricular_Cardiomyocyte.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Ventricular_Cardiomyocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Ventricular_Cardiomyocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__HeartAtrial_appendage__Ventricular_Cardiomyocyte-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Islet_CB__Gastric_Neuroendocrine_Cell',
+    name: 'Gastric_Neuroendocrine_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Islet_CB'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Gastric_Neuroendocrine_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Gastric_Neuroendocrine_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Gastric_Neuroendocrine_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Gastric_Neuroendocrine_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Islet_CB__Hepatocyte',
+    name: 'Hepatocyte',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Islet_CB'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Hepatocyte.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_coacc__Islet_CB__Hepatocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_coacc__Islet_CB__Hepatocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_coacc__Islet_CB__Hepatocyte-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Islet_CB__Pancreatic_Alpha_Cell_1',
+    name: 'Pancreatic_Alpha_Cell_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Islet_CB'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Alpha_Cell_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Alpha_Cell_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Alpha_Cell_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Alpha_Cell_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Islet_CB__Pancreatic_Alpha_Cell_2',
+    name: 'Pancreatic_Alpha_Cell_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Islet_CB'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Alpha_Cell_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Alpha_Cell_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Alpha_Cell_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Alpha_Cell_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Islet_CB__Pancreatic_Beta_Cell_1',
+    name: 'Pancreatic_Beta_Cell_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Islet_CB'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Beta_Cell_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Beta_Cell_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Beta_Cell_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Beta_Cell_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Islet_CB__Pancreatic_Beta_Cell_2',
+    name: 'Pancreatic_Beta_Cell_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Islet_CB'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Beta_Cell_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Beta_Cell_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Beta_Cell_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Beta_Cell_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Islet_CB__Pancreatic_Delta,Gamma_cell',
+    name: 'Pancreatic_Delta,Gamma_cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Islet_CB'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Delta,Gamma_cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Delta,Gamma_cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Delta,Gamma_cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Islet_CB__Pancreatic_Delta,Gamma_cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__lung__Cilliated_Cell',
+    name: 'Cilliated_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'lung'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_lung-Cilliated_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_coacc__lung__Cilliated_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_coacc__lung__Cilliated_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_coacc__lung__Cilliated_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__lung__Club_Cell',
+    name: 'Club_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'lung'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_lung-Club_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_coacc__lung__Club_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_coacc__lung__Club_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_coacc__lung__Club_Cell-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Mammary_tissue__Eccrine_Epidermal_(Skin)',
+    name: 'Eccrine_Epidermal_(Skin)',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Mammary_tissue'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Eccrine_Epidermal_(Skin).bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Eccrine_Epidermal_(Skin)-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Eccrine_Epidermal_(Skin)-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Eccrine_Epidermal_(Skin)-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Mammary_tissue__Mammary_Epithelial',
+    name: 'Mammary_Epithelial',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Mammary_tissue'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Mammary_Epithelial.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Mammary_Epithelial-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Mammary_Epithelial-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Mammary_Epithelial-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Mammary_tissue__Mammary_Luminal_Epithelial_Cell_1',
+    name: 'Mammary_Luminal_Epithelial_Cell_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Mammary_tissue'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Mammary_Luminal_Epithelial_Cell_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Mammary_Luminal_Epithelial_Cell_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Mammary_Luminal_Epithelial_Cell_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Mammary_Luminal_Epithelial_Cell_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Mammary_tissue__Microglia',
+    name: 'Microglia',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Mammary_tissue'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Microglia.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Microglia-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Mammary_tissue__Microglia-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_coacc__Mammary_tissue__Microglia-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__muscle__Type_II_Skeletal_Myocyte',
+    name: 'Type_II_Skeletal_Myocyte',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'muscle'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_muscle-Type_II_Skeletal_Myocyte.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__muscle__Type_II_Skeletal_Myocyte-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__muscle__Type_II_Skeletal_Myocyte-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__muscle__Type_II_Skeletal_Myocyte-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__Skin_sun_exposed__Astrocyte_1',
+    name: 'Astrocyte_1',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'Skin_sun_exposed'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Skin_sun_exposed-Astrocyte_1.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId:
+          'Adult_coacc__Skin_sun_exposed__Astrocyte_1-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId:
+          'Adult_coacc__Skin_sun_exposed__Astrocyte_1-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId:
+          'Adult_coacc__Skin_sun_exposed__Astrocyte_1-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__skin__Keratinocyte_2',
+    name: 'Keratinocyte_2',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'skin'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_skin-Keratinocyte_2.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_coacc__skin__Keratinocyte_2-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_coacc__skin__Keratinocyte_2-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_coacc__skin__Keratinocyte_2-ChordVariantDisplay',
+      },
+    ],
+  },
+  {
+    type: 'VariantTrack',
+    trackId: 'Adult_coacc__stomach__Parietal_Cell',
+    name: 'Parietal_Cell',
+    assemblyNames: ['hg19'],
+    category: ['Adult_coacc', 'stomach'],
+    adapter: {
+      type: 'BedpeAdapter',
+      bedpeLocation: {
+        locationType: 'UriLocation',
+        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_stomach-Parietal_Cell.bedpe',
+      },
+    },
+    displays: [
+      {
+        type: 'LinearPairedArcDisplay',
+        displayId: 'Adult_coacc__stomach__Parietal_Cell-LinearPairedArcDisplay',
+      },
+      {
+        type: 'LinearVariantDisplay',
+        displayId: 'Adult_coacc__stomach__Parietal_Cell-LinearVariantDisplay',
+      },
+      {
+        type: 'ChordVariantDisplay',
+        displayId: 'Adult_coacc__stomach__Parietal_Cell-ChordVariantDisplay',
+      },
+    ],
   },
 ];
 export default tracks;

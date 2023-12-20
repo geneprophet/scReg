@@ -32,7 +32,7 @@ export default function View(props: any) {
           type: 'BigWigAdapter',
           bigWigLocation: {
             uri:
-              'http://screg.sdfmu.edu.cn/result/' +
+              'http://screg.sdfmu.edu.cn/taskout/' +
               props.data.type +
               '/' +
               props.data.taskid +
@@ -57,7 +57,7 @@ export default function View(props: any) {
           type: 'BedpeAdapter',
           bedpeLocation: {
             uri:
-              'http://screg.sdfmu.edu.cn/result/' +
+              'http://screg.sdfmu.edu.cn/taskout/' +
               props.data.type +
               '/' +
               props.data.taskid +
@@ -65,6 +65,20 @@ export default function View(props: any) {
             locationType: 'UriLocation',
           },
         },
+        displays: [
+          {
+            type: 'LinearPairedArcDisplay',
+            displayId: props.data.taskid + '-LinearPairedArcDisplay',
+          },
+          {
+            type: 'LinearVariantDisplay',
+            displayId: props.data.taskid + '-LinearVariantDisplay',
+          },
+          {
+            type: 'ChordVariantDisplay',
+            displayId: props.data.taskid + '-ChordVariantDisplay',
+          },
+        ],
       };
       setAlltracks([...alltracks, new_track]);
     }

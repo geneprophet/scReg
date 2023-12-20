@@ -53,29 +53,31 @@ const defaultSession = {
       },
       {
         type: 'VariantTrack',
-        configuration: 'skbr3_bedpe_arcs',
+        configuration: 'Adult_coacc__lung__Cilliated_Cell',
         displays: [
           {
             type: 'LinearPairedArcDisplay',
-            displayId: 'skbr3_bedpe_arcs-LinearPairedArcDisplay',
+            displayId:
+              'Adult_coacc__lung__Cilliated_Cell-LinearPairedArcDisplay',
           },
           {
             type: 'LinearVariantDisplay',
-            displayId: 'skbr3_bedpe_arcs-LinearVariantDisplay',
+            displayId: 'Adult_coacc__lung__Cilliated_Cell-LinearVariantDisplay',
           },
           {
             type: 'ChordVariantDisplay',
-            displayId: 'skbr3_bedpe_arcs-ChordVariantDisplay',
+            displayId: 'Adult_coacc__lung__Cilliated_Cell-ChordVariantDisplay',
           },
         ],
       },
       {
         type: 'QuantitativeTrack',
-        configuration: 'my_wiggle_track',
+        configuration: 'Adult_scATAC__Adipose_Omentum__adult_Adipocyte',
         displays: [
           {
             type: 'LinearWiggleDisplay',
-            displayId: 'my_wiggle_track-LinearWiggleDisplay',
+            displayId:
+              'Adult_scATAC__Adipose_Omentum__adult_Adipocyte-LinearWiggleDisplay',
           },
         ],
       },
