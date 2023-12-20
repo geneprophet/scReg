@@ -9,7 +9,10 @@ export default defineConfig({
   outputPath: './dist/screg',
   publicPath: '/screg/',
   routes: [
-    { path: '/', component: '@/pages/index' },
+    {
+      path: '/:type/:taskid',
+      component: '@/pages/index',
+    },
   ],
   fastRefresh: {},
 });
