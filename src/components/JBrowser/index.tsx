@@ -11,7 +11,10 @@ import aggregateTextSearchAdapters from './aggregateTextSearchAdapters';
 
 export default function View(props: any) {
   // const [location, setLocation] = useState();
-  const [location, setLocation] = useState('1:55055000..56061000');
+  // const [location, setLocation] = useState('1:55055000..56061000');
+  const [location, setLocation] = useState(
+    props.data.chr + ':' + props.data.start + '..' + props.data.end,
+  );
   const [alltracks, setAlltracks] = useState(tracks);
   const [allsessions, setAllsessions] = useState(defaultSession);
   const [allviews, setAllviews] = useState(defaultSession.view.tracks);
