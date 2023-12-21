@@ -16423,7 +16423,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Adrenocortical_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Adrenocortical_Cells.bedpe',
       },
     },
     displays: [
@@ -16454,7 +16454,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Chromaffin_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Chromaffin_Cells.bedpe',
       },
     },
     displays: [
@@ -16485,7 +16485,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Erythroblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Erythroblasts.bedpe',
       },
     },
     displays: [
@@ -16516,7 +16516,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Megakaryocytes_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Megakaryocytes_Unsure.bedpe',
       },
     },
     displays: [
@@ -16547,7 +16547,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -16578,7 +16578,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Schwann_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Schwann_Cells.bedpe',
       },
     },
     displays: [
@@ -16609,7 +16609,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Stromal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Stromal_Cells.bedpe',
       },
     },
     displays: [
@@ -16640,7 +16640,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Sympathoblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Sympathoblasts.bedpe',
       },
     },
     displays: [
@@ -16671,7 +16671,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Adrenal_Gland-Adrenal_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -16702,7 +16702,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Astrocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Astrocytes.bedpe',
       },
     },
     displays: [
@@ -16733,7 +16733,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Granule_Neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Granule_Neurons.bedpe',
       },
     },
     displays: [
@@ -16764,7 +16764,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Inhibitory_Interneurons_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Inhibitory_Interneurons_Unsure.bedpe',
       },
     },
     displays: [
@@ -16795,7 +16795,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Purkinje_Neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebellum-Cerebellum_Purkinje_Neurons.bedpe',
       },
     },
     displays: [
@@ -16826,7 +16826,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Astrocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Astrocytes.bedpe',
       },
     },
     displays: [
@@ -16857,7 +16857,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Cerebrum_Unknown.3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Cerebrum_Unknown.3.bedpe',
       },
     },
     displays: [
@@ -16888,7 +16888,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Excitatory_Neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Excitatory_Neurons.bedpe',
       },
     },
     displays: [
@@ -16919,7 +16919,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Inhibitory_Neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Inhibitory_Neurons.bedpe',
       },
     },
     displays: [
@@ -16950,7 +16950,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Limbic_System_Neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Limbic_System_Neurons.bedpe',
       },
     },
     displays: [
@@ -16981,7 +16981,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Skor2_Npsr1_Positive_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Skor2_Npsr1_Positive_Cells.bedpe',
       },
     },
     displays: [
@@ -17012,7 +17012,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Cerebrum-Cerebrum_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -17043,7 +17043,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Ganglion_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Ganglion_Cells.bedpe',
       },
     },
     displays: [
@@ -17071,7 +17071,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Horizontal_Cells_Amacrine_Cells_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Horizontal_Cells_Amacrine_Cells_Unsure.bedpe',
       },
     },
     displays: [
@@ -17102,7 +17102,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Photoreceptor_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Photoreceptor_Cells.bedpe',
       },
     },
     displays: [
@@ -17133,7 +17133,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Retinal_Pigment_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Retinal_Pigment_Cells.bedpe',
       },
     },
     displays: [
@@ -17164,7 +17164,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Retinal_Progenitors_And_Muller_Glia.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Retinal_Progenitors_And_Muller_Glia.bedpe',
       },
     },
     displays: [
@@ -17195,7 +17195,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Stromal_Cells_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Stromal_Cells_Unsure.bedpe',
       },
     },
     displays: [
@@ -17226,7 +17226,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Unknown_6.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Unknown_6.bedpe',
       },
     },
     displays: [
@@ -17254,7 +17254,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Vascular_Endothelial_Cells_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Eye-Eye_Vascular_Endothelial_Cells_Unsure.bedpe',
       },
     },
     displays: [
@@ -17286,7 +17286,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Cardiomyocytes_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Cardiomyocytes_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -17317,7 +17317,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Cardiomyocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Cardiomyocytes.bedpe',
       },
     },
     displays: [
@@ -17347,7 +17347,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Elf3_Agbl2_Positive_Cells_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Elf3_Agbl2_Positive_Cells_Unsure.bedpe',
       },
     },
     displays: [
@@ -17378,7 +17378,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Endocardial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Endocardial_Cells.bedpe',
       },
     },
     displays: [
@@ -17409,7 +17409,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Epicardial_Fat_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Epicardial_Fat_Cells.bedpe',
       },
     },
     displays: [
@@ -17440,7 +17440,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Erythroblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Erythroblasts.bedpe',
       },
     },
     displays: [
@@ -17469,7 +17469,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Heart_Unknown.10.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Heart_Unknown.10.bedpe',
       },
     },
     displays: [
@@ -17500,7 +17500,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Lymphatic_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Lymphatic_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -17531,7 +17531,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Lymphoid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Lymphoid_Cells.bedpe',
       },
     },
     displays: [
@@ -17561,7 +17561,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -17590,7 +17590,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Schwann_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Schwann_Cells.bedpe',
       },
     },
     displays: [
@@ -17619,7 +17619,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Smooth_Muscle_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Smooth_Muscle_Cells.bedpe',
       },
     },
     displays: [
@@ -17650,7 +17650,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Stromal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Stromal_Cells.bedpe',
       },
     },
     displays: [
@@ -17679,7 +17679,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Heart-Heart_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -17710,7 +17710,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Chromaffin_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Chromaffin_Cells.bedpe',
       },
     },
     displays: [
@@ -17741,7 +17741,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Ens_Glia.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Ens_Glia.bedpe',
       },
     },
     displays: [
@@ -17772,7 +17772,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Ens_Neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Ens_Neurons.bedpe',
       },
     },
     displays: [
@@ -17803,7 +17803,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Intestinal_Epithelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Intestinal_Epithelial_Cells.bedpe',
       },
     },
     displays: [
@@ -17834,7 +17834,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Intestine_Unknown.4.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Intestine_Unknown.4.bedpe',
       },
     },
     displays: [
@@ -17865,7 +17865,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Intestine_Unknown.8.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Intestine_Unknown.8.bedpe',
       },
     },
     displays: [
@@ -17896,7 +17896,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Lymphatic_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Lymphatic_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -17927,7 +17927,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Lymphoid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Lymphoid_Cells.bedpe',
       },
     },
     displays: [
@@ -17958,7 +17958,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Mesothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Mesothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -17989,7 +17989,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -18020,7 +18020,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Smooth_Muscle_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Smooth_Muscle_Cells.bedpe',
       },
     },
     displays: [
@@ -18051,7 +18051,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Stromal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Stromal_Cells.bedpe',
       },
     },
     displays: [
@@ -18082,7 +18082,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Intestine-Intestine_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -18113,7 +18113,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Mesangial_Cells_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Mesangial_Cells_Unsure.bedpe',
       },
     },
     displays: [
@@ -18144,7 +18144,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Mesangial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Mesangial_Cells.bedpe',
       },
     },
     displays: [
@@ -18175,7 +18175,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Metanephric_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Metanephric_Cells.bedpe',
       },
     },
     displays: [
@@ -18206,7 +18206,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -18237,7 +18237,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Stromal_Cells_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Stromal_Cells_Unsure.bedpe',
       },
     },
     displays: [
@@ -18268,7 +18268,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Unknown_14.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Unknown_14.bedpe',
       },
     },
     displays: [
@@ -18297,7 +18297,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Unknown_7.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Unknown_7.bedpe',
       },
     },
     displays: [
@@ -18325,7 +18325,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Ureteric_Bud_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Ureteric_Bud_Cells.bedpe',
       },
     },
     displays: [
@@ -18356,7 +18356,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Kidney-Kidney_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -18387,7 +18387,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Erythroblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Erythroblasts.bedpe',
       },
     },
     displays: [
@@ -18416,7 +18416,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Hematopoietic_Stem_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Hematopoietic_Stem_Cells.bedpe',
       },
     },
     displays: [
@@ -18447,7 +18447,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Hepatoblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Hepatoblasts.bedpe',
       },
     },
     displays: [
@@ -18476,7 +18476,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Lymphoid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Lymphoid_Cells.bedpe',
       },
     },
     displays: [
@@ -18506,7 +18506,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Megakaryocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Megakaryocytes.bedpe',
       },
     },
     displays: [
@@ -18536,7 +18536,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -18565,7 +18565,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Stellate_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Stellate_Cells.bedpe',
       },
     },
     displays: [
@@ -18595,7 +18595,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Liver-Liver_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -18626,7 +18626,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Bronchiolar_And_Alveolar_Epithelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Bronchiolar_And_Alveolar_Epithelial_Cells.bedpe',
       },
     },
     displays: [
@@ -18657,7 +18657,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Ciliated_Epithelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Ciliated_Epithelial_Cells.bedpe',
       },
     },
     displays: [
@@ -18688,7 +18688,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Lymphatic_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Lymphatic_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -18719,7 +18719,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Lymphoid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Lymphoid_Cells.bedpe',
       },
     },
     displays: [
@@ -18748,7 +18748,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Megakaryocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Megakaryocytes.bedpe',
       },
     },
     displays: [
@@ -18777,7 +18777,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -18805,7 +18805,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Neuroendocrine_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Neuroendocrine_Cells.bedpe',
       },
     },
     displays: [
@@ -18836,7 +18836,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Stromal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Stromal_Cells.bedpe',
       },
     },
     displays: [
@@ -18864,7 +18864,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Lung-Lung_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -18895,7 +18895,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Lymphoid_And_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Lymphoid_And_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -18926,7 +18926,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Satellite_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Satellite_Cells.bedpe',
       },
     },
     displays: [
@@ -18957,7 +18957,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Schwann_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Schwann_Cells.bedpe',
       },
     },
     displays: [
@@ -18988,7 +18988,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Skeletal_Muscle_Cells_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Skeletal_Muscle_Cells_Unsure.bedpe',
       },
     },
     displays: [
@@ -19019,7 +19019,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Skeletal_Muscle_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Skeletal_Muscle_Cells.bedpe',
       },
     },
     displays: [
@@ -19050,7 +19050,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Smooth_Muscle_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Smooth_Muscle_Cells.bedpe',
       },
     },
     displays: [
@@ -19081,7 +19081,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Stromal_Cells_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Stromal_Cells_Unsure.bedpe',
       },
     },
     displays: [
@@ -19112,7 +19112,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Stromal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Stromal_Cells.bedpe',
       },
     },
     displays: [
@@ -19143,7 +19143,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Unknown_7.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Unknown_7.bedpe',
       },
     },
     displays: [
@@ -19171,7 +19171,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Muscle-Muscle_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -19202,7 +19202,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Acinar_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Acinar_Cells.bedpe',
       },
     },
     displays: [
@@ -19233,7 +19233,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Ductal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Ductal_Cells.bedpe',
       },
     },
     displays: [
@@ -19264,7 +19264,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Islet_Endocrine_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Islet_Endocrine_Cells.bedpe',
       },
     },
     displays: [
@@ -19295,7 +19295,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Lymphoid_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Lymphoid_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -19326,7 +19326,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Pancreas_Unknown.1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Pancreas_Unknown.1.bedpe',
       },
     },
     displays: [
@@ -19357,7 +19357,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Stromal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Stromal_Cells.bedpe',
       },
     },
     displays: [
@@ -19388,7 +19388,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Pancreas-Pancreas_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -19419,7 +19419,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Erythroblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Erythroblasts.bedpe',
       },
     },
     displays: [
@@ -19450,7 +19450,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Extravillous_Trophoblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Extravillous_Trophoblasts.bedpe',
       },
     },
     displays: [
@@ -19481,7 +19481,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Igfbp1_Dkk1_Positive_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Igfbp1_Dkk1_Positive_Cells.bedpe',
       },
     },
     displays: [
@@ -19512,7 +19512,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Lymphoid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Lymphoid_Cells.bedpe',
       },
     },
     displays: [
@@ -19543,7 +19543,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -19574,7 +19574,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Paep_Mecom_Positive_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Paep_Mecom_Positive_Cells.bedpe',
       },
     },
     displays: [
@@ -19605,7 +19605,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Smooth_Muscle_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Smooth_Muscle_Cells.bedpe',
       },
     },
     displays: [
@@ -19636,7 +19636,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Stromal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Stromal_Cells.bedpe',
       },
     },
     displays: [
@@ -19668,7 +19668,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Syncytiotrophoblast_And_Villous_Cytotrophoblasts_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Syncytiotrophoblast_And_Villous_Cytotrophoblasts_Unsure.bedpe',
       },
     },
     displays: [
@@ -19700,7 +19700,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Syncytiotrophoblasts_And_Villous_Cytotrophoblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Syncytiotrophoblasts_And_Villous_Cytotrophoblasts.bedpe',
       },
     },
     displays: [
@@ -19731,7 +19731,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Trophoblast_Giant_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Trophoblast_Giant_Cells.bedpe',
       },
     },
     displays: [
@@ -19762,7 +19762,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Placenta-Placenta_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -19793,7 +19793,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Megakaryocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Megakaryocytes.bedpe',
       },
     },
     displays: [
@@ -19824,7 +19824,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Myeloid_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Myeloid_Cells.bedpe',
       },
     },
     displays: [
@@ -19855,7 +19855,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Stromal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Stromal_Cells.bedpe',
       },
     },
     displays: [
@@ -19886,7 +19886,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Spleen-Spleen_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -19917,7 +19917,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Ens_Glia.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Ens_Glia.bedpe',
       },
     },
     displays: [
@@ -19946,7 +19946,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Ens_Neurons_Unsure.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Ens_Neurons_Unsure.bedpe',
       },
     },
     displays: [
@@ -19977,7 +19977,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Epithelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Epithelial_Cells.bedpe',
       },
     },
     displays: [
@@ -20008,7 +20008,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Goblet_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Goblet_Cells.bedpe',
       },
     },
     displays: [
@@ -20039,7 +20039,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Parietal_And_Chief_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Parietal_And_Chief_Cells.bedpe',
       },
     },
     displays: [
@@ -20070,7 +20070,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Stromal_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Stromal_Cells.bedpe',
       },
     },
     displays: [
@@ -20101,7 +20101,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Stomach-Stomach_Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -20132,7 +20132,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Thymic_Epithelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Thymic_Epithelial_Cells.bedpe',
       },
     },
     displays: [
@@ -20163,7 +20163,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Thymocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Thymocytes.bedpe',
       },
     },
     displays: [
@@ -20191,7 +20191,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Thymus_Antigen_Presenting_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Thymus_Antigen_Presenting_Cells.bedpe',
       },
     },
     displays: [
@@ -20222,7 +20222,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Vascular_Endothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/fetal/abc_Thymus-Vascular_Endothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -20253,7 +20253,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Adipocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Adipocyte.bedpe',
       },
     },
     displays: [
@@ -20282,7 +20282,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Alveolar_Capillary_Endothelial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Alveolar_Capillary_Endothelial_Cell.bedpe',
       },
     },
     displays: [
@@ -20313,7 +20313,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Blood_Brain_Barrier_Endothelial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Blood_Brain_Barrier_Endothelial_Cell.bedpe',
       },
     },
     displays: [
@@ -20344,7 +20344,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Fibroblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Fibroblasts.bedpe',
       },
     },
     displays: [
@@ -20375,7 +20375,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Pericyte_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Pericyte_2.bedpe',
       },
     },
     displays: [
@@ -20406,7 +20406,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Pericyte_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Pericyte_3.bedpe',
       },
     },
     displays: [
@@ -20437,7 +20437,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Pericyte_4.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Cardiac_Pericyte_4.bedpe',
       },
     },
     displays: [
@@ -20468,7 +20468,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Chief_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Chief_Cell.bedpe',
       },
     },
     displays: [
@@ -20498,7 +20498,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_General_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_General_1.bedpe',
       },
     },
     displays: [
@@ -20529,7 +20529,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_General_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_General_2.bedpe',
       },
     },
     displays: [
@@ -20560,7 +20560,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_General_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_General_3.bedpe',
       },
     },
     displays: [
@@ -20591,7 +20591,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_Myocardial.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Endothelial_Cell_Myocardial.bedpe',
       },
     },
     displays: [
@@ -20622,7 +20622,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Enterocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Enterocyte.bedpe',
       },
     },
     displays: [
@@ -20652,7 +20652,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_Epithelial.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_Epithelial.bedpe',
       },
     },
     displays: [
@@ -20683,7 +20683,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_General.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_General.bedpe',
       },
     },
     displays: [
@@ -20714,7 +20714,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_Peripheral_Nerve.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_Peripheral_Nerve.bedpe',
       },
     },
     displays: [
@@ -20745,7 +20745,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_Sk_Muscle_Associated.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Fibroblast_Sk_Muscle_Associated.bedpe',
       },
     },
     displays: [
@@ -20776,7 +20776,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Foveolar_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Foveolar_Cell.bedpe',
       },
     },
     displays: [
@@ -20807,7 +20807,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Luteal_Cell_Ovarian.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Luteal_Cell_Ovarian.bedpe',
       },
     },
     displays: [
@@ -20838,7 +20838,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Lymphatic_Endothelial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Lymphatic_Endothelial_Cell.bedpe',
       },
     },
     displays: [
@@ -20869,7 +20869,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Macrophage_Gen_Or_Alv.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Macrophage_Gen_Or_Alv.bedpe',
       },
     },
     displays: [
@@ -20900,7 +20900,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Macrophage_General.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Macrophage_General.bedpe',
       },
     },
     displays: [
@@ -20931,7 +20931,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Mast_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Mast_Cell.bedpe',
       },
     },
     displays: [
@@ -20960,7 +20960,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Memory_B_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Memory_B_Cell.bedpe',
       },
     },
     displays: [
@@ -20991,7 +20991,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Mesothelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Mesothelial_Cells.bedpe',
       },
     },
     displays: [
@@ -21022,7 +21022,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Naive_T_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Naive_T_Cell.bedpe',
       },
     },
     displays: [
@@ -21053,7 +21053,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Natural_Killer_T_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Natural_Killer_T_Cell.bedpe',
       },
     },
     displays: [
@@ -21084,7 +21084,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Nerve_Stromal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Nerve_Stromal.bedpe',
       },
     },
     displays: [
@@ -21115,7 +21115,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_1.bedpe',
       },
     },
     displays: [
@@ -21146,7 +21146,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_2.bedpe',
       },
     },
     displays: [
@@ -21177,7 +21177,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_3.bedpe',
       },
     },
     displays: [
@@ -21208,7 +21208,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_4.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_General_4.bedpe',
       },
     },
     displays: [
@@ -21239,7 +21239,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_Muscularis.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Pericyte_Muscularis.bedpe',
       },
     },
     displays: [
@@ -21270,7 +21270,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Plasma_B.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Plasma_B.bedpe',
       },
     },
     displays: [
@@ -21299,7 +21299,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Schwann_Cell_General.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Schwann_Cell_General.bedpe',
       },
     },
     displays: [
@@ -21331,7 +21331,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Smooth_Muscle_Esophageal_Muscularis_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Smooth_Muscle_Esophageal_Muscularis_3.bedpe',
       },
     },
     displays: [
@@ -21362,7 +21362,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Smooth_Muscle_General.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Smooth_Muscle_General.bedpe',
       },
     },
     displays: [
@@ -21393,7 +21393,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Smooth_Muscle_Vaginal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Smooth_Muscle_Vaginal.bedpe',
       },
     },
     displays: [
@@ -21424,7 +21424,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Vascular_Smooth_Muscle_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Vascular_Smooth_Muscle_1.bedpe',
       },
     },
     displays: [
@@ -21455,7 +21455,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Vascular_Smooth_Muscle_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adipose_Omentum-Vascular_Smooth_Muscle_2.bedpe',
       },
     },
     displays: [
@@ -21486,7 +21486,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Cortical_Epithelial_Like.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Cortical_Epithelial_Like.bedpe',
       },
     },
     displays: [
@@ -21517,7 +21517,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Endothelial_Exocrine_Tissues.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Endothelial_Exocrine_Tissues.bedpe',
       },
     },
     displays: [
@@ -21548,7 +21548,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Enteric_Neuron.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Enteric_Neuron.bedpe',
       },
     },
     displays: [
@@ -21579,7 +21579,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Fasciculata.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Fasciculata.bedpe',
       },
     },
     displays: [
@@ -21608,7 +21608,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Fibroblast_Liver_Adrenal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Fibroblast_Liver_Adrenal.bedpe',
       },
     },
     displays: [
@@ -21639,7 +21639,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Glomerulosa.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Glomerulosa.bedpe',
       },
     },
     displays: [
@@ -21668,7 +21668,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Transitional_Cortical.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Adrenal_Gland-Transitional_Cortical.bedpe',
       },
     },
     displays: [
@@ -21699,7 +21699,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-Alveolar_Type_2_AT2_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-Alveolar_Type_2_AT2_Cell.bedpe',
       },
     },
     displays: [
@@ -21730,7 +21730,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-Endocardial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-Endocardial_Cell.bedpe',
       },
     },
     displays: [
@@ -21761,7 +21761,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-T_Lymphocyte_1_CD8.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-T_Lymphocyte_1_CD8.bedpe',
       },
     },
     displays: [
@@ -21792,7 +21792,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-T_Lymphocyte_2_CD4.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Aorta-T_Lymphocyte_2_CD4.bedpe',
       },
     },
     displays: [
@@ -21823,7 +21823,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Tibial-Alveolar_Type_2_Immune.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Tibial-Alveolar_Type_2_Immune.bedpe',
       },
     },
     displays: [
@@ -21854,7 +21854,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Tibial-Smooth_Muscle_Colon_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Tibial-Smooth_Muscle_Colon_2.bedpe',
       },
     },
     displays: [
@@ -21885,7 +21885,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Tibial-Smooth_Muscle_Ge_Junction.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Artery_Tibial-Smooth_Muscle_Ge_Junction.bedpe',
       },
     },
     displays: [
@@ -21916,7 +21916,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-GABAergic_Neuron_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-GABAergic_Neuron_1.bedpe',
       },
     },
     displays: [
@@ -21947,7 +21947,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-GABAergic_Neuron_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-GABAergic_Neuron_2.bedpe',
       },
     },
     displays: [
@@ -21978,7 +21978,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-Glutamatergic_Neuron_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-Glutamatergic_Neuron_1.bedpe',
       },
     },
     displays: [
@@ -22009,7 +22009,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-Glutamatergic_Neuron_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Cerebrum-Glutamatergic_Neuron_2.bedpe',
       },
     },
     displays: [
@@ -22040,7 +22040,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Colon_Epithelial_Cell_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Colon_Epithelial_Cell_1.bedpe',
       },
     },
     displays: [
@@ -22071,7 +22071,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Fibroblast_Gastrointestinal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Fibroblast_Gastrointestinal.bedpe',
       },
     },
     displays: [
@@ -22102,7 +22102,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Melanocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Melanocyte.bedpe',
       },
     },
     displays: [
@@ -22131,7 +22131,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Colon_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Colon_1.bedpe',
       },
     },
     displays: [
@@ -22162,7 +22162,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Esophageal_Mucosal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Esophageal_Mucosal.bedpe',
       },
     },
     displays: [
@@ -22193,7 +22193,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Esophageal_Muscularis_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Esophageal_Muscularis_1.bedpe',
       },
     },
     displays: [
@@ -22224,7 +22224,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Esophageal_Muscularis_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Esophageal_Muscularis_2.bedpe',
       },
     },
     displays: [
@@ -22255,7 +22255,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_General_Gastrointestinal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_General_Gastrointestinal.bedpe',
       },
     },
     displays: [
@@ -22286,7 +22286,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Uterine.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Sigmoid-Smooth_Muscle_Uterine.bedpe',
       },
     },
     displays: [
@@ -22317,7 +22317,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Astrocyte_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Astrocyte_2.bedpe',
       },
     },
     displays: [
@@ -22348,7 +22348,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Colon_Epithelial_Cell_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Colon_Epithelial_Cell_2.bedpe',
       },
     },
     displays: [
@@ -22379,7 +22379,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Colon_Epithelial_Cell_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Colon_Epithelial_Cell_3.bedpe',
       },
     },
     displays: [
@@ -22410,7 +22410,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Colonic_Goblet_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Colonic_Goblet_Cell.bedpe',
       },
     },
     displays: [
@@ -22441,7 +22441,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Enterochromaffin_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Enterochromaffin_Cell.bedpe',
       },
     },
     displays: [
@@ -22472,7 +22472,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Mammary_Luminal_Epithelial_Cell_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Mammary_Luminal_Epithelial_Cell_2.bedpe',
       },
     },
     displays: [
@@ -22503,7 +22503,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Oligodendrocyte_Precursor.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Oligodendrocyte_Precursor.bedpe',
       },
     },
     displays: [
@@ -22534,7 +22534,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Paneth_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Paneth_Cell.bedpe',
       },
     },
     displays: [
@@ -22565,7 +22565,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Si_Goblet.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Si_Goblet.bedpe',
       },
     },
     displays: [
@@ -22595,7 +22595,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Tuft_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Colon_Transverse-Tuft_Cell.bedpe',
       },
     },
     displays: [
@@ -22625,7 +22625,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Gejunction-Airway_Goblet_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Gejunction-Airway_Goblet_Cell.bedpe',
       },
     },
     displays: [
@@ -22656,7 +22656,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Gejunction-Myoepithelial_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Gejunction-Myoepithelial_Cells.bedpe',
       },
     },
     displays: [
@@ -22687,7 +22687,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Esophageal_Epithelial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Esophageal_Epithelial_Cell.bedpe',
       },
     },
     displays: [
@@ -22718,7 +22718,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Keratinocyte_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Keratinocyte_1.bedpe',
       },
     },
     displays: [
@@ -22749,7 +22749,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Mammary_Basal_Epi.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Mammary_Basal_Epi.bedpe',
       },
     },
     displays: [
@@ -22780,7 +22780,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Skin_Basal_Epidermal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Skin_Basal_Epidermal.bedpe',
       },
     },
     displays: [
@@ -22811,7 +22811,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Skin_Granular_Epidermal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Mucosa-Skin_Granular_Epidermal.bedpe',
       },
     },
     displays: [
@@ -22842,7 +22842,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Muscularis-Follicular.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Muscularis-Follicular.bedpe',
       },
     },
     displays: [
@@ -22873,7 +22873,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Muscularis-Satellite_Cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Muscularis-Satellite_Cells.bedpe',
       },
     },
     displays: [
@@ -22904,7 +22904,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Muscularis-Type_I_Skeletal_Myocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Esophagus_Muscularis-Type_I_Skeletal_Myocyte.bedpe',
       },
     },
     displays: [
@@ -22935,7 +22935,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Heart_Lv-A_Cardiomyocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Heart_Lv-A_Cardiomyocyte.bedpe',
       },
     },
     displays: [
@@ -22964,7 +22964,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Heart_Lv-Cardiac_Pericyte_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Heart_Lv-Cardiac_Pericyte_1.bedpe',
       },
     },
     displays: [
@@ -22995,7 +22995,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Heart_Lv-Ventricular_Cardiomyocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Heart_Lv-Ventricular_Cardiomyocyte.bedpe',
       },
     },
     displays: [
@@ -23026,7 +23026,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Heartatrial_Appendage-Alveolar_Type_1_AT1_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Heartatrial_Appendage-Alveolar_Type_1_AT1_Cell.bedpe',
       },
     },
     displays: [
@@ -23057,7 +23057,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Acinar.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Acinar.bedpe',
       },
     },
     displays: [
@@ -23085,7 +23085,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Alpha_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Alpha_1.bedpe',
       },
     },
     displays: [
@@ -23113,7 +23113,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Alpha_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Alpha_2.bedpe',
       },
     },
     displays: [
@@ -23141,7 +23141,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Beta_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Beta_1.bedpe',
       },
     },
     displays: [
@@ -23169,7 +23169,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Beta_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Beta_2.bedpe',
       },
     },
     displays: [
@@ -23197,7 +23197,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Delta_Gamma.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Delta_Gamma.bedpe',
       },
     },
     displays: [
@@ -23225,7 +23225,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Gastric_Neuroendocrine.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Gastric_Neuroendocrine.bedpe',
       },
     },
     displays: [
@@ -23256,7 +23256,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Hepatocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Islet_Cb-Hepatocyte.bedpe',
       },
     },
     displays: [
@@ -23284,7 +23284,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Lung-Cilliated_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Lung-Cilliated_Cell.bedpe',
       },
     },
     displays: [
@@ -23312,7 +23312,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Lung-Club_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Lung-Club_Cell.bedpe',
       },
     },
     displays: [
@@ -23340,7 +23340,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Mammary_Epithelial.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Mammary_Epithelial.bedpe',
       },
     },
     displays: [
@@ -23371,7 +23371,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Mammary_Luminal_Epithelial_Cell_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Mammary_Luminal_Epithelial_Cell_1.bedpe',
       },
     },
     displays: [
@@ -23402,7 +23402,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Microglia.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Microglia.bedpe',
       },
     },
     displays: [
@@ -23431,7 +23431,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Skin_Eccrine_Epidermal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Mammary_Tissue-Skin_Eccrine_Epidermal.bedpe',
       },
     },
     displays: [
@@ -23462,7 +23462,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Muscle-Type_II_Skeletal_Myocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Muscle-Type_II_Skeletal_Myocyte.bedpe',
       },
     },
     displays: [
@@ -23493,7 +23493,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Pancreas-Ductal_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Pancreas-Ductal_Cell.bedpe',
       },
     },
     displays: [
@@ -23521,7 +23521,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Skin_Sun_Exposed-Astrocyte_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Skin_Sun_Exposed-Astrocyte_1.bedpe',
       },
     },
     displays: [
@@ -23552,7 +23552,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Skin-Keratinocyte_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Skin-Keratinocyte_2.bedpe',
       },
     },
     displays: [
@@ -23580,7 +23580,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/abc/adult/abc_Stomach-Parietal_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/abc/adult/abc_Stomach-Parietal_Cell.bedpe',
       },
     },
     displays: [
@@ -23608,7 +23608,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Adrenocortical_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Adrenocortical_cells.bedpe',
       },
     },
     displays: [
@@ -23639,7 +23639,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Chromaffin_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Chromaffin_cells.bedpe',
       },
     },
     displays: [
@@ -23669,7 +23669,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Erythroblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Erythroblasts.bedpe',
       },
     },
     displays: [
@@ -23697,7 +23697,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Myeloid_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Myeloid_cells.bedpe',
       },
     },
     displays: [
@@ -23725,7 +23725,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Schwann_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Schwann_cells.bedpe',
       },
     },
     displays: [
@@ -23753,7 +23753,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Stromal_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Stromal_cells.bedpe',
       },
     },
     displays: [
@@ -23781,7 +23781,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Sympathoblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Sympathoblasts.bedpe',
       },
     },
     displays: [
@@ -23810,7 +23810,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Vascular_endothelial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Adrenal-Vascular_endothelial_cells.bedpe',
       },
     },
     displays: [
@@ -23841,7 +23841,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebellum-Astrocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebellum-Astrocytes.bedpe',
       },
     },
     displays: [
@@ -23869,7 +23869,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebellum-Granule_neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebellum-Granule_neurons.bedpe',
       },
     },
     displays: [
@@ -23900,7 +23900,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Astrocytes_Oligodendrocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Astrocytes_Oligodendrocytes.bedpe',
       },
     },
     displays: [
@@ -23931,7 +23931,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Cerebrum_Unknown_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Cerebrum_Unknown_3.bedpe',
       },
     },
     displays: [
@@ -23962,7 +23962,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Excitatory_neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Excitatory_neurons.bedpe',
       },
     },
     displays: [
@@ -23993,7 +23993,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Inhibitory_neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Inhibitory_neurons.bedpe',
       },
     },
     displays: [
@@ -24024,7 +24024,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Limbic_system_neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-Limbic_system_neurons.bedpe',
       },
     },
     displays: [
@@ -24055,7 +24055,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-SKOR2_NPSR1_positive_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_cerebrum-SKOR2_NPSR1_positive_cells.bedpe',
       },
     },
     displays: [
@@ -24086,7 +24086,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Unknown_6.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Eye_Unknown_6.bedpe',
       },
     },
     displays: [
@@ -24114,7 +24114,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Ganglion_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Ganglion_cells.bedpe',
       },
     },
     displays: [
@@ -24142,7 +24142,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Horizontal_cells_Amacrine_cells_.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Horizontal_cells_Amacrine_cells_.bedpe',
       },
     },
     displays: [
@@ -24173,7 +24173,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Photoreceptor_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Photoreceptor_cells.bedpe',
       },
     },
     displays: [
@@ -24202,7 +24202,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Retinal_pigment_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Retinal_pigment_cells.bedpe',
       },
     },
     displays: [
@@ -24233,7 +24233,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Retinal_progenitors_and_Muller_glia.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Eye-Retinal_progenitors_and_Muller_glia.bedpe',
       },
     },
     displays: [
@@ -24264,7 +24264,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Cardiomyocytes_Vascular_endothelial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Cardiomyocytes_Vascular_endothelial_cells.bedpe',
       },
     },
     displays: [
@@ -24295,7 +24295,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Cardiomyocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Cardiomyocytes.bedpe',
       },
     },
     displays: [
@@ -24323,7 +24323,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-ELF3_AGBL2_positive_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-ELF3_AGBL2_positive_cells.bedpe',
       },
     },
     displays: [
@@ -24354,7 +24354,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Endocardial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Endocardial_cells.bedpe',
       },
     },
     displays: [
@@ -24383,7 +24383,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Epicardial_fat_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Epicardial_fat_cells.bedpe',
       },
     },
     displays: [
@@ -24414,7 +24414,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Heart_Unknown_10.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Heart_Unknown_10.bedpe',
       },
     },
     displays: [
@@ -24443,7 +24443,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Lymphatic_endothelial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Lymphatic_endothelial_cells.bedpe',
       },
     },
     displays: [
@@ -24474,7 +24474,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Lymphoid_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Lymphoid_cells.bedpe',
       },
     },
     displays: [
@@ -24502,7 +24502,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Smooth_muscle_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_heart-Smooth_muscle_cells.bedpe',
       },
     },
     displays: [
@@ -24533,7 +24533,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-ENS_glia.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-ENS_glia.bedpe',
       },
     },
     displays: [
@@ -24561,7 +24561,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-ENS_neurons.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-ENS_neurons.bedpe',
       },
     },
     displays: [
@@ -24589,7 +24589,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestinal_epithelial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestinal_epithelial_cells.bedpe',
       },
     },
     displays: [
@@ -24620,7 +24620,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Unknown_4.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Unknown_4.bedpe',
       },
     },
     displays: [
@@ -24651,7 +24651,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Unknown_8.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Intestine_Unknown_8.bedpe',
       },
     },
     displays: [
@@ -24682,7 +24682,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Mesothelial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Intestine-Mesothelial_cells.bedpe',
       },
     },
     displays: [
@@ -24713,7 +24713,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Kidney_Unknown_14.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Kidney_Unknown_14.bedpe',
       },
     },
     displays: [
@@ -24743,7 +24743,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Kidney_Unknown_7.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Kidney_Unknown_7.bedpe',
       },
     },
     displays: [
@@ -24772,7 +24772,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Mesangial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Mesangial_cells.bedpe',
       },
     },
     displays: [
@@ -24801,7 +24801,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Metanephric_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Metanephric_cells.bedpe',
       },
     },
     displays: [
@@ -24831,7 +24831,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Ureteric_bud_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_kidney-Ureteric_bud_cells.bedpe',
       },
     },
     displays: [
@@ -24862,7 +24862,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Hematopoietic_stem_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Hematopoietic_stem_cells.bedpe',
       },
     },
     displays: [
@@ -24893,7 +24893,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Hepatoblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Hepatoblasts.bedpe',
       },
     },
     displays: [
@@ -24921,7 +24921,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Megakaryocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Megakaryocytes.bedpe',
       },
     },
     displays: [
@@ -24949,7 +24949,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Stellate_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_liver-Stellate_cells.bedpe',
       },
     },
     displays: [
@@ -24977,7 +24977,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_lung-Bronchiolar_and_alveolar_epithelial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_lung-Bronchiolar_and_alveolar_epithelial_cells.bedpe',
       },
     },
     displays: [
@@ -25008,7 +25008,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_lung-Ciliated_epithelial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_lung-Ciliated_epithelial_cells.bedpe',
       },
     },
     displays: [
@@ -25039,7 +25039,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_lung-Neuroendocrine_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_lung-Neuroendocrine_cells.bedpe',
       },
     },
     displays: [
@@ -25070,7 +25070,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Lymphoid_and_Myeloid_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Lymphoid_and_Myeloid_cells.bedpe',
       },
     },
     displays: [
@@ -25101,7 +25101,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Muscle_Unknown_7.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Muscle_Unknown_7.bedpe',
       },
     },
     displays: [
@@ -25130,7 +25130,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Satellite_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Satellite_cells.bedpe',
       },
     },
     displays: [
@@ -25159,7 +25159,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Skeletal_muscle_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_muscle-Skeletal_muscle_cells.bedpe',
       },
     },
     displays: [
@@ -25190,7 +25190,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Acinar_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Acinar_cells.bedpe',
       },
     },
     displays: [
@@ -25218,7 +25218,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Ductal_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Ductal_cells.bedpe',
       },
     },
     displays: [
@@ -25246,7 +25246,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Islet_endocrine_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Islet_endocrine_cells.bedpe',
       },
     },
     displays: [
@@ -25277,7 +25277,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Pancreas_Unknown_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_pancreas-Pancreas_Unknown_1.bedpe',
       },
     },
     displays: [
@@ -25308,7 +25308,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Extravillous_trophoblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Extravillous_trophoblasts.bedpe',
       },
     },
     displays: [
@@ -25339,7 +25339,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-PAEP_MECOM_positive_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-PAEP_MECOM_positive_cells.bedpe',
       },
     },
     displays: [
@@ -25371,7 +25371,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Syncytiotrophoblast_and_villous_cytotrophoblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Syncytiotrophoblast_and_villous_cytotrophoblasts.bedpe',
       },
     },
     displays: [
@@ -25402,7 +25402,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Trophoblast_giant_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_Placenta-Trophoblast_giant_cells.bedpe',
       },
     },
     displays: [
@@ -25433,7 +25433,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_stomach-Epithelial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_stomach-Epithelial_cells.bedpe',
       },
     },
     displays: [
@@ -25463,7 +25463,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_stomach-Goblet_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_stomach-Goblet_cells.bedpe',
       },
     },
     displays: [
@@ -25491,7 +25491,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_stomach-Parietal_and_chief_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_stomach-Parietal_and_chief_cells.bedpe',
       },
     },
     displays: [
@@ -25522,7 +25522,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_thymus-Antigen_presenting_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_thymus-Antigen_presenting_cells.bedpe',
       },
     },
     displays: [
@@ -25553,7 +25553,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_thymus-Thymic_epithelial_cells.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_thymus-Thymic_epithelial_cells.bedpe',
       },
     },
     displays: [
@@ -25584,7 +25584,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_thymus-Thymocytes.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/fetal/coaccessibility_thymus-Thymocytes.bedpe',
       },
     },
     displays: [
@@ -25612,7 +25612,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Adipocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Adipocyte.bedpe',
       },
     },
     displays: [
@@ -25644,7 +25644,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Alveolar_Capillary_Endothelial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Alveolar_Capillary_Endothelial_Cell.bedpe',
       },
     },
     displays: [
@@ -25676,7 +25676,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Blood_Brain_Barrier_Endothelial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Blood_Brain_Barrier_Endothelial_Cell.bedpe',
       },
     },
     displays: [
@@ -25707,7 +25707,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Fibroblasts.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Fibroblasts.bedpe',
       },
     },
     displays: [
@@ -25738,7 +25738,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Pericyte_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Pericyte_2.bedpe',
       },
     },
     displays: [
@@ -25769,7 +25769,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Pericyte_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Pericyte_3.bedpe',
       },
     },
     displays: [
@@ -25800,7 +25800,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Pericyte_4.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Cardiac_Pericyte_4.bedpe',
       },
     },
     displays: [
@@ -25831,7 +25831,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Chief_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Chief_Cell.bedpe',
       },
     },
     displays: [
@@ -25862,7 +25862,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Ductal_Cell_(Pancreatic).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Ductal_Cell_(Pancreatic).bedpe',
       },
     },
     displays: [
@@ -25893,7 +25893,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(General)_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(General)_1.bedpe',
       },
     },
     displays: [
@@ -25924,7 +25924,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(General)_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(General)_2.bedpe',
       },
     },
     displays: [
@@ -25955,7 +25955,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(General)_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(General)_3.bedpe',
       },
     },
     displays: [
@@ -25986,7 +25986,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(Myocardial).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Endothelial_Cell_(Myocardial).bedpe',
       },
     },
     displays: [
@@ -26017,7 +26017,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(Epithelial).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(Epithelial).bedpe',
       },
     },
     displays: [
@@ -26048,7 +26048,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(General).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(General).bedpe',
       },
     },
     displays: [
@@ -26079,7 +26079,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(Peripheral_Nerve).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(Peripheral_Nerve).bedpe',
       },
     },
     displays: [
@@ -26110,7 +26110,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(Sk_Muscle_Associated).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Fibroblast_(Sk_Muscle_Associated).bedpe',
       },
     },
     displays: [
@@ -26141,7 +26141,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Foveolar_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Foveolar_Cell.bedpe',
       },
     },
     displays: [
@@ -26172,7 +26172,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Luteal_Cell_(Ovarian).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Luteal_Cell_(Ovarian).bedpe',
       },
     },
     displays: [
@@ -26203,7 +26203,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Lymphatic_Endothelial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Lymphatic_Endothelial_Cell.bedpe',
       },
     },
     displays: [
@@ -26234,7 +26234,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Macrophage_(General,Alveolar).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Macrophage_(General,Alveolar).bedpe',
       },
     },
     displays: [
@@ -26265,7 +26265,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Macrophage_(General).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Macrophage_(General).bedpe',
       },
     },
     displays: [
@@ -26296,7 +26296,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Mast_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Mast_Cell.bedpe',
       },
     },
     displays: [
@@ -26327,7 +26327,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Memory_B_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Memory_B_Cell.bedpe',
       },
     },
     displays: [
@@ -26358,7 +26358,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Mesothelial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Mesothelial_Cell.bedpe',
       },
     },
     displays: [
@@ -26389,7 +26389,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Naive_T_cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Naive_T_cell.bedpe',
       },
     },
     displays: [
@@ -26420,7 +26420,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Natural_Killer_T_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Natural_Killer_T_Cell.bedpe',
       },
     },
     displays: [
@@ -26451,7 +26451,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pancreatic_Acinar_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pancreatic_Acinar_Cell.bedpe',
       },
     },
     displays: [
@@ -26482,7 +26482,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(Esophageal_Muscularis).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(Esophageal_Muscularis).bedpe',
       },
     },
     displays: [
@@ -26513,7 +26513,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_1.bedpe',
       },
     },
     displays: [
@@ -26544,7 +26544,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_2.bedpe',
       },
     },
     displays: [
@@ -26575,7 +26575,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_3.bedpe',
       },
     },
     displays: [
@@ -26606,7 +26606,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_4.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Pericyte_(General)_4.bedpe',
       },
     },
     displays: [
@@ -26637,7 +26637,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Peripheral_Nerve_Stromal.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Peripheral_Nerve_Stromal.bedpe',
       },
     },
     displays: [
@@ -26668,7 +26668,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Plasma_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Plasma_Cell.bedpe',
       },
     },
     displays: [
@@ -26699,7 +26699,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Schwann_Cell_(General).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Schwann_Cell_(General).bedpe',
       },
     },
     displays: [
@@ -26730,7 +26730,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Small_Intestinal_Enterocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Small_Intestinal_Enterocyte.bedpe',
       },
     },
     displays: [
@@ -26762,7 +26762,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Smooth_Muscle_(Esophageal_Muscularis)_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Smooth_Muscle_(Esophageal_Muscularis)_3.bedpe',
       },
     },
     displays: [
@@ -26793,7 +26793,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Smooth_Muscle_(General).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Smooth_Muscle_(General).bedpe',
       },
     },
     displays: [
@@ -26824,7 +26824,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Smooth_Muscle_(Vaginal).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Smooth_Muscle_(Vaginal).bedpe',
       },
     },
     displays: [
@@ -26855,7 +26855,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-T_Lymphocyte_1_(CD8+).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-T_Lymphocyte_1_(CD8+).bedpe',
       },
     },
     displays: [
@@ -26886,7 +26886,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-T_lymphocyte_2_(CD4+).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-T_lymphocyte_2_(CD4+).bedpe',
       },
     },
     displays: [
@@ -26917,7 +26917,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Vascular_Smooth_Muscle_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Vascular_Smooth_Muscle_1.bedpe',
       },
     },
     displays: [
@@ -26948,7 +26948,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Vascular_Smooth_Muscle_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adipose_omentum-Vascular_Smooth_Muscle_2.bedpe',
       },
     },
     displays: [
@@ -26979,7 +26979,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-CNS,Enteric_Neuron.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-CNS,Enteric_Neuron.bedpe',
       },
     },
     displays: [
@@ -27010,7 +27010,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Cortical_Epithelial-like.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Cortical_Epithelial-like.bedpe',
       },
     },
     displays: [
@@ -27041,7 +27041,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Endothelial_(Exocrine_Tissues).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Endothelial_(Exocrine_Tissues).bedpe',
       },
     },
     displays: [
@@ -27072,7 +27072,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Fibroblast_(Liver_Adrenal).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Fibroblast_(Liver_Adrenal).bedpe',
       },
     },
     displays: [
@@ -27103,7 +27103,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Transitional_Zone_Cortical_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Transitional_Zone_Cortical_Cell.bedpe',
       },
     },
     displays: [
@@ -27134,7 +27134,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Zona_Fasciculata_Cortical_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Zona_Fasciculata_Cortical_Cell.bedpe',
       },
     },
     displays: [
@@ -27165,7 +27165,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Zona_Glomerulosa_Cortical_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Adrenal_gland-Zona_Glomerulosa_Cortical_Cell.bedpe',
       },
     },
     displays: [
@@ -27196,7 +27196,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_aorta-Alveolar_Type_2_(AT2)_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_aorta-Alveolar_Type_2_(AT2)_Cell.bedpe',
       },
     },
     displays: [
@@ -27227,7 +27227,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_aorta-Endocardial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_aorta-Endocardial_Cell.bedpe',
       },
     },
     displays: [
@@ -27258,7 +27258,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_tibial-Alverolar_Type_2,Immune.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_tibial-Alverolar_Type_2,Immune.bedpe',
       },
     },
     displays: [
@@ -27289,7 +27289,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_tibial-Smooth_Muscle_(Colon)_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_tibial-Smooth_Muscle_(Colon)_2.bedpe',
       },
     },
     displays: [
@@ -27320,7 +27320,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_tibial-Smooth_Muscle_(GE_Junction).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Artery_tibial-Smooth_Muscle_(GE_Junction).bedpe',
       },
     },
     displays: [
@@ -27351,7 +27351,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Colon_Epithelial_Cell_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Colon_Epithelial_Cell_1.bedpe',
       },
     },
     displays: [
@@ -27382,7 +27382,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Fibroblast_(Gastrointestinal).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Fibroblast_(Gastrointestinal).bedpe',
       },
     },
     displays: [
@@ -27413,7 +27413,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Melanocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Melanocyte.bedpe',
       },
     },
     displays: [
@@ -27443,7 +27443,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Colon)_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Colon)_1.bedpe',
       },
     },
     displays: [
@@ -27474,7 +27474,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Esophageal_Mucosal).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Esophageal_Mucosal).bedpe',
       },
     },
     displays: [
@@ -27506,7 +27506,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Esophageal_Muscularis)_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Esophageal_Muscularis)_1.bedpe',
       },
     },
     displays: [
@@ -27538,7 +27538,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Esophageal_Muscularis)_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Esophageal_Muscularis)_2.bedpe',
       },
     },
     displays: [
@@ -27570,7 +27570,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(General_Gastrointestinal).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(General_Gastrointestinal).bedpe',
       },
     },
     displays: [
@@ -27601,7 +27601,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Uterine).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_sigmoid-Smooth_Muscle_(Uterine).bedpe',
       },
     },
     displays: [
@@ -27632,7 +27632,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Astrocyte_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Astrocyte_2.bedpe',
       },
     },
     displays: [
@@ -27663,7 +27663,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Colon_Epithelial_Cell_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Colon_Epithelial_Cell_2.bedpe',
       },
     },
     displays: [
@@ -27694,7 +27694,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Colon_Epithelial_Cell_3.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Colon_Epithelial_Cell_3.bedpe',
       },
     },
     displays: [
@@ -27725,7 +27725,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Colonic_Goblet_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Colonic_Goblet_Cell.bedpe',
       },
     },
     displays: [
@@ -27756,7 +27756,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Enterochromaffin_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Enterochromaffin_Cell.bedpe',
       },
     },
     displays: [
@@ -27787,7 +27787,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Mammary_Luminal_Epithelial_Cell_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Mammary_Luminal_Epithelial_Cell_2.bedpe',
       },
     },
     displays: [
@@ -27818,7 +27818,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Oligodendrocyte_Precursor.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Oligodendrocyte_Precursor.bedpe',
       },
     },
     displays: [
@@ -27849,7 +27849,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Paneth_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Paneth_Cell.bedpe',
       },
     },
     displays: [
@@ -27880,7 +27880,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Small_Intestinal_Goblet_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Small_Intestinal_Goblet_Cell.bedpe',
       },
     },
     displays: [
@@ -27911,7 +27911,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Tuft_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Colon_transverse-Tuft_Cell.bedpe',
       },
     },
     displays: [
@@ -27942,7 +27942,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_gejunction-Airway_Goblet_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_gejunction-Airway_Goblet_Cell.bedpe',
       },
     },
     displays: [
@@ -27973,7 +27973,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_gejunction-Myoepithelial_(Skin).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_gejunction-Myoepithelial_(Skin).bedpe',
       },
     },
     displays: [
@@ -28004,7 +28004,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Basal_Epidermal_(Skin).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Basal_Epidermal_(Skin).bedpe',
       },
     },
     displays: [
@@ -28035,7 +28035,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Basal_Epithelial_(Mammary).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Basal_Epithelial_(Mammary).bedpe',
       },
     },
     displays: [
@@ -28066,7 +28066,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Esophageal_Epithelial_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Esophageal_Epithelial_Cell.bedpe',
       },
     },
     displays: [
@@ -28097,7 +28097,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Granular_Epidermal_(Skin).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Granular_Epidermal_(Skin).bedpe',
       },
     },
     displays: [
@@ -28128,7 +28128,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Keratinocyte_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_mucosa-Keratinocyte_1.bedpe',
       },
     },
     displays: [
@@ -28159,7 +28159,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_muscularis-Satellite_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_muscularis-Satellite_Cell.bedpe',
       },
     },
     displays: [
@@ -28190,7 +28190,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_muscularis-Thyroid_Follicular_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_muscularis-Thyroid_Follicular_Cell.bedpe',
       },
     },
     displays: [
@@ -28221,7 +28221,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_muscularis-Type_I_Skeletal_Myocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Esophagus_muscularis-Type_I_Skeletal_Myocyte.bedpe',
       },
     },
     displays: [
@@ -28252,7 +28252,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Alveolar_Type_1_(AT1)_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Alveolar_Type_1_(AT1)_Cell.bedpe',
       },
     },
     displays: [
@@ -28283,7 +28283,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Atrial_Cardiomyocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Atrial_Cardiomyocyte.bedpe',
       },
     },
     displays: [
@@ -28314,7 +28314,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Cardiac_Pericyte_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Cardiac_Pericyte_1.bedpe',
       },
     },
     displays: [
@@ -28345,7 +28345,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Ventricular_Cardiomyocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_HeartAtrial_appendage-Ventricular_Cardiomyocyte.bedpe',
       },
     },
     displays: [
@@ -28376,7 +28376,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Gastric_Neuroendocrine_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Gastric_Neuroendocrine_Cell.bedpe',
       },
     },
     displays: [
@@ -28407,7 +28407,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Hepatocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Hepatocyte.bedpe',
       },
     },
     displays: [
@@ -28435,7 +28435,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Alpha_Cell_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Alpha_Cell_1.bedpe',
       },
     },
     displays: [
@@ -28466,7 +28466,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Alpha_Cell_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Alpha_Cell_2.bedpe',
       },
     },
     displays: [
@@ -28497,7 +28497,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Beta_Cell_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Beta_Cell_1.bedpe',
       },
     },
     displays: [
@@ -28528,7 +28528,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Beta_Cell_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Beta_Cell_2.bedpe',
       },
     },
     displays: [
@@ -28559,7 +28559,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Delta,Gamma_cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Islet_CB-Pancreatic_Delta,Gamma_cell.bedpe',
       },
     },
     displays: [
@@ -28590,7 +28590,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_lung-Cilliated_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_lung-Cilliated_Cell.bedpe',
       },
     },
     displays: [
@@ -28618,7 +28618,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_lung-Club_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_lung-Club_Cell.bedpe',
       },
     },
     displays: [
@@ -28646,7 +28646,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Eccrine_Epidermal_(Skin).bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Eccrine_Epidermal_(Skin).bedpe',
       },
     },
     displays: [
@@ -28677,7 +28677,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Mammary_Epithelial.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Mammary_Epithelial.bedpe',
       },
     },
     displays: [
@@ -28708,7 +28708,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Mammary_Luminal_Epithelial_Cell_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Mammary_Luminal_Epithelial_Cell_1.bedpe',
       },
     },
     displays: [
@@ -28739,7 +28739,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Microglia.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Mammary_tissue-Microglia.bedpe',
       },
     },
     displays: [
@@ -28769,7 +28769,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_muscle-Type_II_Skeletal_Myocyte.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_muscle-Type_II_Skeletal_Myocyte.bedpe',
       },
     },
     displays: [
@@ -28800,7 +28800,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Skin_sun_exposed-Astrocyte_1.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_Skin_sun_exposed-Astrocyte_1.bedpe',
       },
     },
     displays: [
@@ -28831,7 +28831,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_skin-Keratinocyte_2.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_skin-Keratinocyte_2.bedpe',
       },
     },
     displays: [
@@ -28859,7 +28859,7 @@ const tracks = [
       type: 'BedpeAdapter',
       bedpeLocation: {
         locationType: 'UriLocation',
-        uri: 'http://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_stomach-Parietal_Cell.bedpe',
+        uri: 'https://screg.sdfmu.edu.cn/result/co-accessibility/adult/coaccessibility_stomach-Parietal_Cell.bedpe',
       },
     },
     displays: [

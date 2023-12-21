@@ -35,7 +35,7 @@ export default function View(props: any) {
           type: 'BigWigAdapter',
           bigWigLocation: {
             uri:
-              'http://screg.sdfmu.edu.cn/taskout/' +
+              'https://screg.sdfmu.edu.cn/taskout/' +
               props.data.type +
               '/' +
               props.data.taskid +
@@ -60,7 +60,7 @@ export default function View(props: any) {
           type: 'BedpeAdapter',
           bedpeLocation: {
             uri:
-              'http://screg.sdfmu.edu.cn/taskout/' +
+              'https://screg.sdfmu.edu.cn/taskout/' +
               props.data.type +
               '/' +
               props.data.taskid +
